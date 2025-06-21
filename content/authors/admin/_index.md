@@ -55,8 +55,8 @@ interests:
 education:
   - area: Ph.D. in Education and Psychology
     institution: University of Michigan
-    date_start: 2014-9
-    date_end: 2020-5
+    date_start: 2014-09-01
+    date_end: 2020-05-01
     summary: |
       Dissertation on _how eye movements reveal cognitive processing during mind-wandering_. 
     button:
@@ -64,15 +64,15 @@ education:
       url: 'https://deepblue.lib.umich.edu/handle/2027.42/155215'
   - area: Psychology
     institution: Beijing Normal University
-    date_start: 2010-09
-    date_end: 2014-05
+    date_start: 2010-09-01
+    date_end: 2014-07-01
 
 work:
   - position: Assistant Research Scientist
     company_name: University of Michigan Transportation Research Institute
     company_url: 'https://umtri.umich.edu/'
     company_logo: ''
-    date_start: 2025-06
+    date_start: 2025-06-15
     date_end: ''
     # summary: |2-
     #   Responsibilities include:
@@ -83,8 +83,8 @@ work:
     company_name: Department of Psychology, University of Michigan
     company_url: 'https://lsa.umich.edu/psych/'
     company_logo: ''
-    date_start: 2020-05
-    date_end: 2025-06
+    date_start: 2020-06-28
+    date_end: 2025-06-14
     # summary: |
     #   Responsibilities include:
     #   - Migrated infrastructure to a new data center
