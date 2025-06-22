@@ -1,0 +1,14 @@
+---
+title: Applying Computational Modeling to Forced-Response Conflict Tasks in Adults
+  with ADHD
+authors:
+- Jahla Osborne
+- Jacob Sellers
+- Han Zhang
+- Priti Shah
+- John Jonides
+date: '2024-11-01'
+publishDate: '2025-06-22T02:49:34.139522Z'
+publication_types:
+- paper-conference
+---
