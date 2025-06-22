@@ -80,24 +80,6 @@ def format_publication_field(entry):
     
     return None
 
-def bold_author_name(authors, target_name="Han Zhang"):
-    """Bold the target author name in the authors list"""
-    if not authors or not isinstance(authors, list):
-        return authors
-    
-    bolded_authors = []
-    for author in authors:
-        if isinstance(author, str):
-            # Check if this author matches the target name
-            if target_name.lower() in author.lower():
-                # Bold the author name
-                bolded_authors.append(f"**{author}**")
-            else:
-                bolded_authors.append(author)
-        else:
-            bolded_authors.append(author)
-    
-    return bolded_authors
 
 def enhance_publication_files():
     """Enhance all publication markdown files"""
@@ -158,10 +140,6 @@ def enhance_publication_files():
                                 if matching_entry:
                                     # Format the publication field
                                     new_pub_field = format_publication_field(matching_entry)
-                                     
-                                    # Bold the author name in authors list
-                                    if 'authors' in data:
-                                        data['authors'] = bold_author_name(data['authors'])
                                      
                                     if new_pub_field:
                                         # Update or add publication field
