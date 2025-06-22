@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/CV-HanZhang.pdf
+        url: uploads/CV_HanZhang.pdf
     design:
       css_class: dark
       background:
@@ -27,7 +27,7 @@ sections:
           #filename: stacked-peaks.svg
           filename: dileepa-nipun-5bakUnqvBo0-unsplash.jpg
           filters:
-            brightness: 0.2
+            brightness: 0.3
           size: cover
           position: center
           parallax: false
