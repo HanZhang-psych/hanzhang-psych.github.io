@@ -57,6 +57,7 @@ sections:
   #     view: article-grid
   #     columns: 2
 
+  # journal articles
   - block: collection
     content:
       title: Journal Articles
@@ -68,7 +69,32 @@ sections:
         exclude_featured: false
     design:
       view: citation
-      
+
+  # preprints
+  - block: collection
+    content:
+      title: Preprints
+      text: ""
+      filters:
+        folders:
+          - publication
+        publication_type: "article"
+        exclude_featured: false
+    design:
+      view: citation
+
+  # - block: collection
+  #   content:
+  #     title: Conference Papers
+  #     text: ""
+  #     filters:
+  #       folders:
+  #         - publication
+  #       publication_type: "paper-conference"
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
+
   # - block: collection
   #   id: talks
   #   content:
