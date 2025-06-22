@@ -1,15 +1,4 @@
 ---
-title: How does mind-wandering affect distractor suppression?
-authors:
-- Han Zhang
-- Kevin F. Miller
-- John Jonides
-date: '2024-11-01'
-publishDate: '2025-06-22T14:31:09.770510Z'
-publication_types:
-- article-journal
-publication: '*Visual Cognition*'
-doi: 10.1080/13506285.2024.2347605
 abstract: The current study examined whether the suppression of overt attention to
   a salient distractor requires attentional resources. In a feature-search task, participants
   searched for a constant shape among different shapes while ignoring a uniquely coloured
@@ -23,12 +12,23 @@ abstract: The current study examined whether the suppression of overt attention 
   might still disrupt later processing stages, an effect exacerbated by mind-wandering.
   These results also suggest that initial eye movements do not fully reflect the extent
   of distractor interference during the entire course of visual search.
+authors:
+- Han Zhang
+- Kevin F. Miller
+- John Jonides
+date: '2024-11-01'
+doi: 10.1080/13506285.2024.2347605
+links:
+- name: URL
+  url: https://doi.org/10.1080/13506285.2024.2347605
+publication: '*Visual Cognition*, 32*(9-10), 1027-1044'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T14:31:09.770510Z'
 tags:
 - attentional capture
 - eye movements
 - mind-wandering
 - Visual search
-links:
-- name: URL
-  url: https://doi.org/10.1080/13506285.2024.2347605
+title: How does mind-wandering affect distractor suppression?
 ---
