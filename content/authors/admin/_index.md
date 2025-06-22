@@ -62,7 +62,7 @@ education:
     button:
       text: 'Read Dissertation'
       url: 'https://deepblue.lib.umich.edu/handle/2027.42/155215'
-  - area: Psychology
+  - area: B.S. in Psychology
     institution: Beijing Normal University
     date_start: 2010-09-01
     date_end: 2014-07-01
@@ -167,4 +167,4 @@ work:
 
 ## About Me
 
-I am a cognitive psychologist in training with extensive experience investigating cognitive processes critical to driving performance, including visual perception, attention, and memory. I have examined these processes in young and older adults as well as individuals with ADHD. My goal is to translate basic understandings about limitations of the human cognitive system into practical solutions for improving driving safety.
+I am a cognitive psychologist with extensive experience investigating cognitive processes critical to driving performance, including visual perception, attention, and memory. I have examined these issues in young and older adults as well as individuals with ADHD. My goal is to translate basic understandings about limitations of the human cognitive system into practical solutions for improving driving safety.
