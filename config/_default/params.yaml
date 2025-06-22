@@ -58,3 +58,8 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+# Publications
+publications:
+  date_format: January 2006
+  citation_style: apa
