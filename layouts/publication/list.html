@@ -1,0 +1,104 @@
+{{- define "main" -}}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.subtitle -}}<p class="page-subtitle">{{ . | markdownify | emojify }}</p>{{- end -}}
+</header>
+
+<div class="page-body">
+  {{- .Content -}}
+</div>
+
+{{/* Group publications by year */}}
+{{- $publications := where site.RegularPages "Type" "publication" -}}
+{{- $publications = $publications.GroupByDate "2006" "desc" -}}
+
+{{- range $publications -}}
+  <div class="year-group">
+    <h2 class="year-heading">{{ .Key }}</h2>
+    
+    {{- range .Pages -}}
+      <div class="pub-list-item view-citation">
+        <div class="article-metadata">
+          {{- with .Params.authors -}}
+            {{- $author_count := len . -}}
+            {{- range $index, $author := . -}}
+              {{ $author }}
+              {{- if lt $index (sub $author_count 1) -}}
+                {{- if eq $index (sub $author_count 2) -}} and {{ else }}, {{ end -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+          
+          {{- with .Date -}}
+            ({{ .Format "2006" }}).
+          {{- end -}}
+        </div>
+
+        <h3 class="article-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+
+        {{- with .Params.publication -}}
+          <div class="article-style">
+            {{ . | markdownify }}
+          </div>
+        {{- end -}}
+
+        {{- if .Params.doi -}}
+          <div class="article-metadata">
+            doi: <a href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">{{ .Params.doi }}</a>
+          </div>
+        {{- end -}}
+
+        {{/* Publication links */}}
+        <div class="btn-links">
+          {{- if .Params.url_pdf -}}
+            <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_pdf }}" target="_blank" rel="noopener">PDF</a>
+          {{- end -}}
+          
+          {{- if .Params.doi -}}
+            <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">DOI</a>
+          {{- end -}}
+          
+          {{- if .Params.url_code -}}
+            <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_code }}" target="_blank" rel="noopener">Code</a>
+          {{- end -}}
+          
+          {{- if .Params.url_dataset -}}
+            <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_dataset }}" target="_blank" rel="noopener">Dataset</a>
+          {{- end -}}
+          
+          <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .RelPermalink }}">Cite</a>
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}
+
+<style>
+.year-group {
+  margin-bottom: 3rem;
+}
+
+.year-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.pub-list-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.pub-list-item:last-child {
+  border-bottom: none;
+}
+</style>
+
+{{- end -}} 
