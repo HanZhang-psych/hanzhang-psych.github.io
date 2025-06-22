@@ -25,7 +25,7 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           #filename: stacked-peaks.svg
-          filename: kelly-sikkema-tk9RQCq5eQo-unsplash.jpg
+          filename: martin-martz-X5fEKadz0Xc-unsplash.jpg
           filters:
             brightness: 1.0
           size: cover
