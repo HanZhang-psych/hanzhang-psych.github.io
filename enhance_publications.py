@@ -42,9 +42,9 @@ def format_publication_field(entry):
             # Add volume and issue
             if volume:
                 if number:
-                    pub_field += f", {volume}*({number})"
+                    pub_field += f", *{volume}*({number})"
                 else:
-                    pub_field += f", {volume}*"
+                    pub_field += f", *{volume}*"
             
             # Add pages
             if pages:
