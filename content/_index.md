@@ -25,7 +25,7 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           #filename: stacked-peaks.svg
-          filename: richard-horvath-cPccYbPrF-A-unsplash.jpg
+          filename: dileepa-nipun-5bakUnqvBo0-unsplash.jpg
           filters:
             brightness: 1.0
           size: cover
