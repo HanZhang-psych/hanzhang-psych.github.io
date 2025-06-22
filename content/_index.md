@@ -63,7 +63,8 @@ sections:
       text: ""
       filters:
         folders:
-          - publication/journal-article
+          - publication
+        publication_type: "article-journal"
         exclude_featured: false
     design:
       view: citation
