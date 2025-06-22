@@ -6,11 +6,11 @@ permissions:
   contents: write
   pull-requests: write
 
-# Run workflow when a `.bib` file is added or updated in the `data/` folder
+# Run workflow when a `.bib` file is added or updated in the root folder
 on:
   push:
     branches: ['main']
-    paths: ['publications.bib']
+    paths: ['*.bib']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,9 +30,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install academic==0.10.0
-      - name: Run Academic (Bibtex To Markdown Converter)
-        # Check `.bib` file exists for case when action runs on `.bib` deletion
-        # Note GH only provides hashFiles func in `steps.if` context, not `jobs.if` context
+      - name: Import Journal Articles
+        # Check if journal articles bib file exists
+        if: ${{ hashFiles('journal_articles.bib') != '' }}
+        run: academic import journal_articles.bib content/publication/ --compact
+      - name: Import Preprints
+        # Check if preprints bib file exists
+        if: ${{ hashFiles('preprints.bib') != '' }}
+        run: academic import preprints.bib content/publication/ --compact
+      - name: Import Publications (fallback for single file)
+        # Check if single publications.bib file exists
         if: ${{ hashFiles('publications.bib') != '' }}
         run: academic import publications.bib content/publication/ --compact
       - name: Create Pull Request
@@ -43,8 +50,8 @@ jobs:
           commit-message: 'content: import publications from Bibtex'
           title: Hugo Blox Builder - Import latest publications
           body: |
-            Import the latest publications from `publications.bib` to `content/publication/`.
-            将最新的出版物从`publications.bib`导入到`content/publication/`。
+            Import the latest publications from BibTeX files to `content/publication/`.
+            将最新的出版物从BibTeX文件导入到`content/publication/`。
             [View Documentation](https://github.com/GetRD/academic-file-converter)
           base: main
           labels: automated-pr, content
