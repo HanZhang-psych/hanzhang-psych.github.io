@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/CV-Han Zhang.pdf
     design:
       css_class: dark
       background:
@@ -25,7 +25,7 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           #filename: stacked-peaks.svg
-          filename: thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg
+          filename: richard-horvath-cPccYbPrF-A-unsplash.jpg
           filters:
             brightness: 1.0
           size: cover
