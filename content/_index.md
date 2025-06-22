@@ -27,7 +27,7 @@ sections:
           #filename: stacked-peaks.svg
           filename: dileepa-nipun-5bakUnqvBo0-unsplash.jpg
           filters:
-            brightness: 0.6
+            brightness: 0.3
           size: cover
           position: center
           parallax: false
