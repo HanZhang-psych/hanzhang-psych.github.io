@@ -80,10 +80,15 @@ sections:
     content:
       title: Preprints
       text: ""
+      count: 5
+      archive:
+        enable: true
+        text: See all
+        link: publication/
       filters:
         folders:
           - publication
-        publication_type: "article"
+        publication_type: "manuscript"
         exclude_featured: false
     design:
       view: citation
