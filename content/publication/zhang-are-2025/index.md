@@ -1,16 +1,4 @@
 ---
-title: Are abrupt onsets highly salient?
-authors:
-- Han Zhang
-- Esha Brar
-- A. Kane York
-- John Jonides
-date: '2025-01-01'
-publishDate: '2025-06-22T14:31:09.763078Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
-doi: 10.1037/xhp0001329
 abstract: Abrupt onsets are commonly assumed to be a class of stimuli with high physical
   salience. This high salience has been used to explain past findings showing abrupt
   onsets captured attention more strongly compared to other types of distractors,
@@ -27,9 +15,22 @@ abstract: Abrupt onsets are commonly assumed to be a class of stimuli with high 
   because of high physical salience. Indeed, high physical salience may make an object
   easier to suppress during visual search. (PsycInfo Database Record (c) 2025 APA,
   all rights reserved)
+authors:
+- Han Zhang
+- Esha Brar
+- A. Kane York
+- John Jonides
+date: '2025-01-01'
+doi: 10.1037/xhp0001329
+publication: '*Journal of Experimental Psychology: Human Perception and Performance*,
+  51*(7), 911-926'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T14:31:09.763078Z'
 tags:
 - Attentional Capture
 - Color
 - Stimulus Salience
 - Visual Search
+title: Are abrupt onsets highly salient?
 ---

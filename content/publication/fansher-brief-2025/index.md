@@ -1,22 +1,4 @@
 ---
-title: A brief intervention to improve reasoning about accumulation
-authors:
-- Madison Fansher
-- Poortata Lalwani
-- Tyler J. Adkins
-- Han Zhang
-- Madelyn Quirk
-- Madison Carlson
-- Aysecan Boduroglu
-- Richard L. Lewis
-- John Jonides
-- Priti Shah
-date: '2025-01-01'
-publishDate: '2025-06-22T14:31:09.755152Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: Applied*'
-doi: 10.1037/xap0000532
 abstract: Prior research suggests that people often misunderstand visualizations of
   inflow (e.g., deposits in a banking context) and accumulation (e.g., cumulative
   savings) in dynamic systems. The present study aimed to examine participants’ understanding
@@ -33,6 +15,23 @@ abstract: Prior research suggests that people often misunderstand visualizations
   to improve the understanding of the relationship between inflow and accumulation,
   with Experiment 1 suggesting that the effects of our intervention lasted up to 6–7
   weeks after testing. (PsycInfo Database Record (c) 2025 APA, all rights reserved)
+authors:
+- Madison Fansher
+- Poortata Lalwani
+- Tyler J. Adkins
+- Han Zhang
+- Madelyn Quirk
+- Madison Carlson
+- Aysecan Boduroglu
+- Richard L. Lewis
+- John Jonides
+- Priti Shah
+date: '2025-01-01'
+doi: 10.1037/xap0000532
+publication: '*Journal of Experimental Psychology: Applied*, 31*(2), 99-125'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T14:31:09.755152Z'
 tags:
 - Brief Interventions
 - Intervention
@@ -42,4 +41,5 @@ tags:
 - Tests and Measures
 - Treatment Effectiveness Evaluation
 - Video-Based Interventions
+title: A brief intervention to improve reasoning about accumulation
 ---

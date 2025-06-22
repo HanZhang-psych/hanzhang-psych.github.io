@@ -1,15 +1,4 @@
 ---
-title: The malleability of attentional capture
-authors:
-- Han Zhang
-- Tessa R. Abagis
-- John Jonides
-date: '2021-10-01'
-publishDate: '2025-06-22T14:31:09.689383Z'
-publication_types:
-- article-journal
-publication: '*Visual Cognition*'
-doi: 10.1080/13506285.2021.1915903
 abstract: We suggest that consideration of trial-by-trial variations, individual diﬀerences,
   and training data will enrich the current framework in Luck, S. J., Gaspelin, N.,
   Folk, C. L., Remington, R. W., & Theeuwes, J. (2020. Progress toward resolving the
@@ -22,7 +11,18 @@ abstract: We suggest that consideration of trial-by-trial variations, individual
   practice but the underlying mechanisms are not entirely clear. Understanding the
   malleability of attentional capture may broaden the current framework and resolve
   outstanding questions.
+authors:
+- Han Zhang
+- Tessa R. Abagis
+- John Jonides
+date: '2021-10-01'
+doi: 10.1080/13506285.2021.1915903
 links:
 - name: URL
   url: https://www.tandfonline.com/doi/full/10.1080/13506285.2021.1915903
+publication: '*Visual Cognition*, 29*(9), 571-574'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T14:31:09.689383Z'
+title: The malleability of attentional capture
 ---
