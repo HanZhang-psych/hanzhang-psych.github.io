@@ -212,7 +212,7 @@ jobs:
                                                       matching_entry = entry
                                                       break
                                           
-                                                                                     if matching_entry:
+                                          if matching_entry:
                                                # Format the publication field
                                                new_pub_field = format_publication_field(matching_entry)
                                                
