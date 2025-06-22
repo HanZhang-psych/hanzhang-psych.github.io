@@ -25,7 +25,7 @@ sections:
         image:
           # Add your image background to `assets/media/`.
           #filename: stacked-peaks.svg
-          filename: martin-martz-X5fEKadz0Xc-unsplash.jpg
+          filename: milad-fakurian-seA-FPPXL-M-unsplash.jpg
           filters:
             brightness: 1.0
           size: cover
