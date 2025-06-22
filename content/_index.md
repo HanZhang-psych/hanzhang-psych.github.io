@@ -60,8 +60,13 @@ sections:
   # journal articles
   - block: collection
     content:
-      title: Journal Articles
+      title: Recent Papers
       text: ""
+      count: 10
+      archive:
+        enable: true
+        text: See all
+        link: publication/
       filters:
         folders:
           - publication
