@@ -27,7 +27,7 @@ sections:
           #filename: stacked-peaks.svg
           filename: milad-fakurian-seA-FPPXL-M-unsplash.jpg
           filters:
-            brightness: 1.0
+            brightness: 0.8
           size: cover
           position: center
           parallax: false
