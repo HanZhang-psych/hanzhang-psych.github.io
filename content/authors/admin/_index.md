@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Han Zhang
+title: Han Zhang, Ph.D.
 
 # Name pronunciation (optional)
 # name_pronunciation: Chien Shiung Wu
