@@ -17,7 +17,7 @@ abstract: Adults with Attention-Deficit/Hyperactivity Disorder (ADHD) are genera
   and different sources of distraction.
 authors:
 - Jahla B. Osborne
-- Han Zhang
+- '**Han Zhang**'
 - Madison Carlson
 - Priti Shah
 - John Jonides

@@ -19,7 +19,7 @@ authors:
 - Madison Fansher
 - Poortata Lalwani
 - Tyler J. Adkins
-- Han Zhang
+- '**Han Zhang**'
 - Madelyn Quirk
 - Madison Carlson
 - Aysecan Boduroglu
