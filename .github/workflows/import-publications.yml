@@ -95,12 +95,12 @@ jobs:
                   if journal:
                       pub_field = f"*{journal}*"
                       
-                                             # Add volume and issue
-                       if volume:
-                           if number:
-                               pub_field += f", *{volume}*({number})"
-                           else:
-                               pub_field += f", *{volume}*"
+                      # Add volume and issue
+                      if volume:
+                          if number:
+                              pub_field += f", *{volume}*({number})"
+                          else:
+                              pub_field += f", *{volume}*"
                       
                       # Add pages
                       if pages:
