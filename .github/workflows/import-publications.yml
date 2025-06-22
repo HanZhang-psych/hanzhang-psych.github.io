@@ -38,6 +38,14 @@ jobs:
         # Check if preprints bib file exists
         if: ${{ hashFiles('preprints.bib') != '' }}
         run: academic import preprints.bib content/publication/ --compact
+      - name: Import Conference Papers
+        # Check if conference papers bib file exists
+        if: ${{ hashFiles('conference_papers.bib') != '' }}
+        run: academic import conference_papers.bib content/publication/ --compact
+      - name: Import Talks
+        # Check if talks bib file exists
+        if: ${{ hashFiles('talks.bib') != '' }}
+        run: academic import talks.bib content/publication/ --compact
       - name: Import Publications (fallback for single file)
         # Check if single publications.bib file exists
         if: ${{ hashFiles('publications.bib') != '' }}
