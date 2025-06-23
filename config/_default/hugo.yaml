@@ -6,7 +6,7 @@
 # Website name
 title: Han Zhang, Ph.D.
 # Website URL
-baseURL: 'https://hanzhang.cv/'
+baseURL: 'http://hanzhang.cv/'
 
 ############################
 ## LANGUAGE
