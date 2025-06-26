@@ -1,16 +1,4 @@
 ---
-title: 'Lingering on distraction: Examining distractor rejection in adults with ADHD'
-authors:
-- Han Zhang
-- Tessa R. Abagis
-- Clara J. Steeby
-- John Jonides
-date: '2024-01-01'
-publishDate: '2025-06-22T19:14:14.918963Z'
-publication_types:
-- article-journal
-publication: '*Visual Cognition*'
-doi: 10.1080/13506285.2024.2328379
 abstract: Effective visual search relies on reactively disengaging from distractors
   when the features of the distractors are unpredictable. Does this ability differ
   between adults with and without Attention-Deficit/Hyperactivity Disorder (ADHD)?.
@@ -24,13 +12,25 @@ abstract: Effective visual search relies on reactively disengaging from distract
   duration before disengaging from it, compared to those without ADHD. These results
   suggest that ADHD is associated with deficits in reactively disengaging from distractions
   rather than deficits in avoiding being captured in the first place.
+authors:
+- admin
+- Tessa R. Abagis
+- Clara J. Steeby
+- John Jonides
+date: '2024-01-01'
+doi: 10.1080/13506285.2024.2328379
+links:
+- name: URL
+  url: https://doi.org/10.1080/13506285.2024.2328379
+publication: '*Visual Cognition*, *32*(9-10), 910-924'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T19:14:14.918963Z'
 tags:
 - ADHD
 - attentional capture
 - eye movements
 - reactive control
 - visual search
-links:
-- name: URL
-  url: https://doi.org/10.1080/13506285.2024.2328379
+title: 'Lingering on distraction: Examining distractor rejection in adults with ADHD'
 ---

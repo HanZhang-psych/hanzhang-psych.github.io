@@ -1,15 +1,4 @@
 ---
-title: 'PupEyes: An Interactive Python Library for Pupil Size and Eye Movement Data
-  Processing'
-authors:
-- Han Zhang
-- John Jonides
-date: '2025-04-01'
-publishDate: '2025-06-22T19:14:15.239477Z'
-publication_types:
-- manuscript
-publication: '*OSF*'
-doi: 10.31234/osf.io/h95ma_v1
 abstract: We present PupEyes, an open-source Python package for preprocessing and
   visualizing pupil size and eye movement data. Developed with current best practices
   in mind, PupEyes offers a comprehensive and reproducible pupil preprocessing pipeline,
@@ -27,6 +16,18 @@ abstract: We present PupEyes, an open-source Python package for preprocessing an
   interactive visualizations, and (3) enables flexible extensions for further analysis
   tailored to specific research goals. We believe PupEyes is a useful addition to
   the analysis workflow for pupil size and eye movement data.
+authors:
+- admin
+- John Jonides
+date: '2025-04-01'
+doi: 10.31234/osf.io/h95ma_v1
+links:
+- name: URL
+  url: https://osf.io/h95ma_v1
+publication: '*OSF*'
+publication_types:
+- manuscript
+publishDate: '2025-06-22T19:14:15.239477Z'
 tags:
 - pupillometry
 - data anlysis
@@ -35,7 +36,6 @@ tags:
 - open-source
 - pupil size
 - Python
-links:
-- name: URL
-  url: https://osf.io/h95ma_v1
+title: 'PupEyes: An Interactive Python Library for Pupil Size and Eye Movement Data
+  Processing'
 ---

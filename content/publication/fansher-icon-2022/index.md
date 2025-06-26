@@ -1,23 +1,4 @@
 ---
-title: 'Icon arrays reduce concern over COVID-19 vaccine side effects: a randomized
-  control study'
-authors:
-- Madison Fansher
-- Tyler J. Adkins
-- Poortata Lalwani
-- Aysecan Boduroglu
-- Madison Carlson
-- Madelyn Quirk
-- Richard L. Lewis
-- Priti Shah
-- Han Zhang
-- John Jonides
-date: '2022-12-01'
-publishDate: '2025-06-22T19:14:14.879710Z'
-publication_types:
-- article-journal
-publication: '*Cognitive Research: Principles and Implications*'
-doi: 10.1186/s41235-022-00387-5
 abstract: On April 13, 2021, the CDC announced that the administration of Johnson
   and Johnson’s COVID-19 vaccine would be paused due to a rare blood clotting side
   effect in ~ 0.0001% of people given the vaccine. Most people who are hesitant to
@@ -30,8 +11,26 @@ abstract: On April 13, 2021, the CDC announced that the administration of Johnso
   announcement. We found that using icon arrays to illustrate the small chance of
   experiencing the blood clotting side effect significantly prevented increases in
   aversion toward the Johnson and Johnson vaccine as well as all other COVID-19 vaccines.
+authors:
+- Madison Fansher
+- Tyler J. Adkins
+- Poortata Lalwani
+- Aysecan Boduroglu
+- Madison Carlson
+- Madelyn Quirk
+- Richard L. Lewis
+- Priti Shah
+- admin
+- John Jonides
+date: '2022-12-01'
+doi: 10.1186/s41235-022-00387-5
 links:
 - name: URL
-  url: 
-    https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-022-00387-5
+  url: https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-022-00387-5
+publication: '*Cognitive Research: Principles and Implications*, *7*(1), 38'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T19:14:14.879710Z'
+title: 'Icon arrays reduce concern over COVID-19 vaccine side effects: a randomized
+  control study'
 ---

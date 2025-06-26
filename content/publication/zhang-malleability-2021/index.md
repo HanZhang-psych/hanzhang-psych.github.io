@@ -12,7 +12,7 @@ abstract: We suggest that consideration of trial-by-trial variations, individual
   malleability of attentional capture may broaden the current framework and resolve
   outstanding questions.
 authors:
-- Han Zhang
+- admin
 - Tessa R. Abagis
 - John Jonides
 date: '2021-10-01'

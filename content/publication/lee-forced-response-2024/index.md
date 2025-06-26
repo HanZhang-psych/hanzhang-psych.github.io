@@ -1,17 +1,4 @@
 ---
-title: 'The forced-response method: A new chronometric approach to measure conflict
-  processing'
-authors:
-- Taraz G. Lee
-- Jacob Sellers
-- John Jonides
-- Han Zhang
-date: '2024-12-01'
-publishDate: '2025-06-22T19:14:14.995287Z'
-publication_types:
-- article-journal
-publication: '*Behavior Research Methods*'
-doi: 10.3758/s13428-024-02516-y
 abstract: Despite long-standing concerns about the use of free reaction times (RTs)
   in cognitive psychology, they remain a prevalent measure of conflict resolution.
   This report presents the forced-response method as a fresh approach to examine speed–accuracy
@@ -26,6 +13,20 @@ abstract: Despite long-standing concerns about the use of free reaction times (R
   conflict tasks. As a behavioral method that examines the time course of cognitive
   processing, the forced-response method provides a novel and more nuanced look into
   the dynamics of conflict resolution.
+authors:
+- Taraz G. Lee
+- Jacob Sellers
+- John Jonides
+- admin
+date: '2024-12-01'
+doi: 10.3758/s13428-024-02516-y
+links:
+- name: URL
+  url: https://doi.org/10.3758/s13428-024-02516-y
+publication: '*Behavior Research Methods*, *57*(1), 15'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T19:14:14.995287Z'
 tags:
 - Behavioral Methods
 - Cognitive Control
@@ -38,7 +39,6 @@ tags:
 - Response conflict
 - Response signal
 - Speed–accuracy trade-off
-links:
-- name: URL
-  url: https://doi.org/10.3758/s13428-024-02516-y
+title: 'The forced-response method: A new chronometric approach to measure conflict
+  processing'
 ---

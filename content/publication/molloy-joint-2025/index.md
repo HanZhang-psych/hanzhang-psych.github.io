@@ -1,21 +1,4 @@
 ---
-title: Joint Cognitive Models Reveal Sources of Robust Individual Differences in Conflict
-  Processing
-authors:
-- M. Fiona Molloy
-- Taraz Lee
-- John Jonides
-- Han Zhang
-- Jacob Sellers
-- Andrew Heathcote
-- Chandra Sripada
-- Alexander Weigard
-date: '2025-06-01'
-publishDate: '2025-06-22T19:14:15.247202Z'
-publication_types:
-- manuscript
-publication: '*OSF*'
-doi: 10.31234/osf.io/5axpj_v1
 abstract: Experimental manipulations in conflict tasks, e.g., the Stroop, Flanker,
   and Simon tasks, lead to systematically poorer performance in “incongruent” conditions
   that feature stimuli that contradict task goals. However, substantial recent debate
@@ -40,13 +23,30 @@ abstract: Experimental manipulations in conflict tasks, e.g., the Stroop, Flanke
   and a simple decision-making task without conflict suppression demands. Overall,
   we found robust individual differences in computational mechanisms underlying general
   decision-making, but not mechanisms specific to conflict processing.
+authors:
+- M. Fiona Molloy
+- Taraz Lee
+- John Jonides
+- admin
+- Jacob Sellers
+- Andrew Heathcote
+- Chandra Sripada
+- Alexander Weigard
+date: '2025-06-01'
+doi: 10.31234/osf.io/5axpj_v1
+links:
+- name: URL
+  url: https://osf.io/5axpj_v1
+publication: '*OSF*'
+publication_types:
+- manuscript
+publishDate: '2025-06-22T19:14:15.247202Z'
 tags:
 - individual differences
 - conflict task
 - hierarchical Bayesian
 - joint modeling
 - linear ballistic accumulator model
-links:
-- name: URL
-  url: https://osf.io/5axpj_v1
+title: Joint Cognitive Models Reveal Sources of Robust Individual Differences in Conflict
+  Processing
 ---

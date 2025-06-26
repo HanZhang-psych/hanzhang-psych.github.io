@@ -1,16 +1,4 @@
 ---
-title: 'Missing the joke: Reduced rereading of garden-path jokes during mind-wandering'
-authors:
-- Han Zhang
-- Chuyan Qu
-- Kevin F. Miller
-- Kai S. Cortina
-date: '2020-01-01'
-publishDate: '2025-06-22T19:14:14.971830Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: Learning, Memory, and Cognition*'
-doi: 10.1037/xlm0000745
 abstract: 'Mind-wandering (i.e., thoughts irrelevant to the current task) occurs frequently
   during reading. The current study examined whether mind-wandering was associated
   with reduced rereading when the reader read the so-called garden-path jokes. In
@@ -28,6 +16,18 @@ abstract: 'Mind-wandering (i.e., thoughts irrelevant to the current task) occurs
   These results show that mind-wandering is associated with reduced rereading, which
   is important for resolving higher level comprehension difficulties. (PsycInfo Database
   Record (c) 2020 APA, all rights reserved)'
+authors:
+- admin
+- Chuyan Qu
+- Kevin F. Miller
+- Kai S. Cortina
+date: '2020-01-01'
+doi: 10.1037/xlm0000745
+publication: '*Journal of Experimental Psychology: Learning, Memory, and Cognition*,
+  *46*(4), 638-648'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T19:14:14.971830Z'
 tags:
 - Daydreaming
 - Eye Movements
@@ -38,4 +38,5 @@ tags:
 - Reading Comprehension
 - Semantics
 - Tobacco Smoking
+title: 'Missing the joke: Reduced rereading of garden-path jokes during mind-wandering'
 ---

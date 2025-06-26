@@ -1,16 +1,4 @@
 ---
-title: 'How listening to music affects reading: Evidence from eye tracking'
-authors:
-- Han Zhang
-- Kevin Miller
-- Raymond Cleveland
-- Kai Cortina
-date: '2018-01-01'
-publishDate: '2025-06-22T19:14:14.979346Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: Learning, Memory, and Cognition*'
-doi: 10.1037/xlm0000544
 abstract: The current research looked at how listening to music affects eye movements
   when college students read natural passages for comprehension. Two studies found
   that effects of music depend on both frequency of the word and dynamics of the music.
@@ -27,6 +15,18 @@ abstract: The current research looked at how listening to music affects eye move
   patterns are different from those observed in some other scenarios in which reading
   comprehension is impaired, including mindless reading. (PsycInfo Database Record
   (c) 2020 APA, all rights reserved)
+authors:
+- admin
+- Kevin Miller
+- Raymond Cleveland
+- Kai Cortina
+date: '2018-01-01'
+doi: 10.1037/xlm0000544
+publication: '*Journal of Experimental Psychology: Learning, Memory, and Cognition*,
+  *44*(11), 1778-1791'
+publication_types:
+- article-journal
+publishDate: '2025-06-22T19:14:14.979346Z'
 tags:
 - Auditory Perception
 - College Students
@@ -37,4 +37,5 @@ tags:
 - Reading Comprehension
 - Visual Tracking
 - Word Frequency
+title: 'How listening to music affects reading: Evidence from eye tracking'
 ---
