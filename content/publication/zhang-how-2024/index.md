@@ -13,7 +13,7 @@ abstract: The current study examined whether the suppression of overt attention 
   These results also suggest that initial eye movements do not fully reflect the extent
   of distractor interference during the entire course of visual search.
 authors:
-- Han Zhang
+- admin
 - Kevin F. Miller
 - John Jonides
 date: '2024-11-01'

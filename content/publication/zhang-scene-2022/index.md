@@ -20,7 +20,7 @@ abstract: During scene viewing, semantic information in the scene has been shown
   meaningful regions over visually salient regions in real-world scenes even during
   mind-wandering.
 authors:
-- Han Zhang
+- admin
 - Nicola C. Anderson
 - Kevin F. Miller
 date: '2022-05-01'

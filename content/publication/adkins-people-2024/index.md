@@ -21,7 +21,7 @@ abstract: Humans tend to slow down after making an error. A longstanding account
   committed an error.
 authors:
 - Tyler J. Adkins
-- Han Zhang
+- admin
 - Taraz G. Lee
 date: '2024-07-01'
 doi: 10.1038/s41467-024-50547-y
