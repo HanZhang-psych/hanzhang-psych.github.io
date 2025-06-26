@@ -25,6 +25,21 @@ def load_bibtex_data():
     
     return bib_data
 
+def convert_author_names(authors_list):
+    """Convert plain text author names to author profile references"""
+    if not authors_list:
+        return authors_list
+    
+    converted_authors = []
+    for author in authors_list:
+        # Convert "Han Zhang" to "admin" for author highlighting
+        if author.strip() == "Han Zhang":
+            converted_authors.append("admin")
+        else:
+            converted_authors.append(author)
+    
+    return converted_authors
+
 def format_publication_field(entry):
     """Format publication field with volume, issue, pages"""
     entry_type = entry.get('ENTRYTYPE', '').lower()
@@ -144,6 +159,10 @@ def enhance_publication_files():
                                     if new_pub_field:
                                         # Update or add publication field
                                         data['publication'] = new_pub_field
+                                    
+                                    # Convert author names for highlighting
+                                    if 'authors' in data:
+                                        data['authors'] = convert_author_names(data['authors'])
                                      
                                     # Write back the file
                                     new_front_matter = yaml.dump(data, default_flow_style=False, allow_unicode=True)
