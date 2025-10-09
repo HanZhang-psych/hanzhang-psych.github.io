@@ -1,8 +1,9 @@
 import os
-import re
 import yaml
 import bibtexparser
 from pathlib import Path
+from citeproc import CitationStylesStyle, CitationStylesBibliography, Citation, CitationItem
+from citeproc.source.json import CiteProcJSON
 
 def load_bibtex_data():
     """Load all BibTeX files and create a lookup dictionary"""
@@ -25,142 +26,156 @@ def load_bibtex_data():
     
     return bib_data
 
+def convert_bibtex_to_csl(bib_entry):
+    """Convert a BibTeX entry to CSL JSON format"""
+    entry_type = bib_entry.get('ENTRYTYPE', '').lower()
+    
+    # Map BibTeX entry types to CSL types
+    type_mapping = {
+        'article': 'article-journal',
+        'book': 'book',
+        'inproceedings': 'paper-conference',
+        'incollection': 'chapter',
+        'phdthesis': 'thesis',
+        'mastersthesis': 'thesis',
+        'techreport': 'report',
+        'misc': 'article'
+    }
+    
+    csl_type = type_mapping.get(entry_type, 'article')
+    
+    # Convert authors
+    authors = []
+    if 'author' in bib_entry:
+        author_string = bib_entry['author']
+        # Split by " and " and parse each author
+        for author in author_string.split(' and '):
+            author = author.strip()
+            if ',' in author:
+                # Format: "Last, First"
+                last, first = author.split(',', 1)
+                authors.append({
+                    'family': last.strip(),
+                    'given': first.strip()
+                })
+            else:
+                # Format: "First Last" - try to split
+                parts = author.split()
+                if len(parts) >= 2:
+                    authors.append({
+                        'family': parts[-1],
+                        'given': ' '.join(parts[:-1])
+                    })
+                else:
+                    authors.append({
+                        'family': author,
+                        'given': ''
+                    })
+    
+    # Build CSL entry
+    csl_entry = {
+        'id': bib_entry.get('ID', ''),
+        'type': csl_type,
+        'title': bib_entry.get('title', ''),
+        'author': authors
+    }
+    
+    # Add publication-specific fields
+    if entry_type == 'article':
+        csl_entry.update({
+            'container-title': str(bib_entry.get('journal', '')),
+            'volume': str(bib_entry.get('volume', '')),
+            'issue': str(bib_entry.get('number', '')),
+            'page': str(bib_entry.get('pages', '')),
+            'DOI': str(bib_entry.get('doi', '')),
+            'URL': str(bib_entry.get('url', ''))
+        })
+    elif entry_type in ['inproceedings', 'incollection']:
+        csl_entry.update({
+            'container-title': str(bib_entry.get('booktitle', '')),
+            'publisher': str(bib_entry.get('publisher', '')),
+            'page': str(bib_entry.get('pages', '')),
+            'DOI': str(bib_entry.get('doi', '')),
+            'URL': str(bib_entry.get('url', ''))
+        })
+    elif entry_type == 'book':
+        csl_entry.update({
+            'publisher': str(bib_entry.get('publisher', '')),
+            'publisher-place': str(bib_entry.get('address', '')),
+            'page': str(bib_entry.get('pages', '')),
+            'DOI': str(bib_entry.get('doi', '')),
+            'URL': str(bib_entry.get('url', ''))
+        })
+    elif entry_type in ['phdthesis', 'mastersthesis']:
+        csl_entry.update({
+            'publisher': str(bib_entry.get('school', '')),
+            'genre': 'Doctoral dissertation' if entry_type == 'phdthesis' else 'Master\'s thesis'
+        })
+    
+    # Add common fields
+    if 'year' in bib_entry:
+        try:
+            year = int(bib_entry['year'])
+            csl_entry['issued'] = {'date-parts': [[year]]}
+        except (ValueError, TypeError):
+            # If year is not a valid integer, skip it
+            pass
+    else:
+        # Ensure issued field exists even without year
+        csl_entry['issued'] = {'date-parts': [[]]}
+    
+    if 'doi' in bib_entry and bib_entry['doi']:
+        csl_entry['DOI'] = str(bib_entry['doi'])
+    if 'url' in bib_entry and bib_entry['url']:
+        csl_entry['URL'] = str(bib_entry['url'])
+    
+    return csl_entry
+
+def format_with_csl(bib_entry, csl_file_path='apa-cv.csl'):
+    """Format a BibTeX entry using CSL style"""
+    try:
+        # Convert BibTeX to CSL format
+        csl_entry = convert_bibtex_to_csl(bib_entry)
+        
+        # Create CSL JSON source - CiteProcJSON expects a list of items
+        csl_data = [csl_entry]
+        
+        # Load CSL style
+        style = CitationStylesStyle(csl_file_path, validate=False)
+        
+        # Create bibliography source - pass the data directly, not as JSON string
+        bib_source = CiteProcJSON(csl_data)
+        
+        # Create bibliography formatter
+        bibliography = CitationStylesBibliography(style, bib_source)
+        
+        # Add citation
+        citation = Citation([CitationItem(csl_entry['id'])])
+        bibliography.register(citation)
+        
+        # Render bibliography
+        for item in bibliography.bibliography():
+            return str(item)
+            
+    except Exception as e:
+        print(f"Error formatting with CSL: {e}")
+        return None
+
 def convert_author_names(authors_list):
     """Convert plain text author names to author profile references"""
     if not authors_list:
         return authors_list
     
-    converted_authors = []
-    for author in authors_list:
-        # Convert "Han Zhang" to "admin" for author highlighting
-        if author.strip() == "Han Zhang":
-            converted_authors.append("admin")
-        else:
-            converted_authors.append(author)
-    
-    return converted_authors
+    # Convert "Han Zhang" to "admin" for author highlighting
+    return ["admin" if author.strip() == "Han Zhang" else author for author in authors_list]
 
-def format_doi_url(entry):
-    """Format DOI and URL according to APA-7 style"""
-    doi = entry.get('doi', '')
-    url = entry.get('url', '')
+def write_publication_file(data, body, index_file):
+    """Write publication data back to markdown file"""
+    new_front_matter = yaml.dump(data, default_flow_style=False, allow_unicode=True)
+    new_content = f"---\n{new_front_matter}---{body}"
     
-    if doi:
-        # Clean DOI - remove any existing "doi:" prefix
-        doi = doi.replace('doi:', '').strip()
-        if not doi.startswith('http'):
-            doi = f"https://doi.org/{doi}"
-        return doi
-    elif url:
-        return url
-    
-    return None
-
-def format_publication_field(entry):
-    """Format publication field according to APA-7 style"""
-    entry_type = entry.get('ENTRYTYPE', '').lower()
-    
-    if entry_type == 'article':
-        # Journal article: *Journal Name*, Volume(Issue), pages
-        journal = entry.get('journal', '')
-        volume = entry.get('volume', '')
-        number = entry.get('number', '')
-        pages = entry.get('pages', '')
-        
-        if journal:
-            pub_field = f"*{journal}*"
-            
-            # Add volume and issue
-            if volume:
-                if number:
-                    pub_field += f", *{volume}*({number})"
-                else:
-                    pub_field += f", *{volume}*"
-            
-            # Add pages
-            if pages:
-                # Convert LaTeX page ranges (--) to en-dash
-                pages = pages.replace('--', '-')
-                pub_field += f", {pages}"
-            
-            return pub_field
-    
-    elif entry_type == 'inproceedings':
-        # Conference paper: *Conference Name*
-        booktitle = entry.get('booktitle', '')
-        if booktitle:
-            return f"*{booktitle}*"
-    
-    elif entry_type == 'incollection':
-        # Book chapter: In *Book Title*
-        booktitle = entry.get('booktitle', '')
-        if booktitle:
-            return f"In *{booktitle}*"
-    
-    elif entry_type == 'book':
-        # Book: *Book Title*. Publisher
-        title = entry.get('title', '')
-        publisher = entry.get('publisher', '')
-        if title and publisher:
-            return f"*{title}*. {publisher}"
-        elif title:
-            return f"*{title}*"
-        elif publisher:
-            return f"*{publisher}*"
-    
-    elif entry_type == 'phdthesis' or entry_type == 'mastersthesis':
-        # Thesis: *Title* (Doctoral dissertation/Master's thesis). University
-        title = entry.get('title', '')
-        school = entry.get('school', '')
-        thesis_type = "Doctoral dissertation" if entry_type == 'phdthesis' else "Master's thesis"
-        
-        if title and school:
-            return f"*{title}* ({thesis_type}). {school}"
-        elif title:
-            return f"*{title}* ({thesis_type})"
-    
-    elif entry_type == 'techreport':
-        # Technical report: *Title* (Report No. X). Publisher
-        title = entry.get('title', '')
-        number = entry.get('number', '')
-        institution = entry.get('institution', '')
-        
-        if title and number and institution:
-            return f"*{title}* (Report No. {number}). {institution}"
-        elif title and institution:
-            return f"*{title}*. {institution}"
-        elif title:
-            return f"*{title}*"
-    
-    elif entry_type == 'misc':
-        # Miscellaneous: *Title*. Publisher/Organization
-        title = entry.get('title', '')
-        howpublished = entry.get('howpublished', '')
-        
-        if title and howpublished:
-            return f"*{title}*. {howpublished}"
-        elif title:
-            return f"*{title}*"
-    
-    # Default fallback
-    journal = entry.get('journal', '')
-    booktitle = entry.get('booktitle', '')
-    publisher = entry.get('publisher', '')
-    title = entry.get('title', '')
-    
-    if journal:
-        return f"*{journal}*"
-    elif booktitle:
-        return f"*{booktitle}*"
-    elif title and publisher:
-        return f"*{title}*. {publisher}"
-    elif title:
-        return f"*{title}*"
-    elif publisher:
-        return f"*{publisher}*"
-    
-    return None
-
+    with open(index_file, 'w', encoding='utf-8') as f:
+        f.write(new_content)
 
 def enhance_publication_files():
     """Enhance all publication markdown files"""
@@ -226,28 +241,26 @@ def enhance_publication_files():
                                             break
                                 
                                 if matching_entry:
-                                    # Format the publication field
-                                    new_pub_field = format_publication_field(matching_entry)
-                                     
-                                    if new_pub_field:
-                                        # Update or add publication field
-                                        data['publication'] = new_pub_field
-                                    
-                                    # Add DOI/URL if available
-                                    doi_url = format_doi_url(matching_entry)
-                                    if doi_url:
-                                        data['doi'] = doi_url
+                                    # Format using CSL (if CSL file exists)
+                                    if os.path.exists('apa-cv.csl'):
+                                        try:
+                                            csl_formatted = format_with_csl(matching_entry)
+                                            if csl_formatted:
+                                                data['publication'] = csl_formatted
+                                                print(f"CSL formatted: {pub_folder.name}")
+                                            else:
+                                                print(f"CSL formatting returned empty for: {pub_folder.name}")
+                                        except Exception as e:
+                                            print(f"CSL formatting failed for {pub_folder.name}: {e}")
+                                    else:
+                                        print(f"CSL file not found, skipping formatting for: {pub_folder.name}")
                                     
                                     # Convert author names for highlighting
                                     if 'authors' in data:
                                         data['authors'] = convert_author_names(data['authors'])
                                      
                                     # Write back the file
-                                    new_front_matter = yaml.dump(data, default_flow_style=False, allow_unicode=True)
-                                    new_content = f"---\n{new_front_matter}---{body}"
-                                     
-                                    with open(index_file, 'w', encoding='utf-8') as f:
-                                        f.write(new_content)
+                                    write_publication_file(data, body, index_file)
                                      
                                     enhanced_count += 1
                                     print(f"Enhanced: {pub_folder.name}")
@@ -255,14 +268,7 @@ def enhance_publication_files():
                                     # Even if no matching BibTeX entry, still convert author names
                                     if 'authors' in data:
                                         data['authors'] = convert_author_names(data['authors'])
-                                        
-                                        # Write back the file with converted authors
-                                        new_front_matter = yaml.dump(data, default_flow_style=False, allow_unicode=True)
-                                        new_content = f"---\n{new_front_matter}---{body}"
-                                        
-                                        with open(index_file, 'w', encoding='utf-8') as f:
-                                            f.write(new_content)
-                                        
+                                        write_publication_file(data, body, index_file)
                                         enhanced_count += 1
                                         print(f"Enhanced authors: {pub_folder.name}")
                                     else:
