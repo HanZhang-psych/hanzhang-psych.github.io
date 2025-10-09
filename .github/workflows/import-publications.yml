@@ -55,10 +55,21 @@ jobs:
       - name: Copy CSL file and enhance publication metadata
         run: |
           # Copy the CSL file to the working directory
-          cp apa-cv.csl . || echo "CSL file not found, will use fallback formatting"
+          if [ -f "apa-cv.csl" ]; then
+            cp apa-cv.csl .
+            echo "CSL file copied successfully"
+          else
+            echo "Warning: CSL file not found, will use fallback formatting"
+          fi
           
           # Copy the enhanced publications script
-          cp enhance_publications.py . || echo "Enhanced publications script not found"
+          if [ -f "enhance_publications.py" ]; then
+            cp enhance_publications.py .
+            echo "Enhanced publications script copied successfully"
+          else
+            echo "Error: Enhanced publications script not found"
+            exit 1
+          fi
           
           python enhance_publications.py
       - name: Create Pull Request

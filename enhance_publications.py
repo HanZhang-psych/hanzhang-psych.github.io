@@ -155,11 +155,35 @@ def format_with_csl(bib_entry, csl_file_path='apa-cv.csl'):
         
         # Render bibliography
         for item in bibliography.bibliography():
-            return str(item)
+            formatted = str(item)
+            # Clean up HTML entities and LaTeX formatting
+            formatted = clean_csl_output(formatted)
+            return formatted
             
     except Exception as e:
         print(f"Error formatting with CSL: {e}")
         return None
+
+def clean_csl_output(text):
+    """Clean up CSL output by removing HTML entities and LaTeX formatting"""
+    import re
+    
+    # Replace HTML entities
+    text = text.replace('&amp;', '&')
+    text = text.replace('&lt;', '<')
+    text = text.replace('&gt;', '>')
+    text = text.replace('&quot;', '"')
+    text = text.replace('&#39;', "'")
+    
+    # Remove LaTeX curly braces around single words (but preserve them for multi-word phrases)
+    # This regex matches {word} but not {multiple words}
+    text = re.sub(r'\{([A-Za-z]+)\}', r'\1', text)
+    
+    # Clean up any remaining formatting issues
+    text = text.replace('  ', ' ')  # Remove double spaces
+    text = text.strip()
+    
+    return text
 
 def convert_author_names(authors_list):
     """Convert plain text author names to author profile references"""
@@ -247,6 +271,9 @@ def enhance_publication_files():
                                             csl_formatted = format_with_csl(matching_entry)
                                             if csl_formatted:
                                                 data['publication'] = csl_formatted
+                                                # Clear authors field since CSL formatting includes authors
+                                                if 'authors' in data:
+                                                    del data['authors']
                                                 print(f"CSL formatted: {pub_folder.name}")
                                             else:
                                                 print(f"CSL formatting returned empty for: {pub_folder.name}")
@@ -255,7 +282,7 @@ def enhance_publication_files():
                                     else:
                                         print(f"CSL file not found, skipping formatting for: {pub_folder.name}")
                                     
-                                    # Convert author names for highlighting
+                                    # Only convert author names if we don't have CSL formatting
                                     if 'authors' in data:
                                         data['authors'] = convert_author_names(data['authors'])
                                      
