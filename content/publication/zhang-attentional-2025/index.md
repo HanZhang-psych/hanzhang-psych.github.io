@@ -23,10 +23,17 @@ publication: 'Zhang, H., York, A. K., & Jonides, J.. (2025). Attentional capture
   Human Perception and Performance</i>, <i>51</i>(3), 283--299. https://doi.org/10.1037/xhp0001275'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.304864Z'
+=======
+publishDate: '2025-10-09T20:31:24.108913Z'
+>>>>>>> Stashed changes
 tags:
 - Distraction
 - Visual Attention
 - Attentional Capture
+<<<<<<< Updated upstream
 title: 'Attentional capture by abrupt onsets: Foundations and emerging issues'
+=======
+>>>>>>> Stashed changes
 ---

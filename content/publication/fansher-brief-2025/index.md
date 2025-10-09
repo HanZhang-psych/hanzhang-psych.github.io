@@ -23,7 +23,11 @@ publication: 'Fansher, M., Lalwani, P., Adkins, T. J., Zhang, H., Quirk, M., Car
   Applied</i>, <i>31</i>(2), 99--125. https://doi.org/10.1037/xap0000532'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.326782Z'
+=======
+publishDate: '2025-10-09T20:31:24.116723Z'
+>>>>>>> Stashed changes
 tags:
 - Intervention
 - Reasoning
@@ -33,5 +37,8 @@ tags:
 - Tests and Measures
 - Treatment Effectiveness Evaluation
 - Video-Based Interventions
+<<<<<<< Updated upstream
 title: A brief intervention to improve reasoning about accumulation
+=======
+>>>>>>> Stashed changes
 ---

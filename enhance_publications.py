@@ -271,9 +271,11 @@ def enhance_publication_files():
                                             csl_formatted = format_with_csl(matching_entry)
                                             if csl_formatted:
                                                 data['publication'] = csl_formatted
-                                                # Clear authors field since CSL formatting includes authors
+                                                # Clear authors and title fields since CSL formatting includes both
                                                 if 'authors' in data:
                                                     del data['authors']
+                                                if 'title' in data:
+                                                    del data['title']
                                                 print(f"CSL formatted: {pub_folder.name}")
                                             else:
                                                 print(f"CSL formatting returned empty for: {pub_folder.name}")

@@ -22,7 +22,11 @@ publication: 'Zhang, H., & Jonides, J.. (2025). PupEyes: An Interactive Python L
   for Eye Movement Data Processing. <i>Behavior Research Methods</i>. https://doi.org/10.3758/s13428-025-02830-z'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.229349Z'
+=======
+publishDate: '2025-10-09T20:31:24.082709Z'
+>>>>>>> Stashed changes
 tags:
 - data anlysis
 - eye-tracking
@@ -31,5 +35,8 @@ tags:
 - pupil size
 - pupillometry
 - Python
+<<<<<<< Updated upstream
 title: 'PupEyes: An Interactive Python Library for Eye Movement Data Processing'
+=======
+>>>>>>> Stashed changes
 ---

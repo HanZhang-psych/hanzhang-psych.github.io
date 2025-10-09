@@ -23,13 +23,20 @@ publication: 'Lee, T. G., Sellers, J., Jonides, J., & Zhang, H.. (2025). The for
   Research Methods</i>, <i>57</i>(1), 15. https://doi.org/10.3758/s13428-024-02516-y'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.342126Z'
+=======
+publishDate: '2025-10-09T20:31:24.122086Z'
+>>>>>>> Stashed changes
 tags:
 - Conflict processing
 - Conflict resolution
 - Response conflict
 - Response signal
 - Speed–accuracy trade-off
+<<<<<<< Updated upstream
 title: 'The forced-response method: A new chronometric approach to measure conflict
   processing'
+=======
+>>>>>>> Stashed changes
 ---

@@ -22,7 +22,11 @@ publication: 'Fansher, M., Adkins, T. J., Lalwani, P., Boduroglu, A., Carlson, M
   Research: Principles and Implications</i>, <i>7</i>(1), 38. https://doi.org/10.1186/s41235-022-00387-5'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.210871Z'
 title: 'Icon arrays reduce concern over COVID-19 vaccine side effects: a randomized
   control study'
+=======
+publishDate: '2025-10-09T20:31:24.075331Z'
+>>>>>>> Stashed changes
 ---

@@ -24,7 +24,11 @@ publication: 'Zhang, H., Qu, C., Miller, K. F., & Cortina, K. S.. (2020). Missin
   https://doi.org/10.1037/xlm0000745'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.289794Z'
+=======
+publishDate: '2025-10-09T20:31:24.103595Z'
+>>>>>>> Stashed changes
 tags:
 - Eye Movements
 - Mind Wandering
@@ -35,5 +39,8 @@ tags:
 - Reading Comprehension
 - Semantics
 - Tobacco Smoking
+<<<<<<< Updated upstream
 title: 'Missing the joke: Reduced rereading of garden-path jokes during mind-wandering'
+=======
+>>>>>>> Stashed changes
 ---

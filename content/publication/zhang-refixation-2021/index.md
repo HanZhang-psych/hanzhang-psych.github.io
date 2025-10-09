@@ -27,7 +27,11 @@ publication: 'Zhang, H., Anderson, N. C., & Miller, K. F.. (2021). Refixation pa
   Psychology: Human Perception and Performance</i>, <i>47</i>(1), 36--52. https://doi.org/10.1037/xhp0000877'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.267404Z'
+=======
+publishDate: '2025-10-09T20:31:24.095748Z'
+>>>>>>> Stashed changes
 tags:
 - Eye Movements
 - Visual Displays
@@ -36,5 +40,8 @@ tags:
 - Mind Wandering
 - Human Information Storage
 - Intention
+<<<<<<< Updated upstream
 title: Refixation patterns of mind-wandering during real-world scene perception
+=======
+>>>>>>> Stashed changes
 ---

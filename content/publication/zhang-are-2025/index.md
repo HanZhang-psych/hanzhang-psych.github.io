@@ -22,11 +22,18 @@ publication: 'Zhang, H., Brar, E., York, A. K., & Jonides, J.. (2025). Are abrup
   and Performance</i>, <i>51</i>(7), 911--926. https://doi.org/10.1037/xhp0001329'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.319569Z'
+=======
+publishDate: '2025-10-09T20:31:24.114078Z'
+>>>>>>> Stashed changes
 tags:
 - Visual Search
 - Color
 - Attentional Capture
 - Stimulus Salience
+<<<<<<< Updated upstream
 title: Are abrupt onsets highly salient?
+=======
+>>>>>>> Stashed changes
 ---

@@ -22,12 +22,19 @@ publication: 'Zhang, H., Miller, K. F., Sun, X., & Cortina, K. S.. (2020). Wande
   Psychology</i>, <i>34</i>(2), 449--464. https://doi.org/10.1002/acp.3632'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.275042Z'
+=======
+publishDate: '2025-10-09T20:31:24.098416Z'
+>>>>>>> Stashed changes
 tags:
 - attention
 - mind wandering
 - eye tracking
 - growth curve analysis
 - video lecture
+<<<<<<< Updated upstream
 title: 'Wandering eyes: Eye movements during mind wandering in video lectures'
+=======
+>>>>>>> Stashed changes
 ---

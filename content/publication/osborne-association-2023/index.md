@@ -25,13 +25,20 @@ publication: Osborne, J. B., Zhang, H., Carlson, M., Shah, P., & Jonides, J.. (2
   deficit hyperactivity disorder. <i>Frontiers in Psychiatry</i>, <i>14</i>. https://doi.org/10.3389/fpsyt.2023.1173989
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.297261Z'
+=======
+publishDate: '2025-10-09T20:31:24.106263Z'
+>>>>>>> Stashed changes
 tags:
 - distraction
 - mind-wandering
 - Network analysis
 - Attention-Deficit/Hyperactivity Disorder
 - Dominance analysis
+<<<<<<< Updated upstream
 title: The association between different sources of distraction and symptoms of attention
   deficit hyperactivity disorder
+=======
+>>>>>>> Stashed changes
 ---

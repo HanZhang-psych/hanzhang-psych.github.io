@@ -28,7 +28,11 @@ publication: 'Zhang, H., Sellers, J., Lee, T. G., & Jonides, J.. (2025). The tem
   <i>154</i>(2), 435--456. https://doi.org/10.1037/xge0001661'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.334418Z'
+=======
+publishDate: '2025-10-09T20:31:24.119405Z'
+>>>>>>> Stashed changes
 tags:
 - Eye Movements
 - Visual Search
@@ -36,5 +40,8 @@ tags:
 - Visual Attention
 - Attentional Capture
 - Attentional Bias
+<<<<<<< Updated upstream
 title: The temporal dynamics of visual attention
+=======
+>>>>>>> Stashed changes
 ---

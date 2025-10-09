@@ -26,7 +26,11 @@ publication: Zhang, H., Miyake, A., Osborne, J., Shah, P., & Jonides, J.. (2023)
   symptomatology and hyperfocus. <i>PLOS ONE</i>, <i>18</i>(10), e0292215. https://doi.org/10.1371/journal.pone.0292215
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.259400Z'
+=======
+publishDate: '2025-10-09T20:31:24.093084Z'
+>>>>>>> Stashed changes
 tags:
 - Attention
 - ADHD
@@ -36,6 +40,9 @@ tags:
 - Behavior
 - Questionnaires
 - Lectures
+<<<<<<< Updated upstream
 title: A d factor? Understanding trait distractibility and its relationships with
   ADHD symptomatology and hyperfocus
+=======
+>>>>>>> Stashed changes
 ---

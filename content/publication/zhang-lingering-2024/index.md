@@ -22,12 +22,19 @@ publication: 'Zhang, H., Abagis, T. R., Steeby, C. J., & Jonides, J.. (2024). Li
   <i>32</i>(9-10), 910--924. https://doi.org/10.1080/13506285.2024.2328379'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.244378Z'
+=======
+publishDate: '2025-10-09T20:31:24.087891Z'
+>>>>>>> Stashed changes
 tags:
 - attentional capture
 - eye movements
 - visual search
 - ADHD
 - reactive control
+<<<<<<< Updated upstream
 title: 'Lingering on distraction: Examining distractor rejection in adults with ADHD'
+=======
+>>>>>>> Stashed changes
 ---

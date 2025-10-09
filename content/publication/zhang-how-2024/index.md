@@ -22,11 +22,18 @@ publication: Zhang, H., Miller, K. F., & Jonides, J.. (2024). How does mind-wand
   https://doi.org/10.1080/13506285.2024.2347605
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.312175Z'
+=======
+publishDate: '2025-10-09T20:31:24.111553Z'
+>>>>>>> Stashed changes
 tags:
 - Visual search
 - attentional capture
 - eye movements
 - mind-wandering
+<<<<<<< Updated upstream
 title: How does mind-wandering affect distractor suppression?
+=======
+>>>>>>> Stashed changes
 ---

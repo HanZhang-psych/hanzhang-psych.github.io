@@ -28,9 +28,16 @@ publication: Adkins, T. J., Zhang, H., & Lee, T. G.. (2024). People are more err
   after committing an error. <i>Nature Communications</i>, <i>15</i>(1), 1--11. https://doi.org/10.1038/s41467-024-50547-y
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.251727Z'
 tags:
 - Human behaviour
 - Cognitive control
 title: People are more error-prone after committing an error
+=======
+publishDate: '2025-10-09T20:31:24.090416Z'
+tags:
+- Human behaviour
+- Cognitive control
+>>>>>>> Stashed changes
 ---

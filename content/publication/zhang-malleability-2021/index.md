@@ -20,6 +20,10 @@ publication: Zhang, H., Abagis, T. R., & Jonides, J.. (2021). The malleability o
   attentional capture. <i>Visual Cognition</i>, <i>29</i>(9), 571--574. https://doi.org/10.1080/13506285.2021.1915903
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.221872Z'
 title: The malleability of attentional capture
+=======
+publishDate: '2025-10-09T20:31:24.080077Z'
+>>>>>>> Stashed changes
 ---

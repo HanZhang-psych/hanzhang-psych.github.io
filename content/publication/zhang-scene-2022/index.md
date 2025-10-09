@@ -26,11 +26,18 @@ publication: Zhang, H., Anderson, N. C., & Miller, K. F.. (2022). Scene meaningf
   <i>84</i>(4), 1130--1150. https://doi.org/10.3758/s13414-021-02370-6
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.236861Z'
+=======
+publishDate: '2025-10-09T20:31:24.085296Z'
+>>>>>>> Stashed changes
 tags:
 - Attention
 - Scene perception
 - Mind-wandering
 - Eye-tracking
+<<<<<<< Updated upstream
 title: Scene meaningfulness guides eye movements even during mind-wandering
+=======
+>>>>>>> Stashed changes
 ---

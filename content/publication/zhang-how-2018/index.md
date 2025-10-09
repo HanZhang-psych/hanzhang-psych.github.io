@@ -22,7 +22,11 @@ publication: 'Zhang, H., Miller, K., Cleveland, R., & Cortina, K.. (2018). How l
   Psychology: Learning, Memory, and Cognition</i>, <i>44</i>(11), 1778--1791. https://doi.org/10.1037/xlm0000544'
 publication_types:
 - article-journal
+<<<<<<< Updated upstream
 publishDate: '2025-10-09T20:28:43.282428Z'
+=======
+publishDate: '2025-10-09T20:31:24.101014Z'
+>>>>>>> Stashed changes
 tags:
 - Eye Movements
 - Visual Tracking
@@ -33,5 +37,8 @@ tags:
 - Exposure
 - Auditory Perception
 - Listening Comprehension
+<<<<<<< Updated upstream
 title: 'How listening to music affects reading: Evidence from eye tracking'
+=======
+>>>>>>> Stashed changes
 ---
