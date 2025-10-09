@@ -97,12 +97,28 @@ jobs:
               
               return converted_authors
           
+          def format_doi_url(entry):
+              """Format DOI and URL according to APA-7 style"""
+              doi = entry.get('doi', '')
+              url = entry.get('url', '')
+              
+              if doi:
+                  # Clean DOI - remove any existing "doi:" prefix
+                  doi = doi.replace('doi:', '').strip()
+                  if not doi.startswith('http'):
+                      doi = f"https://doi.org/{doi}"
+                  return doi
+              elif url:
+                  return url
+              
+              return None
+
           def format_publication_field(entry):
-              """Format publication field with volume, issue, pages"""
+              """Format publication field according to APA-7 style"""
               entry_type = entry.get('ENTRYTYPE', '').lower()
               
               if entry_type == 'article':
-                  # Journal article
+                  # Journal article: *Journal Name*, Volume(Issue), pages
                   journal = entry.get('journal', '')
                   volume = entry.get('volume', '')
                   number = entry.get('number', '')
@@ -126,27 +142,77 @@ jobs:
                       
                       return pub_field
               
-              elif entry_type == 'inproceedings' or entry_type == 'incollection':
-                  # Conference paper or book chapter
+              elif entry_type == 'inproceedings':
+                  # Conference paper: *Conference Name*
+                  booktitle = entry.get('booktitle', '')
+                  if booktitle:
+                      return f"*{booktitle}*"
+              
+              elif entry_type == 'incollection':
+                  # Book chapter: In *Book Title*
                   booktitle = entry.get('booktitle', '')
                   if booktitle:
                       return f"In *{booktitle}*"
               
               elif entry_type == 'book':
-                  # Book
+                  # Book: *Book Title*. Publisher
+                  title = entry.get('title', '')
                   publisher = entry.get('publisher', '')
-                  if publisher:
+                  if title and publisher:
+                      return f"*{title}*. {publisher}"
+                  elif title:
+                      return f"*{title}*"
+                  elif publisher:
                       return f"*{publisher}*"
+              
+              elif entry_type == 'phdthesis' or entry_type == 'mastersthesis':
+                  # Thesis: *Title* (Doctoral dissertation/Master's thesis). University
+                  title = entry.get('title', '')
+                  school = entry.get('school', '')
+                  thesis_type = "Doctoral dissertation" if entry_type == 'phdthesis' else "Master's thesis"
+                  
+                  if title and school:
+                      return f"*{title}* ({thesis_type}). {school}"
+                  elif title:
+                      return f"*{title}* ({thesis_type})"
+              
+              elif entry_type == 'techreport':
+                  # Technical report: *Title* (Report No. X). Publisher
+                  title = entry.get('title', '')
+                  number = entry.get('number', '')
+                  institution = entry.get('institution', '')
+                  
+                  if title and number and institution:
+                      return f"*{title}* (Report No. {number}). {institution}"
+                  elif title and institution:
+                      return f"*{title}*. {institution}"
+                  elif title:
+                      return f"*{title}*"
+              
+              elif entry_type == 'misc':
+                  # Miscellaneous: *Title*. Publisher/Organization
+                  title = entry.get('title', '')
+                  howpublished = entry.get('howpublished', '')
+                  
+                  if title and howpublished:
+                      return f"*{title}*. {howpublished}"
+                  elif title:
+                      return f"*{title}*"
               
               # Default fallback
               journal = entry.get('journal', '')
               booktitle = entry.get('booktitle', '')
               publisher = entry.get('publisher', '')
+              title = entry.get('title', '')
               
               if journal:
                   return f"*{journal}*"
               elif booktitle:
-                  return f"In *{booktitle}*"
+                  return f"*{booktitle}*"
+              elif title and publisher:
+                  return f"*{title}*. {publisher}"
+              elif title:
+                  return f"*{title}*"
               elif publisher:
                   return f"*{publisher}*"
               
@@ -224,6 +290,11 @@ jobs:
                                                   # Update or add publication field
                                                   data['publication'] = new_pub_field
                                               
+                                              # Add DOI/URL if available
+                                              doi_url = format_doi_url(matching_entry)
+                                              if doi_url:
+                                                  data['doi'] = doi_url
+                                              
                                               # Convert author names for highlighting
                                               if 'authors' in data:
                                                   data['authors'] = convert_author_names(data['authors'])
@@ -276,9 +347,11 @@ jobs:
           title: Hugo Blox Builder - Import latest publications with volume/issue/pages
           body: |
             Import the latest publications from BibTeX files to `content/publication/` with enhanced metadata including:
-            - Volume and issue numbers
-            - Page ranges
-            - Properly formatted publication fields
+            - Volume and issue numbers formatted according to APA-7 style
+            - Page ranges with proper formatting
+            - Publication fields following APA-7 guidelines
+            - DOI/URL links with proper formatting
+            - Support for multiple publication types (articles, conferences, books, theses, etc.)
             
             将最新的出版物从BibTeX文件导入到`content/publication/`，包含增强的元数据。
             [View Documentation](https://github.com/GetRD/academic-file-converter)

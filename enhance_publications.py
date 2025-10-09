@@ -25,30 +25,6 @@ def load_bibtex_data():
     
     return bib_data
 
-def format_author_names_apa(entry):
-    """Format author names from BibTeX entry according to APA-7 style"""
-    author_field = entry.get('author', '')
-    if not author_field:
-        return None
-    
-    # Split authors by " and "
-    authors = [author.strip() for author in author_field.split(' and ')]
-    
-    if not authors:
-        return None
-    
-    # Format each author name
-    formatted_authors = []
-    for author in authors:
-        # Author is already in "Last, First" format from BibTeX
-        # We just need to convert "Han Zhang" to "admin" for highlighting
-        if author.strip() == "Zhang, Han":
-            formatted_authors.append("admin")
-        else:
-            formatted_authors.append(author)
-    
-    return formatted_authors
-
 def convert_author_names(authors_list):
     """Convert plain text author names to author profile references"""
     if not authors_list:
@@ -262,12 +238,8 @@ def enhance_publication_files():
                                     if doi_url:
                                         data['doi'] = doi_url
                                     
-                                    # Format author names according to APA-7 style
-                                    apa_authors = format_author_names_apa(matching_entry)
-                                    if apa_authors:
-                                        data['authors'] = apa_authors
-                                    elif 'authors' in data:
-                                        # Fallback to existing authors if no BibTeX author data
+                                    # Convert author names for highlighting
+                                    if 'authors' in data:
                                         data['authors'] = convert_author_names(data['authors'])
                                      
                                     # Write back the file
