@@ -37,7 +37,7 @@ doi: 10.31234/osf.io/5axpj_v1
 links:
 - name: URL
   url: https://osf.io/5axpj_v1
-publication: '*OSF*'
+publication: '*{OSF}*'
 publication_types:
 - manuscript
 publishDate: '2025-06-22T19:14:15.247202Z'
