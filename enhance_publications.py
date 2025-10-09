@@ -25,6 +25,30 @@ def load_bibtex_data():
     
     return bib_data
 
+def format_author_names_apa(entry):
+    """Format author names from BibTeX entry according to APA-7 style"""
+    author_field = entry.get('author', '')
+    if not author_field:
+        return None
+    
+    # Split authors by " and "
+    authors = [author.strip() for author in author_field.split(' and ')]
+    
+    if not authors:
+        return None
+    
+    # Format each author name
+    formatted_authors = []
+    for author in authors:
+        # Author is already in "Last, First" format from BibTeX
+        # We just need to convert "Han Zhang" to "admin" for highlighting
+        if author.strip() == "Zhang, Han":
+            formatted_authors.append("admin")
+        else:
+            formatted_authors.append(author)
+    
+    return formatted_authors
+
 def convert_author_names(authors_list):
     """Convert plain text author names to author profile references"""
     if not authors_list:
@@ -40,12 +64,28 @@ def convert_author_names(authors_list):
     
     return converted_authors
 
+def format_doi_url(entry):
+    """Format DOI and URL according to APA-7 style"""
+    doi = entry.get('doi', '')
+    url = entry.get('url', '')
+    
+    if doi:
+        # Clean DOI - remove any existing "doi:" prefix
+        doi = doi.replace('doi:', '').strip()
+        if not doi.startswith('http'):
+            doi = f"https://doi.org/{doi}"
+        return doi
+    elif url:
+        return url
+    
+    return None
+
 def format_publication_field(entry):
-    """Format publication field with volume, issue, pages"""
+    """Format publication field according to APA-7 style"""
     entry_type = entry.get('ENTRYTYPE', '').lower()
     
     if entry_type == 'article':
-        # Journal article
+        # Journal article: *Journal Name*, Volume(Issue), pages
         journal = entry.get('journal', '')
         volume = entry.get('volume', '')
         number = entry.get('number', '')
@@ -69,27 +109,77 @@ def format_publication_field(entry):
             
             return pub_field
     
-    elif entry_type == 'inproceedings' or entry_type == 'incollection':
-        # Conference paper or book chapter
+    elif entry_type == 'inproceedings':
+        # Conference paper: *Conference Name*
+        booktitle = entry.get('booktitle', '')
+        if booktitle:
+            return f"*{booktitle}*"
+    
+    elif entry_type == 'incollection':
+        # Book chapter: In *Book Title*
         booktitle = entry.get('booktitle', '')
         if booktitle:
             return f"In *{booktitle}*"
     
     elif entry_type == 'book':
-        # Book
+        # Book: *Book Title*. Publisher
+        title = entry.get('title', '')
         publisher = entry.get('publisher', '')
-        if publisher:
+        if title and publisher:
+            return f"*{title}*. {publisher}"
+        elif title:
+            return f"*{title}*"
+        elif publisher:
             return f"*{publisher}*"
+    
+    elif entry_type == 'phdthesis' or entry_type == 'mastersthesis':
+        # Thesis: *Title* (Doctoral dissertation/Master's thesis). University
+        title = entry.get('title', '')
+        school = entry.get('school', '')
+        thesis_type = "Doctoral dissertation" if entry_type == 'phdthesis' else "Master's thesis"
+        
+        if title and school:
+            return f"*{title}* ({thesis_type}). {school}"
+        elif title:
+            return f"*{title}* ({thesis_type})"
+    
+    elif entry_type == 'techreport':
+        # Technical report: *Title* (Report No. X). Publisher
+        title = entry.get('title', '')
+        number = entry.get('number', '')
+        institution = entry.get('institution', '')
+        
+        if title and number and institution:
+            return f"*{title}* (Report No. {number}). {institution}"
+        elif title and institution:
+            return f"*{title}*. {institution}"
+        elif title:
+            return f"*{title}*"
+    
+    elif entry_type == 'misc':
+        # Miscellaneous: *Title*. Publisher/Organization
+        title = entry.get('title', '')
+        howpublished = entry.get('howpublished', '')
+        
+        if title and howpublished:
+            return f"*{title}*. {howpublished}"
+        elif title:
+            return f"*{title}*"
     
     # Default fallback
     journal = entry.get('journal', '')
     booktitle = entry.get('booktitle', '')
     publisher = entry.get('publisher', '')
+    title = entry.get('title', '')
     
     if journal:
         return f"*{journal}*"
     elif booktitle:
-        return f"In *{booktitle}*"
+        return f"*{booktitle}*"
+    elif title and publisher:
+        return f"*{title}*. {publisher}"
+    elif title:
+        return f"*{title}*"
     elif publisher:
         return f"*{publisher}*"
     
@@ -167,8 +257,17 @@ def enhance_publication_files():
                                         # Update or add publication field
                                         data['publication'] = new_pub_field
                                     
-                                    # Convert author names for highlighting
-                                    if 'authors' in data:
+                                    # Add DOI/URL if available
+                                    doi_url = format_doi_url(matching_entry)
+                                    if doi_url:
+                                        data['doi'] = doi_url
+                                    
+                                    # Format author names according to APA-7 style
+                                    apa_authors = format_author_names_apa(matching_entry)
+                                    if apa_authors:
+                                        data['authors'] = apa_authors
+                                    elif 'authors' in data:
+                                        # Fallback to existing authors if no BibTeX author data
                                         data['authors'] = convert_author_names(data['authors'])
                                      
                                     # Write back the file
