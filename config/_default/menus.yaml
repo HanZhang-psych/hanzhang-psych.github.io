@@ -10,14 +10,15 @@ main:
   - name: Papers
     url: /publication/
     weight: 11
-    has_children: true
-    children:
-      - name: Journal Articles
-        url: /publication/journal-articles/
-        weight: 1
-      - name: Preprints
-        url: /publication/preprints/
-        weight: 2
+    identifier: papers
+  - name: Journal Articles
+    url: /publication/journal-articles/
+    parent: papers
+    weight: 12
+  - name: Preprints
+    url: /publication/preprints/
+    parent: papers
+    weight: 13
   # - name: Talks
   # #  url: /#talks
   #   url: talks/
