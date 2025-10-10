@@ -59,6 +59,7 @@ sections:
 
   # journal articles
   - block: collection
+    id: journal-articles
     content:
       title: Journal Articles
       text: "Peer-reviewed journal articles"
@@ -69,13 +70,14 @@ sections:
         link: publication/journal-articles/
       filters:
         folders:
-          - publication/journal-articles/
+          - publication/journal-articles
         exclude_featured: false
     design:
-      view: citation
+      view: publication
 
   # preprints
   - block: collection
+    id: preprints
     content:
       title: Preprints
       text: "Preprints and working papers"
@@ -86,10 +88,10 @@ sections:
         link: publication/preprints/
       filters:
         folders:
-          - publication/preprints/
+          - publication/preprints
         exclude_featured: false
     design:
-      view: citation
+      view: publication
 
 
 
