@@ -14,6 +14,6 @@
     {{ $.Scratch.Set "thumbnail" ($image.Resize "x300 q90") }}
     {{ $imageName := $image.Name }}
     {{ $caption := index $captions $imageName | default (path.Split $imageName).File }}
-    <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" data-ngdesc="{{ $caption }}">{{ $caption }}</a>
+    <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" data-ngdesc="{{ $caption }}" title="{{ $caption }}">{{ $caption }}</a>
     {{ end }}
 </div>
