@@ -1,0 +1,28 @@
+{
+  "thumbnailHeight": 200,
+  "thumbnailWidth": 200,
+  "thumbnailBorderVertical": 0,
+  "thumbnailBorderHorizontal": 0,
+  "thumbnailLabel": {
+    "position": "overImageOnBottom",
+    "display": true,
+    "hideIcons": true
+  },
+  "thumbnailAlignment": "center",
+  "thumbnailGutterWidth": 2,
+  "thumbnailGutterHeight": 2,
+  "thumbnailDisplayTransition": "scaleUp",
+  "thumbnailDisplayTransitionDuration": 300,
+  "thumbnailDisplayInterval": 15,
+  "galleryDisplayMode": "moreButton",
+  "galleryMaxRows": 2,
+  "gallerySorting": "random",
+  "thumbnailHoverEffect2": "scale120|borderLighter",
+  "thumbnailHoverEffect2Duration": 300,
+  "viewerTools": {
+    "topLeft": "pageCounter, label",
+    "topRight": "playPauseButton, rotateLeft, rotateRight, fullscreenButton, closeButton"
+  },
+  "viewerTheme": "light",
+  "thumbnailOpenImage": true
+}
