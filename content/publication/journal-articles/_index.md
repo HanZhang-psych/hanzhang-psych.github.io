@@ -10,5 +10,6 @@ banner:
   caption: ''
   image: ''
 ---
+Peer-reviewed journal articles.
 
-Peer-reviewed journal articles with APA-7 formatted citations.
+* indicates shared authorship. 

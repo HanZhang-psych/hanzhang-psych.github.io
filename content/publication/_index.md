@@ -14,4 +14,4 @@ banner:
 Browse publications by type:
 
 - [Journal Articles](journal-articles/) - Peer-reviewed journal articles
-- [Preprints](preprints/) - Preprints and working papers
+- [Preprints](preprints/) - Preprints and papers under review
