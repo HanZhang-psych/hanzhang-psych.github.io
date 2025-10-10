@@ -3,7 +3,7 @@ title: Preprints
 cms_exclude: true
 
 # View.
-view: compact
+view: citation
 list_format: numbered
 numbering: true
 
