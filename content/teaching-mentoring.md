@@ -1,8 +1,7 @@
 ---
 title: 'Teaching and Mentoring'
 date: 2024-12-19
-type: page
-summary: 'Teaching experience and student mentoring at the University of Michigan'
+type: landing
 
 design:
   # Section spacing
