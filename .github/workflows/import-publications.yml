@@ -31,7 +31,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install academic==0.10.0
-          pip install bibtexparser pyyaml citeproc-py pybtex
+          pip install pyyaml
       - name: Import Journal Articles
         # Check if journal articles bib file exists
         if: ${{ hashFiles('journal_articles.bib') != '' }}
@@ -52,37 +52,31 @@ jobs:
         # Check if single publications.bib file exists
         if: ${{ hashFiles('publications.bib') != '' }}
         run: academic import publications.bib content/publication/ --compact
-    #   - name: Enhance publication metadata with CSL formatting
-    #     run: |
-    #       # Check if required files exist
-    #       if [ ! -f "apa-cv.csl" ]; then
-    #         echo "Warning: CSL file not found, will use fallback formatting"
-    #       else
-    #         echo "CSL file found, will use APA-7 formatting"
-    #       fi
+      - name: Enhance publication metadata with author highlighting
+        run: |
+          # Check if enhancement script exists
+          if [ ! -f "enhance_publications.py" ]; then
+            echo "Error: Enhanced publications script not found"
+            exit 1
+          fi
           
-    #       if [ ! -f "enhance_publications.py" ]; then
-    #         echo "Error: Enhanced publications script not found"
-    #         exit 1
-    #       fi
-          
-    #       # Run the enhancement script
-    #       python enhance_publications.py
+          # Run the enhancement script
+          python enhance_publications.py
       - name: Create Pull Request
         # Set ID for `Check outputs` stage
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
-          commit-message: 'content: import publications from Bibtex with APA-7 CSL formatting'
-          title: Hugo Blox Builder - Import latest publications with APA-7 formatting
+          commit-message: 'content: import publications from Bibtex with author highlighting'
+          title: Hugo Blox Builder - Import latest publications with author highlighting
           body: |
             Import the latest publications from BibTeX files to `content/publication/` with enhanced metadata including:
-            - APA-7 style formatting using CSL (Citation Style Language)
-            - Properly formatted publication fields with volume, issue, and pages
-            - Author highlighting for the site owner
+            - Author highlighting for the site owner (Han Zhang)
+            - Bold formatting for first author or single author publications
+            - Asterisk (*) for shared authorship publications
             - DOI and URL links when available
             
-            将最新的出版物从BibTeX文件导入到`content/publication/`，使用APA-7格式。
+            将最新的出版物从BibTeX文件导入到`content/publication/`，突出显示作者。
             [View Documentation](https://github.com/GetRD/academic-file-converter)
           base: main
           labels: automated-pr, content

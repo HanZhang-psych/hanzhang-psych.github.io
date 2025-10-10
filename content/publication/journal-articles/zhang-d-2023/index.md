@@ -1,18 +1,4 @@
 ---
-title: A d factor? Understanding trait distractibility and its relationships with
-  ADHD symptomatology and hyperfocus
-authors:
-- Han Zhang
-- Akira Miyake
-- Jahla Osborne
-- Priti Shah
-- John Jonides
-date: '2023-10-01'
-publishDate: '2025-10-10T01:11:39.491368Z'
-publication_types:
-- article-journal
-publication: '*PLOS ONE*'
-doi: 10.1371/journal.pone.0292215
 abstract: 'People differ substantially in their vulnerability to distraction. Yet,
   many types of distractions exist, from external stimulation to internal thoughts.
   How should we characterize individual differences in their distractibility? Two
@@ -30,6 +16,21 @@ abstract: 'People differ substantially in their vulnerability to distraction. Ye
   to some degree, reflect attention problems. These results also show marked consistencies
   across the two samples. Overall, the study provides an important step toward a comprehensive
   understanding of individual differences in distractibility and related constructs.'
+authors:
+- '**Han Zhang**'
+- Akira Miyake
+- Jahla Osborne
+- Priti Shah
+- John Jonides
+date: '2023-10-01'
+doi: 10.1371/journal.pone.0292215
+links:
+- name: URL
+  url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292215
+publication: '*PLOS ONE*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.491368Z'
 tags:
 - Attention
 - ADHD
@@ -39,7 +40,6 @@ tags:
 - Behavior
 - Questionnaires
 - Lectures
-links:
-- name: URL
-  url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292215
+title: A d factor? Understanding trait distractibility and its relationships with
+  ADHD symptomatology and hyperfocus
 ---

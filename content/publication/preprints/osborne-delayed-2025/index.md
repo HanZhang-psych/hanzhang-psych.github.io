@@ -1,21 +1,4 @@
 ---
-title: Delayed Goal-Directed Processing Underlies Inhibitory Control Challenges in
-  Adult ADHD
-authors:
-- Jahla Osborne
-- Jacob Sellers
-- Han Zhang
-- Su Wang
-- Sarah Liberatore
-- Chandra Sripada
-- Priti Shah
-- John Jonides
-date: '2025-09-01'
-publishDate: '2025-10-10T01:11:39.821786Z'
-publication_types:
-- manuscript
-publication: '*OSF*'
-doi: 10.31234/osf.io/7mkt9_v2
 abstract: It is well documented that ADHD is associated with challenges in inhibitory
   control.  However, the underlying cognitive mechanisms that give rise to these difficulties
   are not well established. Here, we employ a novel “forced-response” method with
@@ -32,7 +15,24 @@ abstract: It is well documented that ADHD is associated with challenges in inhib
   conflict tasks. These findings mark an important step toward elucidating the underlying
   mechanisms that lead to real-life challenges in inhibiting distracting information
   in adults with ADHD.
+authors:
+- Jahla Osborne
+- Jacob Sellers
+- Han Zhang*
+- Su Wang
+- Sarah Liberatore
+- Chandra Sripada
+- Priti Shah
+- John Jonides
+date: '2025-09-01'
+doi: 10.31234/osf.io/7mkt9_v2
 links:
 - name: URL
   url: https://osf.io/7mkt9_v2
+publication: '*OSF*'
+publication_types:
+- manuscript
+publishDate: '2025-10-10T01:11:39.821786Z'
+title: Delayed Goal-Directed Processing Underlies Inhibitory Control Challenges in
+  Adult ADHD
 ---

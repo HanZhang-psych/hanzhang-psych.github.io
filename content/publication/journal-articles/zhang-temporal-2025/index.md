@@ -1,16 +1,4 @@
 ---
-title: The temporal dynamics of visual attention
-authors:
-- Han Zhang
-- Jacob Sellers
-- Taraz G. Lee
-- John Jonides
-date: '2025-04-01'
-publishDate: '2025-10-10T01:11:39.566395Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: General*'
-doi: 10.1037/xge0001661
 abstract: Researchers have long debated how humans select relevant objects amid physically
   salient distractions. An increasingly popular view holds that the key to avoiding
   distractions lies in suppressing the attentional priority of a salient distractor.
@@ -33,6 +21,17 @@ abstract: Researchers have long debated how humans select relevant objects amid 
   underscores the importance of considering the temporal dynamics of visual attention
   and provides a computational architecture for understanding the mechanisms of distractor
   suppression. (PsycInfo Database Record (c) 2025 APA, all rights reserved)
+authors:
+- '**Han Zhang**'
+- Jacob Sellers
+- Taraz G. Lee
+- John Jonides
+date: '2025-04-01'
+doi: 10.1037/xge0001661
+publication: '*Journal of Experimental Psychology: General*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.566395Z'
 tags:
 - Eye Movements
 - Visual Search
@@ -40,4 +39,5 @@ tags:
 - Visual Attention
 - Attentional Capture
 - Attentional Bias
+title: The temporal dynamics of visual attention
 ---

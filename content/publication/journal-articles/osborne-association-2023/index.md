@@ -1,18 +1,4 @@
 ---
-title: The association between different sources of distraction and symptoms of attention
-  deficit hyperactivity disorder
-authors:
-- Jahla B. Osborne
-- Han Zhang
-- Madison Carlson
-- Priti Shah
-- John Jonides
-date: '2023-07-01'
-publishDate: '2025-10-10T01:11:39.529289Z'
-publication_types:
-- article-journal
-publication: '*Frontiers in Psychiatry*'
-doi: 10.3389/fpsyt.2023.1173989
 abstract: Adults with Attention-Deficit/Hyperactivity Disorder (ADHD) are generally
   distractible. Yet, the precise relationship between ADHD and distractibility remains
   under-specified in two respects. First, different sources of distraction, such as
@@ -29,14 +15,27 @@ abstract: Adults with Attention-Deficit/Hyperactivity Disorder (ADHD) are genera
   symptoms. Findings support a growing body of literature linking spontaneous mind-wandering
   and ADHD, and they highlight the heterogeneity in the association between ADHD symptoms
   and different sources of distraction.
+authors:
+- Jahla B. Osborne
+- Han Zhang*
+- Madison Carlson
+- Priti Shah
+- John Jonides
+date: '2023-07-01'
+doi: 10.3389/fpsyt.2023.1173989
+links:
+- name: URL
+  url: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1173989/full
+publication: '*Frontiers in Psychiatry*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.529289Z'
 tags:
 - distraction
 - mind-wandering
 - Network analysis
 - Attention-Deficit/Hyperactivity Disorder
 - Dominance analysis
-links:
-- name: URL
-  url: 
-    https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1173989/full
+title: The association between different sources of distraction and symptoms of attention
+  deficit hyperactivity disorder
 ---

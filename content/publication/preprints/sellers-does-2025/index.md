@@ -1,16 +1,4 @@
 ---
-title: Does global slowing explain age effects in inhibitory control?
-authors:
-- Jacob Sellers*
-- Han Zhang*
-- John Jonides
-- Taraz Lee
-date: '2025-10-01'
-publishDate: '2025-10-10T01:11:39.829335Z'
-publication_types:
-- manuscript
-publication: '*OSF*'
-doi: 10.31234/osf.io/w7fp9_v1
 abstract: A long-standing debate in the study of cognitive aging concerns whether
   aging results in a selective deficit in inhibitory control beyond a general slowing
   of cognitive processing. Previous studies have obtained mixed findings, in part
@@ -24,7 +12,19 @@ abstract: A long-standing debate in the study of cognitive aging concerns whethe
   we demonstrate global slowing is sufficient to explain the mixed findings in previous
   free RT studies. Overall, these results highlight the utility of using a theory-informed,
   fine-grained approach to study inhibitory control.
+authors:
+- Jacob Sellers*
+- Han Zhang*
+- John Jonides
+- Taraz Lee
+date: '2025-10-01'
+doi: 10.31234/osf.io/w7fp9_v1
 links:
 - name: URL
   url: https://osf.io/w7fp9_v1
+publication: '*OSF*'
+publication_types:
+- manuscript
+publishDate: '2025-10-10T01:11:39.829335Z'
+title: Does global slowing explain age effects in inhibitory control?
 ---

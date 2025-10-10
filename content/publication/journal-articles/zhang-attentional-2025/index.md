@@ -1,15 +1,4 @@
 ---
-title: 'Attentional capture by abrupt onsets: Foundations and emerging issues'
-authors:
-- Han Zhang
-- A. Kane York
-- John Jonides
-date: '2025-04-01'
-publishDate: '2025-10-10T01:11:39.536938Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
-doi: 10.1037/xhp0001275
 abstract: The study of attentional allocation due to external stimulation has a long
   history in psychology. Early research by Yantis and Jonides suggested that abrupt
   onsets constitute a unique class of stimuli that captures attention in a stimulus-driven
@@ -27,8 +16,19 @@ abstract: The study of attentional allocation due to external stimulation has a 
   However, given their real-world relevance, abrupt onsets represent the exact type
   of stimuli that we need to study more to connect laboratory attention research to
   real life. (PsycInfo Database Record (c) 2025 APA, all rights reserved)
+authors:
+- '**Han Zhang**'
+- A. Kane York
+- John Jonides
+date: '2025-04-01'
+doi: 10.1037/xhp0001275
+publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.536938Z'
 tags:
 - Distraction
 - Visual Attention
 - Attentional Capture
+title: 'Attentional capture by abrupt onsets: Foundations and emerging issues'
 ---

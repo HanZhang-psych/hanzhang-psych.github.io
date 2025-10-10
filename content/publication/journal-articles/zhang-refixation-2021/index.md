@@ -1,15 +1,4 @@
 ---
-title: Refixation patterns of mind-wandering during real-world scene perception
-authors:
-- Han Zhang
-- Nicola C. Anderson
-- Kevin F. Miller
-date: '2021-01-01'
-publishDate: '2025-10-10T01:11:39.499332Z'
-publication_types:
-- article-journal
-publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
-doi: 10.1037/xhp0000877
 abstract: 'Recent studies have shown that mind-wandering (MW) is associated with changes
   in eye movement parameters, but have not explored how MW affects the sequential
   pattern of eye movements involved in making sense of complex visual information.
@@ -31,6 +20,16 @@ abstract: 'Recent studies have shown that mind-wandering (MW) is associated with
   the results advanced our understanding of how visual processing is affected during
   MW by highlighting the sequential aspect of eye movements. (PsycInfo Database Record
   (c) 2020 APA, all rights reserved)'
+authors:
+- '**Han Zhang**'
+- Nicola C. Anderson
+- Kevin F. Miller
+date: '2021-01-01'
+doi: 10.1037/xhp0000877
+publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.499332Z'
 tags:
 - Eye Movements
 - Visual Displays
@@ -39,4 +38,5 @@ tags:
 - Mind Wandering
 - Human Information Storage
 - Intention
+title: Refixation patterns of mind-wandering during real-world scene perception
 ---

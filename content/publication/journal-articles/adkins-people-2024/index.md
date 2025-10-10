@@ -1,15 +1,4 @@
 ---
-title: People are more error-prone after committing an error
-authors:
-- Tyler J. Adkins
-- Han Zhang
-- Taraz G. Lee
-date: '2024-07-01'
-publishDate: '2025-10-10T01:11:39.483710Z'
-publication_types:
-- article-journal
-publication: '*Nature Communications*'
-doi: 10.1038/s41467-024-50547-y
 abstract: Humans tend to slow down after making an error. A longstanding account of
   this post-error slowing is that people are simply more cautious. However, accuracy
   typically does not improve following an error, leading some researchers to suggest
@@ -30,10 +19,21 @@ abstract: Humans tend to slow down after making an error. A longstanding account
   this doesn’t always lead to performance improvement. Here, the authors show that,
   even when given ample time, people are still more error-prone after they have already
   committed an error.
-tags:
-- Human behaviour
-- Cognitive control
+authors:
+- Tyler J. Adkins
+- Han Zhang*
+- Taraz G. Lee
+date: '2024-07-01'
+doi: 10.1038/s41467-024-50547-y
 links:
 - name: URL
   url: https://www.nature.com/articles/s41467-024-50547-y
+publication: '*Nature Communications*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.483710Z'
+tags:
+- Human behaviour
+- Cognitive control
+title: People are more error-prone after committing an error
 ---

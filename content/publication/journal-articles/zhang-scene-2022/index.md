@@ -1,15 +1,4 @@
 ---
-title: Scene meaningfulness guides eye movements even during mind-wandering
-authors:
-- Han Zhang
-- Nicola C. Anderson
-- Kevin F. Miller
-date: '2022-05-01'
-publishDate: '2025-10-10T01:11:39.468905Z'
-publication_types:
-- article-journal
-publication: '*Attention, Perception, & Psychophysics*'
-doi: 10.3758/s13414-021-02370-6
 abstract: During scene viewing, semantic information in the scene has been shown to
   play a dominant role in guiding fixations compared to visual salience (e.g., Henderson
   & Hayes, 2017). However, scene viewing is sometimes disrupted by cognitive processes
@@ -30,9 +19,20 @@ abstract: During scene viewing, semantic information in the scene has been shown
   20(9), 10, 2020) showed similar results. Therefore, viewers appear to prioritize
   meaningful regions over visually salient regions in real-world scenes even during
   mind-wandering.
+authors:
+- '**Han Zhang**'
+- Nicola C. Anderson
+- Kevin F. Miller
+date: '2022-05-01'
+doi: 10.3758/s13414-021-02370-6
+publication: '*Attention, Perception, & Psychophysics*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.468905Z'
 tags:
 - Attention
 - Scene perception
 - Mind-wandering
 - Eye-tracking
+title: Scene meaningfulness guides eye movements even during mind-wandering
 ---

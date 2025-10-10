@@ -1,14 +1,4 @@
 ---
-title: 'PupEyes: An Interactive Python Library for Eye Movement Data Processing'
-authors:
-- Han Zhang
-- John Jonides
-date: '2025-10-01'
-publishDate: '2025-10-10T01:11:39.461526Z'
-publication_types:
-- article-journal
-publication: '*Behavior Research Methods*'
-doi: 10.3758/s13428-025-02830-z
 abstract: We present PupEyes, an open-source Python package for preprocessing and
   visualizing pupil size and eye movement data. Developed with current best practices
   in mind, PupEyes offers a comprehensive and reproducible pupil preprocessing pipeline,
@@ -26,6 +16,15 @@ abstract: We present PupEyes, an open-source Python package for preprocessing an
   interactive visualizations, and (3) enables flexible extensions for further analysis
   tailored to specific research goals. We believe PupEyes is a useful addition to
   the analysis workflow for pupil size and eye movement data.
+authors:
+- '**Han Zhang**'
+- John Jonides
+date: '2025-10-01'
+doi: 10.3758/s13428-025-02830-z
+publication: '*Behavior Research Methods*'
+publication_types:
+- article-journal
+publishDate: '2025-10-10T01:11:39.461526Z'
 tags:
 - data anlysis
 - eye-tracking
@@ -34,4 +33,5 @@ tags:
 - pupil size
 - pupillometry
 - Python
+title: 'PupEyes: An Interactive Python Library for Eye Movement Data Processing'
 ---

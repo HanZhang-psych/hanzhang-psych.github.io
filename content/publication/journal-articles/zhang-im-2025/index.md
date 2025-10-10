@@ -1,14 +1,4 @@
 ---
-title: I’m Trying to Read Here! How Does Irrelevant Speech Affect How You Read?
-authors:
-- Han Zhang
-- Kevin Miller
-date: '2025-07-01'
-publishDate: '2025-10-10T01:11:39.813720Z'
-publication_types:
-- manuscript
-publication: '*OSF*'
-doi: 10.31234/osf.io/gnxjw_v1
 abstract: 'Purpose: Reading involves a remarkable coordination of perceptual and linguistic
   processes. This coordination is reflected by a close coupling between reading eye
   movements and lexical properties of words, such as word frequency and predictability,
@@ -32,12 +22,22 @@ abstract: 'Purpose: Reading involves a remarkable coordination of perceptual and
   of rare and semantically unpredictable words suggests that readers compensate by
   revisiting these words to repair difficulties in integrating their meanings into
   a coherent understanding of the text.'
+authors:
+- '**Han Zhang**'
+- Kevin Miller
+date: '2025-07-01'
+doi: 10.31234/osf.io/gnxjw_v1
+links:
+- name: URL
+  url: https://osf.io/gnxjw_v1
+publication: '*OSF*'
+publication_types:
+- manuscript
+publishDate: '2025-10-10T01:11:39.813720Z'
 tags:
 - distraction
 - irrelevant speech
 - reading
 - eye-tracking
-links:
-- name: URL
-  url: https://osf.io/gnxjw_v1
+title: I’m Trying to Read Here! How Does Irrelevant Speech Affect How You Read?
 ---
