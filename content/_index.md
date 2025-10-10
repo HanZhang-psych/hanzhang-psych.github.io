@@ -58,7 +58,7 @@ sections:
   #     columns: 2
 
   # journal articles
-  - block: collection
+  - block: publication
     id: journal-articles
     content:
       title: Journal Articles
@@ -72,10 +72,10 @@ sections:
         folders:
           - publication/journal-articles
     design:
-      view: publication
+      view: citation
 
   # preprints
-  - block: collection
+  - block: publication
     id: preprints
     content:
       title: Preprints
@@ -89,7 +89,7 @@ sections:
         folders:
           - publication/preprints
     design:
-      view: publication
+      view: citation
 
 
 
