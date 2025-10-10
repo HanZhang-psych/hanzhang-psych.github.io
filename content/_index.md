@@ -57,43 +57,43 @@ sections:
   #     view: article-grid
   #     columns: 2
 
-  # journal articles
-  - block: collection
-    content:
-      title: Journal Articles
-      text: "Peer-reviewed journal articles"
-      count: 5
-      archive:
-        enable: true
-        text: See all journal articles
-        link: publication/journal-articles/
-      filters:
-        folders:
-          - publication
-        publication_types:
-          - article-journal
-        exclude_featured: false
-    design:
-      view: citation
+  # # journal articles
+  # - block: collection
+  #   content:
+  #     title: Journal Articles
+  #     text: "Peer-reviewed journal articles"
+  #     count: 5
+  #     archive:
+  #       enable: true
+  #       text: See all journal articles
+  #       link: publication/journal-articles/
+  #     filters:
+  #       folders:
+  #         - publication
+  #       publication_types:
+  #         - article-journal
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
 
-  # preprints
-  - block: collection
-    content:
-      title: Preprints
-      text: "Preprints and papers under review"
-      count: 5
-      archive:
-        enable: true
-        text: See all preprints
-        link: publication/preprints/
-      filters:
-        folders:
-          - publication
-        publication_types:
-          - manuscript
-        exclude_featured: false
-    design:
-      view: citation
+  # # preprints
+  # - block: collection
+  #   content:
+  #     title: Preprints
+  #     text: "Preprints and papers under review"
+  #     count: 5
+  #     archive:
+  #       enable: true
+  #       text: See all preprints
+  #       link: publication/preprints/
+  #     filters:
+  #       folders:
+  #         - publication
+  #       publication_types:
+  #         - manuscript
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
 
   # - block: collection
   #   id: talks
