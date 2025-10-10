@@ -71,12 +71,11 @@ jobs:
           title: Hugo Blox Builder - Import latest publications with author highlighting
           body: |
             Import the latest publications from BibTeX files to `content/publication/` with enhanced metadata including:
-            - Author highlighting for the site owner (Han Zhang)
-            - Bold formatting for first author or single author publications
-            - Asterisk (*) for shared authorship publications
+            - Author highlighting using Hugo Blox built-in feature
+            - Automatic highlighting of site owner (admin) in author lists
             - DOI and URL links when available
             
-            将最新的出版物从BibTeX文件导入到`content/publication/`，突出显示作者。
+            将最新的出版物从BibTeX文件导入到`content/publication/`，使用Hugo Blox内置的作者突出显示功能。
             [View Documentation](https://github.com/GetRD/academic-file-converter)
           base: main
           labels: automated-pr, content

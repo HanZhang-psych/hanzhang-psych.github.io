@@ -3,38 +3,17 @@ import yaml
 from pathlib import Path
 
 def convert_author_names(authors_list):
-    """Convert author names to highlight Han Zhang with bold formatting or asterisk for shared authorship"""
+    """Convert 'Han Zhang' to 'admin' for Hugo Blox author highlighting"""
     if not authors_list:
-        return authors_list
-    
-    # Check if Han Zhang is the first author (for bold formatting)
-    # or if there are multiple authors (for asterisk formatting)
-    han_zhang_found = False
-    first_author = False
-    total_authors = len(authors_list)
-    
-    for i, author in enumerate(authors_list):
-        if author.strip() == "Han Zhang":
-            han_zhang_found = True
-            first_author = (i == 0)
-            break
-    
-    if not han_zhang_found:
         return authors_list
     
     # Convert author names
     converted_authors = []
-    for i, author in enumerate(authors_list):
-        if author.strip() == "Han Zhang":
-            if first_author and total_authors == 1:
-                # Single author - bold
-                converted_authors.append("**Han Zhang**")
-            elif first_author and total_authors > 1:
-                # First author with co-authors - bold
-                converted_authors.append("**Han Zhang**")
-            else:
-                # Co-author - add asterisk
-                converted_authors.append("Han Zhang*")
+    for author in authors_list:
+        # Check for "Han Zhang" in various formats and convert to "admin"
+        clean_author = author.strip().replace('**', '').replace('*', '').replace('<strong>', '').replace('</strong>', '')
+        if clean_author == "Han Zhang":
+            converted_authors.append("admin")
         else:
             converted_authors.append(author)
     
