@@ -12,4 +12,4 @@ banner:
 ---
 Peer-reviewed journal articles.
 
-* indicates shared authorship. 
+\* indicates shared authorship. 

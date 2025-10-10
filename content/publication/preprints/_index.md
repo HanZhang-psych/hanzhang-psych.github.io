@@ -12,4 +12,4 @@ banner:
 ---
 Preprints and papers under review
 
-* indicates shared authorship. 
+\* indicates shared authorship. 
