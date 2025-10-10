@@ -9,5 +9,11 @@ view: citation
 banner:
   caption: ''
   image: ''
+
+# Filter to show only journal articles
+filters:
+  publication_types:
+    - article-journal
 ---
-Peer-reviewed journal articles. \* indicates shared authorship. 
+
+Peer-reviewed journal articles.

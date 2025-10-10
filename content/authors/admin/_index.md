@@ -47,10 +47,10 @@ profiles:
     url: https://www.linkedin.com/in/han-zhang-1060a2b2/
 
 interests:
-  - Visual Attention
-  - Mind-wandering
+  - Attention
+  - Cognitive Control
   - Distraction
-  - Driving Safety
+  - Driver Behavior
 
 education:
   - area: Ph.D. in Education and Psychology
@@ -167,4 +167,4 @@ work:
 
 ## About Me
 
-I am a cognitive psychologist with extensive experience investigating cognitive processes critical to driving performance, including visual perception, attention, and memory. I have examined these issues in young and older adults as well as individuals with ADHD. My goal is to translate basic understandings about limitations of the human cognitive system into practical solutions for improving driving safety.
+I am a cognitive psychologist working in the transportation domain. I have extensive experience investigating cognitive processes relevant to driving behavior, including visual perception, attention, and cognitive control. I have examined these issues in young and older adults as well as individuals with ADHD. My goal is to translate basic understandings about human cognition into practical solutions for improving driving safety.

@@ -9,5 +9,11 @@ view: citation
 banner:
   caption: ''
   image: ''
+
+# Filter to show only preprints/manuscripts
+filters:
+  publication_types:
+    - manuscript
 ---
-Preprints and papers under review. \* indicates shared authorship. 
+
+Preprints and papers under review.
