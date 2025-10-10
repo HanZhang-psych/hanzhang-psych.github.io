@@ -68,7 +68,6 @@ sections:
         text: See all journal articles
         link: publication/journal-articles/
       filters:
-        publication_type: "article-journal"
         folders:
           - publication/journal-articles
         exclude_featured: false
@@ -86,7 +85,6 @@ sections:
         text: See all preprints
         link: publication/preprints/
       filters:
-        publication_type: "manuscript"
         folders:
           - publication/preprints
         exclude_featured: false
