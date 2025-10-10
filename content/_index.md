@@ -59,27 +59,28 @@ sections:
 
   # journal articles
   - block: collection
-    id: journal-articles
     content:
       title: Journal Articles
       text: "Peer-reviewed journal articles"
-      count: 10
+      count: 5
       archive:
         enable: true
         text: See all journal articles
         link: publication/journal-articles/
       filters:
         folders:
-          - publication/journal-articles
+          - publication
+        publication_types:
+          - article-journal
+        exclude_featured: false
     design:
-      view: citation
+      view: publication
 
   # preprints
   - block: collection
-    id: preprints
     content:
       title: Preprints
-      text: "Preprints and working papers"
+      text: "Preprints and papers under review"
       count: 5
       archive:
         enable: true
@@ -87,11 +88,12 @@ sections:
         link: publication/preprints/
       filters:
         folders:
-          - publication/preprints
+          - publication
+        publication_types:
+          - manuscript
+        exclude_featured: false
     design:
-      view: citation
-
-
+      view: publication
 
   # - block: collection
   #   id: talks
