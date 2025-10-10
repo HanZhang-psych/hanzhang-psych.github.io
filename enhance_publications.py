@@ -3,17 +3,24 @@ import yaml
 from pathlib import Path
 
 def convert_author_names(authors_list):
-    """Convert 'Han Zhang' to 'admin' for Hugo Blox author highlighting"""
+    """Convert 'Han Zhang' to 'admin' for Hugo Blox author highlighting, with special handling for shared first authorship"""
     if not authors_list:
         return authors_list
     
     # Convert author names
     converted_authors = []
     for author in authors_list:
-        # Check for "Han Zhang" in various formats and convert to "admin"
+        # Check for "Han Zhang" in various formats
         clean_author = author.strip().replace('**', '').replace('*', '').replace('<strong>', '').replace('</strong>', '')
+        
         if clean_author == "Han Zhang":
-            converted_authors.append("admin")
+            # Check if this is shared first authorship (has asterisk)
+            if '*' in author.strip():
+                # Shared first authorship - use admin with asterisk
+                converted_authors.append("admin*")
+            else:
+                # Regular authorship
+                converted_authors.append("admin")
         else:
             converted_authors.append(author)
     
