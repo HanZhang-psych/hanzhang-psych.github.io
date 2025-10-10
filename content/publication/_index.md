@@ -3,12 +3,15 @@ title: Publications
 cms_exclude: true
 
 # View.
-view: citation
+view: list
 
 # Optional header image (relative to `static/media/` folder).
 banner:
   caption: ''
   image: ''
+
+# Center the content
+text_align: center
 ---
 
 Browse publications by type:
