@@ -13,8 +13,8 @@ abstract: A long-standing debate in the study of cognitive aging concerns whethe
   free RT studies. Overall, these results highlight the utility of using a theory-informed,
   fine-grained approach to study inhibitory control.
 authors:
-- Jacob Sellers*
-- admin*
+- Jacob Sellers *
+- admin *
 - John Jonides
 - Taraz Lee
 date: '2025-10-01'
