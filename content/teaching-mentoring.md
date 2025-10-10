@@ -29,22 +29,19 @@ sections:
       text: |
         I have also enjoyed working with my undergraduate student research assistants. Here are some of my fabulous RAs presenting their work at conferences:
 
-  - block: gallery
+  - block: markdown
     content:
       title: Conference Presentations
       text: |
         My research assistants have presented their work at various conferences, showcasing their dedication and contributions to our research projects.
-      photos:
-        - caption: "Me and Raymond Cleveland at APS 2016"
-          image: "https://via.placeholder.com/400x300/4a90e2/ffffff?text=Me+and+Raymond+Cleveland+at+APS+2016"
-        - caption: "Madelyn Evans (L) and Nicole Fraija (R) presenting at the 2018 UROP symposium"
-          image: "https://via.placeholder.com/400x300/7ed321/ffffff?text=Madelyn+Evans+and+Nicole+Fraija+at+UROP+2018"
-        - caption: "Chuyan Qu presenting at APS 2018"
-          image: "https://via.placeholder.com/400x300/f5a623/ffffff?text=Chuyan+Qu+at+APS+2018"
-        - caption: "Yun Gi Hwang presenting at the 2019 UROP symposium"
-          image: "https://via.placeholder.com/400x300/50e3c2/ffffff?text=Yun+Gi+Hwang+at+UROP+2019"
-        - caption: "Alex Fischer presenting at APS 2019"
-          image: "https://via.placeholder.com/400x300/bd10e0/ffffff?text=Alex+Fischer+at+APS+2019"
-    design:
-      columns: 2
+
+        {{< figure src="https://via.placeholder.com/400x300/4a90e2/ffffff?text=Me+and+Raymond+Cleveland+at+APS+2016" title="Me and Raymond Cleveland at APS 2016" >}}
+
+        {{< figure src="https://via.placeholder.com/400x300/7ed321/ffffff?text=Madelyn+Evans+and+Nicole+Fraija+at+UROP+2018" title="Madelyn Evans (L) and Nicole Fraija (R) presenting at the 2018 UROP symposium" >}}
+
+        {{< figure src="https://via.placeholder.com/400x300/f5a623/ffffff?text=Chuyan+Qu+at+APS+2018" title="Chuyan Qu presenting at APS 2018" >}}
+
+        {{< figure src="https://via.placeholder.com/400x300/50e3c2/ffffff?text=Yun+Gi+Hwang+at+UROP+2019" title="Yun Gi Hwang presenting at the 2019 UROP symposium" >}}
+
+        {{< figure src="https://via.placeholder.com/400x300/bd10e0/ffffff?text=Alex+Fischer+at+APS+2019" title="Alex Fischer presenting at APS 2019" >}}
 ---
