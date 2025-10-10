@@ -14,7 +14,7 @@ abstract: A long-standing debate in the study of cognitive aging concerns whethe
   fine-grained approach to study inhibitory control.
 authors:
 - Jacob Sellers*
-- admin*
+- admin
 - John Jonides
 - Taraz Lee
 date: '2025-10-01'
@@ -22,7 +22,7 @@ doi: 10.31234/osf.io/w7fp9_v1
 links:
 - name: URL
   url: https://osf.io/w7fp9_v1
-publication: '*OSF*'
+publication: '*OSF* Shared First Authorship'
 publication_types:
 - manuscript
 publishDate: '2025-10-10T01:46:21.499041Z'
