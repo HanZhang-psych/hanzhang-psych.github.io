@@ -60,13 +60,13 @@ sections:
   # journal articles
   - block: collection
     content:
-      title: Recent Papers
-      text: ""
+      title: Journal Articles
+      text: "Peer-reviewed journal articles"
       count: 10
       archive:
         enable: true
-        text: See all
-        link: publication/
+        text: See all journal articles
+        link: publication/journal-articles/
       filters:
         folders:
           - publication
@@ -79,31 +79,21 @@ sections:
   - block: collection
     content:
       title: Preprints
-      text: ""
+      text: "Preprints and working papers"
       count: 5
       archive:
         enable: true
-        text: See all
-        link: publication/
+        text: See all preprints
+        link: publication/preprints/
       filters:
         folders:
           - publication
-        publication_type: "manuscript"
+        publication_type: "preprint"
         exclude_featured: false
     design:
       view: citation
 
-  # - block: collection
-  #   content:
-  #     title: Conference Papers
-  #     text: ""
-  #     filters:
-  #       folders:
-  #         - publication
-  #       publication_type: "paper-conference"
-  #       exclude_featured: false
-  #   design:
-  #     view: citation
+
 
   # - block: collection
   #   id: talks

@@ -52,22 +52,22 @@ jobs:
         # Check if single publications.bib file exists
         if: ${{ hashFiles('publications.bib') != '' }}
         run: academic import publications.bib content/publication/ --compact
-      - name: Enhance publication metadata with CSL formatting
-        run: |
-          # Check if required files exist
-          if [ ! -f "apa-cv.csl" ]; then
-            echo "Warning: CSL file not found, will use fallback formatting"
-          else
-            echo "CSL file found, will use APA-7 formatting"
-          fi
+    #   - name: Enhance publication metadata with CSL formatting
+    #     run: |
+    #       # Check if required files exist
+    #       if [ ! -f "apa-cv.csl" ]; then
+    #         echo "Warning: CSL file not found, will use fallback formatting"
+    #       else
+    #         echo "CSL file found, will use APA-7 formatting"
+    #       fi
           
-          if [ ! -f "enhance_publications.py" ]; then
-            echo "Error: Enhanced publications script not found"
-            exit 1
-          fi
+    #       if [ ! -f "enhance_publications.py" ]; then
+    #         echo "Error: Enhanced publications script not found"
+    #         exit 1
+    #       fi
           
-          # Run the enhancement script
-          python enhance_publications.py
+    #       # Run the enhancement script
+    #       python enhance_publications.py
       - name: Create Pull Request
         # Set ID for `Check outputs` stage
         id: cpr

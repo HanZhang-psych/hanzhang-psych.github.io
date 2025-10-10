@@ -214,6 +214,16 @@ def enhance_publication_files():
         print("No publication directory found!")
         return
     
+    # Create subdirectories for different publication types
+    type_dirs = {
+        'article-journal': 'journal-articles',
+        'preprint': 'preprints'
+    }
+    
+    for type_dir in type_dirs.values():
+        type_path = pub_dir / type_dir
+        type_path.mkdir(exist_ok=True)
+    
     enhanced_count = 0
     
     for pub_folder in pub_dir.iterdir():
