@@ -47,5 +47,4 @@ sections:
           image: "https://via.placeholder.com/400x300/bd10e0/ffffff?text=Alex+Fischer+at+APS+2019"
     design:
       columns: 2
-      spacing: 1
 ---
