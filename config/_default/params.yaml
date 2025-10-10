@@ -37,6 +37,10 @@ header:
     logo:
       text: "Han Zhang, Ph.D."
 
+# Custom CSS
+custom_css:
+  - css/custom.css
+
 # Site footer
 footer:
   copyright:

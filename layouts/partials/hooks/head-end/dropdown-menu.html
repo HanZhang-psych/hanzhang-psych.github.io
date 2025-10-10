@@ -1,0 +1,20 @@
+<!-- Custom JavaScript for dropdown menu functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover functionality for dropdown menus
+  const dropdownItems = document.querySelectorAll('.navbar-nav .nav-item[has_children="true"]');
+  
+  dropdownItems.forEach(function(item) {
+    const dropdownMenu = item.querySelector('.dropdown-menu');
+    if (dropdownMenu) {
+      item.addEventListener('mouseenter', function() {
+        dropdownMenu.style.display = 'block';
+      });
+      
+      item.addEventListener('mouseleave', function() {
+        dropdownMenu.style.display = 'none';
+      });
+    }
+  });
+});
+</script>

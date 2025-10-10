@@ -10,6 +10,4 @@ banner:
   caption: ''
   image: ''
 ---
-Peer-reviewed journal articles.
-
-\* indicates shared authorship. 
+Peer-reviewed journal articles. \* indicates shared authorship. 
