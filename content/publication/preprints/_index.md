@@ -3,8 +3,9 @@ title: Preprints
 cms_exclude: true
 
 # View.
-view: citation
-numbered: true
+view: compact
+list_format: numbered
+numbering: true
 
 # Optional header image (relative to `static/media/` folder).
 banner:
