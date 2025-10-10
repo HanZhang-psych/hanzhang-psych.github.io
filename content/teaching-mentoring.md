@@ -28,42 +28,36 @@ sections:
       title: Mentoring
       text: |
         Throughout my career, I have been fortunate to mentor many fabulous undergraduate student research assistants. Here are some of them presenting their work at various conferences.
-
-  - block: markdown
-    content:
-      title: Mentees
-      text: |
-        Some of my undergraduate research assistants presenting their work at conferences and research symposiums.
         
         <div class="row">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="text-center">
-              <img src="mentees/alex2019.png" alt="Alex presenting at 2019 APS conference" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-              <p class="mt-2"><small>Alex presenting at 2019 APS conference</small></p>
+              <img src="media/mentees/alex2019.png" alt="Alex at APS 2019" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+              <p class="mt-2"><small>Alex at APS 2019</small></p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="text-center">
-              <img src="mentees/chuyan_aps.png" alt="Chuyan presenting at APS conference" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-              <p class="mt-2"><small>Chuyan presenting at APS conference</small></p>
+              <img src="media/mentees/chuyan_aps.png" alt="Chuyan at APS 2018" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+              <p class="mt-2"><small>Chuyan at APS 2018</small></p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="text-center">
-              <img src="mentees/nicole_madelyn_urop.png" alt="Nicole and Madelyn at UROP symposium" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-              <p class="mt-2"><small>Nicole and Madelyn at UROP symposium</small></p>
+              <img src="media/mentees/nicole_madelyn_urop.png" alt="Nicole and Madelyn at 2018 UROP symposium" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+              <p class="mt-2"><small>Nicole and Madelyn at 2018 UROP symposium</small></p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="text-center">
-              <img src="mentees/ray2016.png" alt="Ray presenting at 2016 APS conference" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-              <p class="mt-2"><small>Ray presenting at 2016 APS conference</small></p>
+              <img src="media/mentees/ray2016.png" alt="Ray at APS 2016" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+              <p class="mt-2"><small>Ray at APS 2016</small></p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="text-center">
-              <img src="mentees/yungi_urop.png" alt="Yun Gi at UROP symposium" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-              <p class="mt-2"><small>Yun Gi at UROP symposium</small></p>
+              <img src="media/mentees/yungi_urop.png" alt="Yun Gi at 2019 UROP symposium" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+              <p class="mt-2"><small>Yun Gi at 2019 UROP symposium</small></p>
             </div>
           </div>
         </div>
