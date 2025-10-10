@@ -17,7 +17,7 @@ abstract: We present PupEyes, an open-source Python package for preprocessing an
   tailored to specific research goals. We believe PupEyes is a useful addition to
   the analysis workflow for pupil size and eye movement data.
 authors:
-- '**Han Zhang**'
+- admin
 - John Jonides
 date: '2025-10-01'
 doi: 10.3758/s13428-025-02830-z

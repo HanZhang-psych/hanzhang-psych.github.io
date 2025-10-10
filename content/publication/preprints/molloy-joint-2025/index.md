@@ -27,7 +27,7 @@ authors:
 - M. Fiona Molloy
 - Taraz Lee
 - John Jonides
-- Han Zhang*
+- admin
 - Jacob Sellers
 - Andrew Heathcote
 - Chandra Sripada

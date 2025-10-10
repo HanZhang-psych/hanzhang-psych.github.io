@@ -21,7 +21,7 @@ abstract: 'Recent studies have shown that mind-wandering (MW) is associated with
   MW by highlighting the sequential aspect of eye movements. (PsycInfo Database Record
   (c) 2020 APA, all rights reserved)'
 authors:
-- '**Han Zhang**'
+- admin
 - Nicola C. Anderson
 - Kevin F. Miller
 date: '2021-01-01'

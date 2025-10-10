@@ -13,7 +13,7 @@ abstract: 'Video lectures are increasingly prevalent, but they present challenge
   may facilitate efforts in objectively identifying mind wandering. Future research
   is needed to determine if these findings can extend to other instructional formats.'
 authors:
-- '**Han Zhang**'
+- admin
 - Kevin F. Miller
 - Xin Sun
 - Kai S. Cortina

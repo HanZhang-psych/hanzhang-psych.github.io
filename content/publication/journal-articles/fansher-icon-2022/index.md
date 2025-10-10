@@ -20,7 +20,7 @@ authors:
 - Madelyn Quirk
 - Richard L. Lewis
 - Priti Shah
-- Han Zhang*
+- admin
 - John Jonides
 date: '2022-12-01'
 doi: 10.1186/s41235-022-00387-5

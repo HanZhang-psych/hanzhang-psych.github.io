@@ -17,7 +17,7 @@ authors:
 - Taraz G. Lee
 - Jacob Sellers
 - John Jonides
-- Han Zhang*
+- admin
 date: '2025-01-01'
 doi: 10.3758/s13428-024-02516-y
 links:

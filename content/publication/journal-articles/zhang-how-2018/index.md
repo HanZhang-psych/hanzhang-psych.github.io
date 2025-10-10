@@ -16,7 +16,7 @@ abstract: The current research looked at how listening to music affects eye move
   comprehension is impaired, including mindless reading. (PsycInfo Database Record
   (c) 2020 APA, all rights reserved)
 authors:
-- '**Han Zhang**'
+- admin
 - Kevin Miller
 - Raymond Cleveland
 - Kai Cortina

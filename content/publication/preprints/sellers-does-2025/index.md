@@ -14,7 +14,7 @@ abstract: A long-standing debate in the study of cognitive aging concerns whethe
   fine-grained approach to study inhibitory control.
 authors:
 - Jacob Sellers*
-- Han Zhang*
+- admin
 - John Jonides
 - Taraz Lee
 date: '2025-10-01'

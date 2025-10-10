@@ -16,7 +16,7 @@ abstract: Abrupt onsets are commonly assumed to be a class of stimuli with high 
   easier to suppress during visual search. (PsycInfo Database Record (c) 2025 APA,
   all rights reserved)
 authors:
-- '**Han Zhang**'
+- admin
 - Esha Brar
 - A. Kane York
 - John Jonides

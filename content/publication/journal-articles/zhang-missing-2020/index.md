@@ -17,7 +17,7 @@ abstract: 'Mind-wandering (i.e., thoughts irrelevant to the current task) occurs
   is important for resolving higher level comprehension difficulties. (PsycInfo Database
   Record (c) 2020 APA, all rights reserved)'
 authors:
-- '**Han Zhang**'
+- admin
 - Chuyan Qu
 - Kevin F. Miller
 - Kai S. Cortina

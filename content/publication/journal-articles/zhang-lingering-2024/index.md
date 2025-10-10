@@ -13,7 +13,7 @@ abstract: Effective visual search relies on reactively disengaging from distract
   suggest that ADHD is associated with deficits in reactively disengaging from distractions
   rather than deficits in avoiding being captured in the first place.
 authors:
-- '**Han Zhang**'
+- admin
 - Tessa R. Abagis
 - Clara J. Steeby
 - John Jonides

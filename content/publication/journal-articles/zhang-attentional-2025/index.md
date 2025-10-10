@@ -17,7 +17,7 @@ abstract: The study of attentional allocation due to external stimulation has a 
   of stimuli that we need to study more to connect laboratory attention research to
   real life. (PsycInfo Database Record (c) 2025 APA, all rights reserved)
 authors:
-- '**Han Zhang**'
+- admin
 - A. Kane York
 - John Jonides
 date: '2025-04-01'

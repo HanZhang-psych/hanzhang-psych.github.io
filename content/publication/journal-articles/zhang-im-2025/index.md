@@ -23,7 +23,7 @@ abstract: 'Purpose: Reading involves a remarkable coordination of perceptual and
   revisiting these words to repair difficulties in integrating their meanings into
   a coherent understanding of the text.'
 authors:
-- '**Han Zhang**'
+- admin
 - Kevin Miller
 date: '2025-07-01'
 doi: 10.31234/osf.io/gnxjw_v1

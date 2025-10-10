@@ -22,7 +22,7 @@ abstract: Researchers have long debated how humans select relevant objects amid 
   and provides a computational architecture for understanding the mechanisms of distractor
   suppression. (PsycInfo Database Record (c) 2025 APA, all rights reserved)
 authors:
-- '**Han Zhang**'
+- admin
 - Jacob Sellers
 - Taraz G. Lee
 - John Jonides

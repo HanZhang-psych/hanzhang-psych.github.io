@@ -17,7 +17,7 @@ abstract: 'People differ substantially in their vulnerability to distraction. Ye
   across the two samples. Overall, the study provides an important step toward a comprehensive
   understanding of individual differences in distractibility and related constructs.'
 authors:
-- '**Han Zhang**'
+- admin
 - Akira Miyake
 - Jahla Osborne
 - Priti Shah

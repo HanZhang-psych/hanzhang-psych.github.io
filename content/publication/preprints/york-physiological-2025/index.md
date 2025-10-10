@@ -1,7 +1,7 @@
 ---
 authors:
 - A. Kane York
-- Han Zhang*
+- admin
 - Jacob Sellers
 - Taraz G. Lee
 - John Jonides

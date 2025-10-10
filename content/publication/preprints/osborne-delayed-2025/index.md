@@ -18,7 +18,7 @@ abstract: It is well documented that ADHD is associated with challenges in inhib
 authors:
 - Jahla Osborne
 - Jacob Sellers
-- Han Zhang*
+- admin
 - Su Wang
 - Sarah Liberatore
 - Chandra Sripada
