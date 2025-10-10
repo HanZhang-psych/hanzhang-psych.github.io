@@ -32,6 +32,6 @@ main:
   # - name: Projects
   #   url: projects/
   #   weight: 30
-  # - name: Teaching and Mentoring
-  #   url: teaching/
-  #   weight: 40
+  - name: Teaching and Mentoring
+    url: /teaching-mentoring/
+    weight: 40
