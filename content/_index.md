@@ -74,7 +74,7 @@ sections:
           - article-journal
         exclude_featured: false
     design:
-      view: publication
+      view: citation
 
   # preprints
   - block: collection
@@ -93,7 +93,7 @@ sections:
           - manuscript
         exclude_featured: false
     design:
-      view: publication
+      view: citation
 
   # - block: collection
   #   id: talks
