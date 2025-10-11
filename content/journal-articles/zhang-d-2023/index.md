@@ -42,4 +42,5 @@ tags:
 - Lectures
 title: A d factor? Understanding trait distractibility and its relationships with
   ADHD symptomatology and hyperfocus
+featured: true
 ---

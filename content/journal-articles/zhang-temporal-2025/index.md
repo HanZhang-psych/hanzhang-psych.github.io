@@ -40,4 +40,5 @@ tags:
 - Attentional Capture
 - Attentional Bias
 title: The temporal dynamics of visual attention
+featured: true
 ---

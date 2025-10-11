@@ -34,4 +34,5 @@ tags:
 - pupillometry
 - Python
 title: 'PupEyes: An Interactive Python Library for Eye Movement Data Processing'
+featured: true
 ---

@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "3rem"
+  spacing: "2rem"
 
 sections:
   - block: resume-biography-3
@@ -47,11 +47,11 @@ sections:
 
   - block: collection
     content:
-      title: Latest Publications
+      title: Featured Publications
       filters:
         folders:
           - journal-articles
-        featured_only: false
+        featured_only: true
       count: 5
       archive:
         enable: true
@@ -68,7 +68,7 @@ sections:
         folders:
           - preprints
         featured_only: false
-        count: 5
+        count: 3
       archive:
         enable: true
         text: See all preprints

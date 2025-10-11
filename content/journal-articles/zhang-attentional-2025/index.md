@@ -31,4 +31,5 @@ tags:
 - Visual Attention
 - Attentional Capture
 title: 'Attentional capture by abrupt onsets: Foundations and emerging issues'
+featured: true
 ---

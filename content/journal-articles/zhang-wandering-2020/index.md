@@ -33,4 +33,5 @@ tags:
 - growth curve analysis
 - video lecture
 title: 'Wandering eyes: Eye movements during mind wandering in video lectures'
+featured: true
 ---
