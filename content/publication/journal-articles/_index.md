@@ -1,7 +1,5 @@
 ---
 title: Journal Articles
-type: landing
-#cms_exclude: true
 
 # View.
 view: citation
@@ -17,8 +15,7 @@ filters:
     - article-journal
 
 # Center the content
-design:
-  text_align: 'center'
+text_align: center
 ---
 
 <div style="text-align: center; margin-bottom: 0rem;">

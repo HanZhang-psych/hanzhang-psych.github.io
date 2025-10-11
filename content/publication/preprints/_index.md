@@ -1,7 +1,5 @@
 ---
 title: Preprints & Under Review
-type: landing
-#cms_exclude: true
 
 # View.
 view: citation
