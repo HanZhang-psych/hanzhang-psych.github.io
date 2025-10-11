@@ -91,23 +91,35 @@ work:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
-# # Skills
-# # Add your own SVG icons to `assets/media/icons/`
-# skills:
-#   - name: Technical Skills
-#     items:
-#       - name: Python
-#         description: ''
-#         percent: 80
-#         icon: code-bracket
-#       - name: Data Science
-#         description: ''
-#         percent: 100
-#         icon: chart-bar
-#       - name: SQL
-#         description: ''
-#         percent: 40
-#         icon: circle-stack
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ''
+        percent: 80
+        icon: devicon/python-original
+      - name: R
+        description: ''
+        percent: 100
+        icon: devicon/r-original
+      - name: Statistical Analysis
+        description: ''
+        percent: 100
+        icon: hero/chart-bar
+      - name: Eye-tracking
+        description: ''
+        percent: 100
+        icon: hero/eye
+      - name: Experimental Design
+        description: ''
+        percent: 100
+        icon: hero/adjustments-horizontal
+      - name: Academic Writing
+        description: ''
+        percent: 100
+        icon: hero/pencil-square
 #   - name: Hobbies
 #     color: '#eeac02'
 #     color_border: '#f0bf23'
@@ -125,13 +137,11 @@ work:
 #         percent: 80
 #         icon: camera
 
-# languages:
-#   - name: English
-#     percent: 100
-#   - name: Chinese
-#     percent: 75
-#   - name: Portuguese
-#     percent: 25
+languages:
+  - name: English
+    percent: 100
+  - name: Chinese
+    percent: 100
 
 # # Awards.
 # #   Add/remove as many awards below as you like.

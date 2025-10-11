@@ -7,18 +7,21 @@ main:
   - name: Bio
     url: /
     weight: 10
+  - name: Experience
+    url: /experience/
+    weight: 11
   - name: Papers
     url: /publication/
-    weight: 11
+    weight: 21
     identifier: papers
   - name: Journal Articles
     url: /publication/journal-articles/
     parent: papers
-    weight: 12
+    weight: 22
   - name: Preprints
     url: /publication/preprints/
     parent: papers
-    weight: 13
+    weight: 23
   # - name: Talks
   # #  url: /#talks
   #   url: talks/
@@ -26,12 +29,9 @@ main:
   # - name: News
   #   url: /#news
   #   weight: 13
-  # - name: Experience
-  #   url: experience/
-  #   weight: 20
   # - name: Projects
   #   url: projects/
   #   weight: 30
-  - name: Teaching and Mentoring
+  - name: Teaching
     url: /teaching-mentoring/
-    weight: 40
+    weight: 31
