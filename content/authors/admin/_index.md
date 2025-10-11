@@ -157,7 +157,7 @@ awards:
       Role: PI UMTRI & Mcity Integration Fund, University of Michigan
     # icon: academic-cap
     summary: |
-      This project seeks to combine eye movements, body positions, and cognitive assessments to develop a driver re-engagebility score that can predict driver's ability to take over vehicle control during urgent situations in level-3 autonomous driving. 
+      This project seeks to combine eye movements, body position, and cognitive assessments to develop a driver re-engagebility score that can predict driver's ability to take over vehicle control during urgent situations in level-3 autonomous driving. 
   - title: Probing Attentional Allocation with a Novel Forced‑Response Method
     url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238151&HistoricalAwards=false
     date: '2023-07-01'
@@ -174,6 +174,37 @@ awards:
     # icon: academic-cap
     summary: |
       This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction in adults with ADHD. 
+  - title: Stanley E. and Ruth B. Dimond Best Dissertation Award
+    date: '2021-06-02'
+    awarder: |
+      School of Education, University of Michigan
+    # icon: academic-cap
+    summary: |
+      Awarded for dissertation: Mind-Wandering: What Can We Learn from Eye Movements?
+  - title: Midwestern Psychological Association Graduate Student Paper Award
+    date: '2020-01-07'
+    awarder: |
+      Midwestern Psychological Association
+    # icon: academic-cap
+    summary: |
+      Awarded for submission: Scan‑paths of mind‑wandering during real‑world scene perception
+  - title: Rackham One‑Term Dissertation Fellowship
+    date: '2019-08-26'
+    awarder: |
+      Rackham Graduate School, University of Michigan
+    # icon: academic-cap
+    summary: |
+      Award that supported my dissertation work.
+  - title: Rackham Graduate Student Research Grant
+    date: '2019-07-09'
+    awarder: |
+      Rackham Graduate School, University of Michigan
+  - title: Rackham Summer Training Award
+    date: '2018-04-12'
+    awarder: |
+      Inter-university Consortium for Political and Social Research (ICPSR), University of Michigan
+    # icon: academic-cap
+    # summary: 
 #   - title: Blockchain Fundamentals
 #     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
 #     date: '2023-07-01'
