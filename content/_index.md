@@ -47,7 +47,7 @@ sections:
 
   - block: collection
     content:
-      title: Featured Publications
+      title: Selected Publications
       filters:
         folders:
           - journal-articles
@@ -63,7 +63,7 @@ sections:
 
   - block: collection
     content:
-      title: Preprints
+      title: Selected Preprints
       filters:
         folders:
           - preprints
