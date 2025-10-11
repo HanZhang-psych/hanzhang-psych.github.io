@@ -19,7 +19,7 @@ sections:
       title: Journal Articles
       filters:
         folders:
-          - publication/journal-articles
+          - journal-articles
     design:
       view: citation
       fill_image: false
@@ -29,7 +29,7 @@ sections:
       title: Preprints
       filters:
         folders:
-          - publication/preprints
+          - preprints
     design:
       view: citation
       fill_image: false
