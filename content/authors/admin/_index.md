@@ -108,6 +108,8 @@ skills:
         description: ''
         percent: 100
         icon: hero/chart-bar
+  - name: ''
+    items:
       - name: Eye-tracking
         description: ''
         percent: 100
