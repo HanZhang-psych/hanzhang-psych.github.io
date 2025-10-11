@@ -1,68 +1,37 @@
-/* Custom CSS for dropdown menu styling */
+/* Custom CSS for dropdown menu styling - Dark mode support only */
 
-/* Create dropdown effect using CSS only */
-.navbar-nav .nav-item {
-  position: relative;
+/* Dark mode support for dropdown text color */
+[data-bs-theme="dark"] .navbar-nav .dropdown-menu a {
+  color: #ffffff !important;
 }
 
-/* Hide submenu by default */
-.navbar-nav .nav-item .nav-link + ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  min-width: 200px;
-  background-color: white;
-  border: 1px solid #dee2e6;
-  border-radius: 0.375rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 0.5rem 0;
-  margin: 0;
-  list-style: none;
-}
-
-/* Show submenu on hover */
-.navbar-nav .nav-item:hover .nav-link + ul {
-  display: block;
-}
-
-/* Style submenu items */
-.navbar-nav .nav-item .nav-link + ul li {
-  margin: 0;
-}
-
-.navbar-nav .nav-item .nav-link + ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #212529;
-  text-decoration: none;
-  transition: background-color 0.15s ease-in-out;
-}
-
-.navbar-nav .nav-item .nav-link + ul li a:hover {
-  background-color: #f8f9fa;
-  color: #0d6efd;
-}
-
-/* Dark mode support */
-[data-bs-theme="dark"] .navbar-nav .nav-item .nav-link + ul {
-  background-color: #1a1a1a;
-  border-color: #333333;
-}
-
-[data-bs-theme="dark"] .navbar-nav .nav-item .nav-link + ul li a {
-  color: #f8f9fa;
-}
-
-[data-bs-theme="dark"] .navbar-nav .nav-item .nav-link + ul li a:hover {
+[data-bs-theme="dark"] .navbar-nav .dropdown-menu a:hover {
+  color: #ffffff !important;
   background-color: #2d2d2d;
-  color: #0d6efd;
+}
+
+/* Additional dark mode support for Hugo Blox theme */
+.dark .navbar-nav .dropdown-menu a {
+  color: #ffffff !important;
+}
+
+.dark .navbar-nav .dropdown-menu a:hover {
+  color: #ffffff !important;
+  background-color: #2d2d2d;
+}
+
+/* Ensure dropdown menu is visible and clickable */
+.navbar-nav .dropdown-menu {
+  display: none;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 991.98px) {
-  .navbar-nav .nav-item .nav-link + ul {
+  .navbar-nav .dropdown-menu {
     position: static;
     display: block;
     box-shadow: none;
