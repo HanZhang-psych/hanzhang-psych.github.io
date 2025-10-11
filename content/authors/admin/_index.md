@@ -153,9 +153,10 @@ awards:
   - title: Understanding Takeover Performance in Urgent Situations during Level‑3 Driving
     #url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2025-10-08'
-    awarder: UMTRI & Mcity Integration Fund, University of Michigan
-    role: PI
-    icon: hero/academic-cap
+    awarder: |
+      * Role: PI
+      * UMTRI & Mcity Integration Fund, University of Michigan
+    icon: academic-cap
     summary: |
       This project seeks to combine eye movements, body positions, and cognitive assessments to develop a driver re-engagebility score that can predict driver's ability to take over vehicle control during urgent situations in level-3 autonomous driving. 
 #   - title: Blockchain Fundamentals
