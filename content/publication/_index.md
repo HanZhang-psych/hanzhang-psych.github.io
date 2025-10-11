@@ -19,7 +19,7 @@ sections:
       text: Select a publication type
       filters:
         folders:
-          - publication/journal-articles
+          - publication/journal-articles/
     design:
       view: article-grid
       fill_image: false
@@ -30,7 +30,7 @@ sections:
       text: Select a publication type
       filters:
         folders:
-          - publication/preprints
+          - publication/preprints/
     design:
       view: article-grid
       fill_image: false
