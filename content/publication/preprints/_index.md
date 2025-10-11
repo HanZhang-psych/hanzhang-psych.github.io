@@ -20,5 +20,6 @@ filters:
 # Center the content
 text_align: center
 ---
-
+<div style="text-align: center; margin-bottom: 2rem;">
 Preprints and papers under review.
+</div>

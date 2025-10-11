@@ -21,4 +21,8 @@ filters:
 text_align: center
 ---
 
+<div style="text-align: center; margin-bottom: 2rem;">
+
 Peer-reviewed journal articles.
+
+</div>

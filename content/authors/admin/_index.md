@@ -187,7 +187,7 @@ awards:
       Midwestern Psychological Association
     # icon: academic-cap
     summary: |
-      Awarded for submission: Scan‑paths of mind‑wandering during real‑world scene perception
+      Awarded for submission: Scan‑paths of mind‑wandering during real‑world scene perception.
   - title: Rackham One‑Term Dissertation Fellowship
     date: '2019-08-26'
     awarder: |
