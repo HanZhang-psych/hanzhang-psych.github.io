@@ -59,7 +59,7 @@ sections:
         link: journal-articles/
     design:
       view: citation
-      columns: 1
+      columns: 2
 
   - block: collection
     content:
@@ -68,14 +68,14 @@ sections:
         folders:
           - preprints
         featured_only: false
-        count: 3
+      count: 3
       archive:
         enable: true
         text: See all preprints
         link: preprints/
     design:
       view: citation
-      columns: 1
+      columns: 2
 
 
   # - block: collection
