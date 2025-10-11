@@ -45,17 +45,17 @@ sections:
   #   design:
   #     columns: '1'
 
-  # - block: collection
-  #   id: papers
-  #   content:
-  #     title: Featured Publications
-  #     filters:
-  #       folders:
-  #         - publication
-  #       featured_only: true
-  #   design:
-  #     view: article-grid
-  #     columns: 2
+  - block: collection
+    id: papers
+    content:
+      title: Latest Publications
+      filters:
+        folders:
+          - journal-articles/
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 2
 
   # # journal articles
   # - block: collection
@@ -66,10 +66,10 @@ sections:
   #     archive:
   #       enable: true
   #       text: See all journal articles
-  #       link: publication/journal-articles/
+  #       link: journal-articles/
   #     filters:
   #       folders:
-  #         - publication
+  #         - journal-articles
   #       publication_types:
   #         - article-journal
   #       exclude_featured: false
@@ -85,10 +85,10 @@ sections:
   #     archive:
   #       enable: true
   #       text: See all preprints
-  #       link: publication/preprints/
+  #       link: preprints/
   #     filters:
   #       folders:
-  #         - publication
+  #         - preprints
   #       publication_types:
   #         - manuscript
   #       exclude_featured: false
