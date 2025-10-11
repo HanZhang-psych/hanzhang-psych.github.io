@@ -154,11 +154,26 @@ awards:
     #url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2025-10-08'
     awarder: |
-      * Role: PI
-      * UMTRI & Mcity Integration Fund, University of Michigan
-    icon: academic-cap
+      Role: PI UMTRI & Mcity Integration Fund, University of Michigan
+    # icon: academic-cap
     summary: |
       This project seeks to combine eye movements, body positions, and cognitive assessments to develop a driver re-engagebility score that can predict driver's ability to take over vehicle control during urgent situations in level-3 autonomous driving. 
+  - title: Probing Attentional Allocation with a Novel Forced‑Response Method
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238151&HistoricalAwards=false
+    date: '2023-07-01'
+    awarder: |
+      Role: Key Personnel (Postdoc) Standard Grant, National Science Foundation
+    # icon: academic-cap
+    summary: |
+      This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction. 
+  - title: Investigating Interference‑Control in ADHD Using a Novel Forced‑Response Method
+    url: https://reporter.nih.gov/project-details/10758598
+    date: '2023-01-01'
+    awarder: |
+      Role: Key Personnel (Postdoc) R21, National Institute of Mental Health
+    # icon: academic-cap
+    summary: |
+      This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction in adults with ADHD. 
 #   - title: Blockchain Fundamentals
 #     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
 #     date: '2023-07-01'
