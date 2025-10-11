@@ -52,7 +52,7 @@ sections:
         folders:
           - journal-articles
         featured_only: true
-      count: 5
+      count: 6
       archive:
         enable: true
         text: See all journal articles
