@@ -7,12 +7,21 @@ banner:
   caption: ''
   image: ''
 
-# Center the content
-text_align: center
----
-<div style="text-align: center; margin-bottom: 0rem;">
-Browse publications by type:
-</div>
+design:
+  # Section spacing
+  spacing: '2rem'
 
-- [Journal Articles](journal-articles/) - Peer-reviewed journal articles
-- [Preprints](preprints/) - Preprints and papers under review
+# Page sections
+sections:
+  - block: collection
+    content:
+      title: Publications
+      text: Select a publication type
+      filters:
+        folders:
+          - publication
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 2
+---

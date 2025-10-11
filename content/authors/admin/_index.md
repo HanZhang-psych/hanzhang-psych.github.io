@@ -58,7 +58,7 @@ education:
     date_start: 2014-09-01
     date_end: 2020-05-01
     summary: |
-      Dissertation on _how eye movements reveal cognitive processing during mind-wandering_. 
+      Dissertation: _Mind-wandering: What Can We Learn From Eye Movements?_. 
     button:
       text: 'Read Dissertation'
       url: 'https://deepblue.lib.umich.edu/handle/2027.42/155215'
