@@ -1,6 +1,7 @@
 ---
 title: Publications
 type: landing
+cms_exclude: true
 
 # Optional header image (relative to `static/media/` folder).
 banner:
@@ -18,9 +19,9 @@ sections:
       title: Journal Articles
       filters:
         folders:
-          - journal-articles/
+          - publication/journal-articles
     design:
-      view: article-grid
+      view: citation
       fill_image: false
       columns: 1
   - block: collection
@@ -28,9 +29,9 @@ sections:
       title: Preprints
       filters:
         folders:
-          - preprints/
+          - publication/preprints
     design:
-      view: article-grid
+      view: citation
       fill_image: false
       columns: 1
 ---
