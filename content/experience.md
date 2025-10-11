@@ -28,7 +28,7 @@ sections:
       username: admin
     design:
       show_skill_percentage: false
-      columns: 2
+      columns: '2'
   # - block: resume-languages
   #   content:
   #     title: Languages
