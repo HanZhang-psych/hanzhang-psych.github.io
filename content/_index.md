@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "2rem"
+  spacing: "3rem"
 
 sections:
   - block: resume-biography-3
@@ -46,54 +46,37 @@ sections:
   #     columns: '1'
 
   - block: collection
-    id: papers
     content:
       title: Latest Publications
       filters:
         folders:
           - journal-articles
         featured_only: false
+      count: 5
+      archive:
+        enable: true
+        text: See all journal articles
+        link: journal-articles/
     design:
-      view: article-grid
-      columns: 2
+      view: citation
+      columns: 1
 
-  # # journal articles
-  # - block: collection
-  #   content:
-  #     title: Journal Articles
-  #     text: "Peer-reviewed journal articles"
-  #     count: 5
-  #     archive:
-  #       enable: true
-  #       text: See all journal articles
-  #       link: journal-articles/
-  #     filters:
-  #       folders:
-  #         - journal-articles
-  #       publication_types:
-  #         - article-journal
-  #       exclude_featured: false
-  #   design:
-  #     view: citation
+  - block: collection
+    content:
+      title: Preprints
+      filters:
+        folders:
+          - preprints
+        featured_only: false
+        count: 5
+      archive:
+        enable: true
+        text: See all preprints
+        link: preprints/
+    design:
+      view: citation
+      columns: 1
 
-  # # preprints
-  # - block: collection
-  #   content:
-  #     title: Preprints
-  #     text: "Preprints and papers under review"
-  #     count: 5
-  #     archive:
-  #       enable: true
-  #       text: See all preprints
-  #       link: preprints/
-  #     filters:
-  #       folders:
-  #         - preprints
-  #       publication_types:
-  #         - manuscript
-  #       exclude_featured: false
-  #   design:
-  #     view: citation
 
   # - block: collection
   #   id: talks
