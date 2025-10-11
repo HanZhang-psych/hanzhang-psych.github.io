@@ -10,7 +10,7 @@ banner:
 
 design:
   # Section spacing
-  spacing: '2rem'
+  spacing: '0rem'
 
 # Page sections
 sections:
