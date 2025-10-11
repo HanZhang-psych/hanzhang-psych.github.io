@@ -99,11 +99,11 @@ skills:
       - name: Python
         description: ''
         percent: 100
-        icon: devicon/python-original
+        icon: devicon/python
       - name: R
         description: ''
         percent: 100
-        icon: devicon/r-original
+        icon: devicon/r
       - name: Statistical Analysis
         description: ''
         percent: 100
