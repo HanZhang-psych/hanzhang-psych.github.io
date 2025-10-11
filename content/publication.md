@@ -20,6 +20,7 @@ sections:
       filters:
         folders:
           - journal-articles
+    count: 999
     design:
       view: citation
       fill_image: false
@@ -30,6 +31,7 @@ sections:
       filters:
         folders:
           - preprints
+    count: 999
     design:
       view: citation
       fill_image: false

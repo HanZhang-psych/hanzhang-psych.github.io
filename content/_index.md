@@ -59,7 +59,7 @@ sections:
         link: journal-articles/
     design:
       view: citation
-      columns: 2
+      columns: 1
 
   - block: collection
     content:
@@ -75,7 +75,7 @@ sections:
         link: preprints/
     design:
       view: citation
-      columns: 2
+      columns: 1
 
 
   # - block: collection
