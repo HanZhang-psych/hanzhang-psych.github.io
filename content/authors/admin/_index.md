@@ -145,18 +145,19 @@ languages:
   - name: Chinese
     percent: 100
 
-# # Awards.
-# #   Add/remove as many awards below as you like.
-# #   Only `title`, `awarder`, and `date` are required.
-# #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-# awards:
-#   - title: Neural Networks and Deep Learning
-#     url: https://www.coursera.org/learn/neural-networks-deep-learning
-#     date: '2023-11-25'
-#     awarder: Coursera
-#     icon: coursera
-#     summary: |
-#       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+awards:
+  - title: Understanding Takeover Performance in Urgent Situations during Level‑3 Driving
+    #url: https://www.coursera.org/learn/neural-networks-deep-learning
+    date: '2025'
+    awarder: UMTRI & Mcity Integration Fund, University of Michigan
+    role: PI
+    icon: hero/academic-cap
+    summary: |
+      This project seeks to combine eye movements, body positions, and cognitive assessments to develop a driver re-engagebility score that can predict driver's ability to take over vehicle control during urgent situations in level-3 autonomous driving. 
 #   - title: Blockchain Fundamentals
 #     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
 #     date: '2023-07-01'
