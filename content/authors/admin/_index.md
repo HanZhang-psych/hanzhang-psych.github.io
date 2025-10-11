@@ -152,7 +152,7 @@ languages:
 awards:
   - title: Understanding Takeover Performance in Urgent Situations during Level‑3 Driving
     #url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2025'
+    date: '2025-10'
     awarder: UMTRI & Mcity Integration Fund, University of Michigan
     role: PI
     icon: hero/academic-cap
