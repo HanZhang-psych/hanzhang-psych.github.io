@@ -15,13 +15,24 @@ design:
 sections:
   - block: collection
     content:
-      title: Publications
+      title: Journal Articles
       text: Select a publication type
       filters:
         folders:
-          - publication
+          - publication/journal-articles
     design:
       view: article-grid
       fill_image: false
-      columns: 2
+      columns: 1
+  - block: collection
+    content:
+      title: Preprints
+      text: Select a publication type
+      filters:
+        folders:
+          - publication/preprints
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 1
 ---
