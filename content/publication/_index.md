@@ -16,10 +16,9 @@ sections:
   - block: collection
     content:
       title: Journal Articles
-      text: Select a publication type
       filters:
         folders:
-          - publication/journal-articles/
+          - journal-articles/
     design:
       view: article-grid
       fill_image: false
@@ -27,10 +26,9 @@ sections:
   - block: collection
     content:
       title: Preprints
-      text: Select a publication type
       filters:
         folders:
-          - publication/preprints/
+          - preprints/
     design:
       view: article-grid
       fill_image: false
