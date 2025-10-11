@@ -1,5 +1,6 @@
 ---
 title: Preprints
+type: landing
 cms_exclude: true
 
 # View.

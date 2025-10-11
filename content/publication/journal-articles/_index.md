@@ -1,5 +1,6 @@
 ---
 title: Journal Articles
+type: landing
 cms_exclude: true
 
 # View.
