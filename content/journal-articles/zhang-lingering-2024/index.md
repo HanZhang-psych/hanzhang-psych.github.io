@@ -33,4 +33,5 @@ tags:
 - ADHD
 - reactive control
 title: 'Lingering on distraction: Examining distractor rejection in adults with ADHD'
+featured: true
 ---

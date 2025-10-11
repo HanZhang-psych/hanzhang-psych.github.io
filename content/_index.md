@@ -68,7 +68,7 @@ sections:
         folders:
           - preprints
         featured_only: false
-      count: 3
+      count: 4
       archive:
         enable: true
         text: See all preprints
