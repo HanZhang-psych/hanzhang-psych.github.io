@@ -1,6 +1,6 @@
 ---
 title: Introduction to Psychology
-summary: Introduction to Psychology
+summary: Winter 2018
 date: 2025-10-11
 type: docs
 math: false
@@ -15,4 +15,4 @@ As a gradute student instructor, I independently taught three one-hour classes p
 
 # Course syllabus
 
-{{< embed-pdf url="./content/teaching/psych111/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
+{{< embed-pdf url="/uploads/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
