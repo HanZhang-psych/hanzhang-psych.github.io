@@ -4,6 +4,10 @@ summary: My courses
 type: landing
 gallery: true
 
+design:
+  # Section spacing
+  spacing: '0rem'
+
 cascade:
   - _target:
       kind: page
