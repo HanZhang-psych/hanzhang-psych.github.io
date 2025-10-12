@@ -28,7 +28,7 @@ sections:
       view: article-grid
       columns: 2
       spacing:
-        padding: ['0rem', '0rem', '0rem', '0rem']
+        padding: ['0rem', '0rem', '1rem', '0rem']
 
   - block: markdown
     content:

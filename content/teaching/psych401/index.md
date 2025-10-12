@@ -1,5 +1,5 @@
 ---
-title: "Cross-cultural comparisons: Methods and applications"
+title: "Cross-Cultural Comparisons: Methods and Applications"
 summary: 2015 - 2019, China
 date: 2025-10-11
 type: docs
@@ -7,7 +7,7 @@ math: false
 tags:
   - Research Methods
 image:
-  caption: 'Cross-cultural comparisons: Methods and applications'
+  caption: "Cross-Cultural Comparisons: Methods and Applications"
 ---
 ## Description
 
