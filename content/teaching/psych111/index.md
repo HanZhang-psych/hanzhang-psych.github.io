@@ -15,4 +15,4 @@ As a gradute student instructor, I independently taught three one-hour classes p
 
 # Course syllabus
 
-{{< embed-pdf url="/uploads/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
+{{< embed-pdf url="/teaching/psych111/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
