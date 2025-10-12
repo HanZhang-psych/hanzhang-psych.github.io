@@ -11,7 +11,7 @@ image:
 ---
 ## Description
 
-As a gradute student instructor, I independently taught three one-hour classes per week to 50 students. The classes focused on reviewing and supplementing content delivered during the main lecture. 
+As a gradute student instructor, I independently taught three one-hour classes per week to 50 students. The classes focused on reviewing and supplementing content delivered during the main lecture. I also graded student essays and exams, held office hours, and coordinated with other members on the team during weekly meetings.
 
 ## Course syllabus
 

@@ -124,7 +124,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr (.Get 
     var selectedPageNum = parseInt("{{ .Get "renderPageNum" }}") || 1;
 
     // Loaded via <script> tag, create shortcut to access PDF.js exports.
-    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+    var pdfjsLib = window.pdfjsLib;
 
     // The workerSrc property shall be specified.
     if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
