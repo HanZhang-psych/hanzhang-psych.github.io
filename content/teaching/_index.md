@@ -15,6 +15,8 @@ sections:
     id: teaching
     content:
       title: Teaching
+      text: |
+        Below is a list of courses I have taught. Click on a specific course to see more information.
       filters:
         folders:
           - teaching
