@@ -2,6 +2,7 @@
 title: Teaching
 summary: My courses
 type: landing
+gallery: true
 
 cascade:
   - _target:

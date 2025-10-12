@@ -14,7 +14,7 @@ sections:
     content:
       title: Teaching
       text: |
-        As a doctoral student in Michigan, teaching and mentoring constitute an important part of our training. Below is a list of courses I have taught, either as a graduate student instructor or as a primary instructor.
+        Below is a list of courses I have taught, either as a graduate student instructor or as a primary instructor.
 
         **PSYCH 111:** Introduction to Psychology
 
