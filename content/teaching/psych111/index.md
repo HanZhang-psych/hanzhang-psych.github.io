@@ -9,10 +9,10 @@ tags:
 image:
   caption: 'Introduction to Psychology'
 ---
-# Description
+## Description
 
 As a gradute student instructor, I independently taught three one-hour classes per week to 50 students. The classes focused on reviewing and supplementing content delivered during the main lecture. 
 
-# Course syllabus
+## Course syllabus
 
 {{< embed-pdf url="/teaching/psych111/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
