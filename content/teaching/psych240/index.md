@@ -1,6 +1,6 @@
 ---
 title: Introduction to Cognitive Psychology
-summary: Winter 2018
+summary: Fall 2016
 date: 2025-10-11
 type: docs
 math: false
