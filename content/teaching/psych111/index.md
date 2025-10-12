@@ -9,4 +9,4 @@ tags:
 image:
   caption: 'Introduction to Psychology (PSYCH 111)'
 ---
-{{< embed-pdf url="/uploads/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
+{{< embed-pdf url="/content/teaching/psych111/Section syllabus_Psych 111_W18_Han Zhang.pdf" >}}
