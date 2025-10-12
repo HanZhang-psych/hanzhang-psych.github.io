@@ -1,5 +1,5 @@
 ---
-title: Cross-cultural comparisons: Methods and applications
+title: "Cross-cultural comparisons: Methods and applications"
 summary: 2015 - 2019, China
 date: 2025-10-11
 type: docs
