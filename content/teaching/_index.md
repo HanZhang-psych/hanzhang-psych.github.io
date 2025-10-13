@@ -42,7 +42,10 @@ sections:
   - block: markdown
     content:
       text: |
-        {{< nanogallery directory="media/mentees/*" >}}
+        {{< nanogallery directory="media/mentees/*" 
+        label_alex2019="Alex at APS 2019"
+        label_ray2016="Ray at APS 2016"
+        >}}
     design:
       spacing:
         padding: ['0rem', '0rem', '0rem', '0rem']
