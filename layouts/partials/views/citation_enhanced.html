@@ -1,7 +1,15 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
+{{/* Initialize counter if not exists */}}
+{{ if not $.Scratch.Get "citation_counter" }}
+  {{ $.Scratch.Set "citation_counter" 0 }}
+{{ end }}
+{{ $.Scratch.Add "citation_counter" 1 }}
+{{ $citation_number := $.Scratch.Get "citation_counter" }}
+
 <div class="pub-list-item view-citation" style="margin-bottom: 0rem">
+  <span class="citation-number" style="font-weight: bold; margin-right: 0.5rem;">[{{ $citation_number }}]</span>
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   {{/* APA Style */}}
