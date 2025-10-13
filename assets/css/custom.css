@@ -40,3 +40,8 @@
     padding-left: 1rem;
   }
 }
+
+/* Citation counter styling */
+.citation-counter::before {
+  content: counter(citation-counter);
+}
