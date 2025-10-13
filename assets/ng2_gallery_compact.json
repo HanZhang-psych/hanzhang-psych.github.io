@@ -1,12 +1,13 @@
 {
   "thumbnailHeight": 300,
-  "thumbnailWidth": "auto",
+  "thumbnailWidth": 500,
   "thumbnailBorderVertical": 0,
   "thumbnailBorderHorizontal": 0,
   "thumbnailLabel": {
     "position": "overImageOnBottom",
     "display": true,
-    "hideIcons": true
+    "hideIcons": true,
+    "title": "%filenameNoExt"
   },
   "thumbnailAlignment": "center",
   "thumbnailGutterWidth": 3,
@@ -14,7 +15,8 @@
   "thumbnailDisplayTransition": "scaleUp",
   "thumbnailDisplayTransitionDuration": 300,
   "thumbnailDisplayInterval": 15,
-  "galleryDisplayMode": "fullContent",
+  "galleryDisplayMode": "rows",
+  "galleryMaxRows": 2,
   "gallerySorting": "random",
   "thumbnailHoverEffect2": "scale120|borderLighter",
   "thumbnailHoverEffect2Duration": 300,
