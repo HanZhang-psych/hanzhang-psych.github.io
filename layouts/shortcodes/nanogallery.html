@@ -14,6 +14,7 @@
     {{ $.Scratch.Set "thumbnail" ($image.Resize "x800 q90") }}
     {{ $imageName := $image.Name }}
     {{ $caption := index $captions $imageName }}
+    <!-- Debug: Image name: {{ $imageName }} -->
     <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}">{{ $caption }}</a>
     {{ end }}
 </div>
