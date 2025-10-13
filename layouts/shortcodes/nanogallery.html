@@ -11,7 +11,7 @@
 
 <div data-nanogallery2="{{$nanogallery2_settings}}">
     {{ range $index, $image := sort (resources.Match (.Get "directory")) }}
-    {{ $.Scratch.Set "thumbnail" ($image.Resize "x300 q90") }}
+    {{ $.Scratch.Set "thumbnail" ($image.Resize "x100 q90") }}
     {{ $imageName := $image.Name }}
     {{ $caption := index $captions $imageName | default (path.Split $imageName).File }}
     <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" data-ngdesc="{{ $caption }}" title="{{ $caption }}">{{ $caption }}</a>
