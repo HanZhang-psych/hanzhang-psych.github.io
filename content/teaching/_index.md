@@ -38,5 +38,12 @@ sections:
     design:
       spacing:
         padding: ['0rem', '0rem', '0rem', '0rem']
+
+  - block: markdown
+    content:
+      text: |
+        {{< nanogallery directory="media/mentees/*" >}}
+    design:
+      spacing:
+        padding: ['0rem', '0rem', '0rem', '0rem']
 ---
-{{< nanogallery directory="media/mentees/*" >}}
