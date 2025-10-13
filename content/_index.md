@@ -61,7 +61,7 @@ sections:
       view: citation
       columns: 1
       spacing:
-        padding: ['0rem', '0rem', '0rem', '0rem']
+        padding: ['2rem', '0rem', '2rem', '0rem']
 
   - block: collection
     content:
@@ -79,7 +79,7 @@ sections:
       view: citation
       columns: 1
       spacing:
-        padding: ['0rem', '0rem', '0rem', '0rem']
+        padding: ['0rem', '0rem', '2rem', '0rem']
 
   # - block: collection
   #   id: talks
