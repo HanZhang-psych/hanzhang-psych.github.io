@@ -14,7 +14,7 @@
   "thumbnailDisplayTransition": "scaleUp",
   "thumbnailDisplayTransitionDuration": 300,
   "thumbnailDisplayInterval": 15,
-  "galleryDisplayMode": "pagination",
+  "galleryDisplayMode": "rows",
   "galleryMaxRows": 2,
   "gallerySorting": "random",
   "thumbnailHoverEffect2": "scale120|borderLighter",
