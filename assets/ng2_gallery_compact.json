@@ -1,5 +1,5 @@
 {
-  "thumbnailHeight": 300,
+  "thumbnailHeight": 250,
   "thumbnailWidth": "auto",
   "thumbnailBorderVertical": 0,
   "thumbnailBorderHorizontal": 0,
@@ -15,7 +15,7 @@
   "thumbnailDisplayTransitionDuration": 300,
   "thumbnailDisplayInterval": 15,
   "galleryDisplayMode": "rows",
-  "galleryMaxRows": 2,
+  "galleryMaxRows": 3,
   "gallerySorting": "random",
   "thumbnailHoverEffect2": "scale120|borderLighter",
   "thumbnailHoverEffect2Duration": 300,
