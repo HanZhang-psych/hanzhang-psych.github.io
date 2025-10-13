@@ -2,7 +2,7 @@
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
 {{/* Initialize counter if not exists */}}
-{{ if not $.Scratch.Get "citation_counter" }}
+{{ if not ($.Scratch.Get "citation_counter") }}
   {{ $.Scratch.Set "citation_counter" 0 }}
 {{ end }}
 {{ $.Scratch.Add "citation_counter" 1 }}
