@@ -1,6 +1,6 @@
 {
-  "thumbnailHeight": "auto",
-  "thumbnailWidth": 250,
+  "thumbnailHeight": 300,
+  "thumbnailWidth": 400,
   "thumbnailBorderVertical": 0,
   "thumbnailBorderHorizontal": 0,
   "thumbnailLabel": {
@@ -14,6 +14,8 @@
   "thumbnailDisplayTransition": "scaleUp",
   "thumbnailDisplayTransitionDuration": 300,
   "thumbnailDisplayInterval": 15,
+  "galleryDisplayMode": "pagination",
+  "galleryMaxRows": 2,
   "gallerySorting": "random",
   "thumbnailHoverEffect2": "scale120|borderLighter",
   "thumbnailHoverEffect2Duration": 300,
