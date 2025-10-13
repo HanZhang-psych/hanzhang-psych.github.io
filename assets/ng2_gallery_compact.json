@@ -6,8 +6,7 @@
   "thumbnailLabel": {
     "position": "overImageOnBottom",
     "display": true,
-    "hideIcons": true,
-    "title": "%filenameNoExt"
+    "hideIcons": true
   },
   "thumbnailAlignment": "center",
   "thumbnailGutterWidth": 3,
