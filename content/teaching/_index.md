@@ -43,7 +43,7 @@ sections:
     content:
       text: |
         {{< nanogallery directory="media/mentees/*" 
-        label_alex2019="Alex at APS 2019"
+        label_alex2019.png="Alex at APS 2019"
         label_ray2016="Ray at APS 2016"
         >}}
     design:
