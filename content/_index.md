@@ -60,6 +60,8 @@ sections:
     design:
       view: citation
       columns: 1
+      spacing:
+        padding: ['0rem', '0rem', '0rem', '0rem']
 
   - block: collection
     content:
@@ -76,7 +78,8 @@ sections:
     design:
       view: citation
       columns: 1
-
+      spacing:
+        padding: ['0rem', '0rem', '0rem', '0rem']
 
   # - block: collection
   #   id: talks
