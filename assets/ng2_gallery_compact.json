@@ -1,6 +1,6 @@
 {
   "thumbnailHeight": 300,
-  "thumbnailWidth": 400,
+  "thumbnailWidth": "auto",
   "thumbnailBorderVertical": 0,
   "thumbnailBorderHorizontal": 0,
   "thumbnailLabel": {
