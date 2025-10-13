@@ -1,19 +1,9 @@
 {{ $nanogallery2_settings := resources.Get "ng2_gallery_compact.json" | transform.Unmarshal | jsonify}}
 
-{{/* Define caption mapping for mentee photos */}}
-{{ $captions := dict 
-    "alex2019.png" "Alex at APS 2019"
-    "chuyan_aps.png" "Chuyan (R) at APS 2018"
-    "nicole_madelyn_urop.png" "Nicole (R) and Madelyn (L) at 2018 UROP symposium"
-    "ray2016.png" "Ray (R) and I (L) at APS 2016"
-    "yungi_urop.png" "Yun Gi at 2019 UROP symposium"
-}}
-
 <div data-nanogallery2="{{$nanogallery2_settings}}">
     {{ range $index, $image := sort (resources.Match (.Get "directory")) }}
     {{ $.Scratch.Set "thumbnail" ($image.Resize "x800 q90") }}
-    {{ $imageName := $image.Name }}
-    {{ $caption := index $captions $imageName | default (path.Split $imageName).File }}
-    <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" data-ngdesc="{{ $caption }}" title="{{ $caption }}">{{ $caption }}</a>
+    {{ $imageName := (path.Split $image.Name).File }}
+    <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}" data-ngdesc="{{ $imageName }}" title="{{ $imageName }}">{{ $imageName }}</a>
     {{ end }}
 </div>
