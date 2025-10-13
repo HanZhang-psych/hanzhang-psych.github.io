@@ -1,19 +1,27 @@
-{{ $nanogallery2_settings := resources.Get "ng2_gallery_compact.json" | transform.Unmarshal | jsonify}}
+{{/* Load nanogallery2 settings JSON from /assets and stringify it */}}
+{{ $nanogallery2_settings := resources.Get "ng2_gallery_compact.json" | transform.Unmarshal | jsonify }}
 
 {{/* Define caption mapping for mentee photos */}}
 {{ $captions := dict 
-    "alex_aps_2019" "Alex Fischer at APS 2019"
-    "chuyan_aps_2018" "Chuyan Qu (R) at APS 2018"
-    "madelyn_nicole_urop" "Madelyn Evans (L) and Nicole Fraija (R) at UROP symposium"
-    "ray_aps_2016" "Ray Cleveland (R) and I (L) at APS 2016"
-    "yun-gi_urop" "Yun-Gi Hwang at UROP symposium"
+  "alex_aps_2019.png"        "Alex Fischer at APS 2019"
+  "chuyan_aps_2018.png"      "Chuyan Qu (R) at APS 2018"
+  "madelyn_nicole_urop.png"  "Madelyn Evans (L) and Nicole Fraija (R) at UROP symposium"
+  "ray_aps_2016.png"         "Ray Cleveland (R) and I (L) at APS 2016"
+  "yun-gi_urop.png"          "Yun-Gi Hwang at UROP symposium"
 }}
 
-<div data-nanogallery2="{{$nanogallery2_settings}}">
-    {{ range $index, $image := sort (resources.Match (.Get "directory")) }}
+<div data-nanogallery2="{{ $nanogallery2_settings }}">
+  {{ range $index, $image := sort (resources.Match (.Get "directory")) }}
+    {{/* Prepare thumbnail */}}
     {{ $.Scratch.Set "thumbnail" ($image.Resize "x800 q90") }}
+
+    {{/* Pick caption: mapped value if present, else filename without extension */}}
     {{ $imageName := $image.Name }}
-    {{ $caption := index $captions $imageName | default (path.Split $imageName).File }}
-    <a href="{{ $image.RelPermalink }}" data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}">{{ $caption }}</a>
-    {{ end }}
+    {{ $fallback  := path.BaseName $imageName }}
+    {{ $caption   := default $fallback (index $captions $imageName) }}
+
+    <a href="{{ $image.RelPermalink }}"
+       data-ngthumb="{{ ($.Scratch.Get "thumbnail").RelPermalink }}"
+       aria-label="{{ $caption }}">{{ $caption }}</a>
+  {{ end }}
 </div>
