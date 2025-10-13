@@ -1,5 +1,5 @@
 {
-  "thumbnailHeight": 400,
+  "thumbnailHeight": 300,
   "thumbnailWidth": 400,
   "thumbnailBorderVertical": 0,
   "thumbnailBorderHorizontal": 0,
@@ -14,12 +14,10 @@
   "thumbnailDisplayTransition": "scaleUp",
   "thumbnailDisplayTransitionDuration": 300,
   "thumbnailDisplayInterval": 15,
-  "galleryDisplayMode": "justified",
+  "galleryDisplayMode": "rows",
   "galleryMaxRows": 0,
-  "itemsPerRow": 0,
+  "itemsPerRow": 2,
   "gallerySorting": "random",
-  "justifiedHeight": 200,
-  "justifiedLastRow": "nojustify",
   "thumbnailHoverEffect2": "scale120|borderLighter",
   "thumbnailHoverEffect2Duration": 300,
   "viewerTools": {
