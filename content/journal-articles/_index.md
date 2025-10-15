@@ -2,7 +2,7 @@
 title: Journal Articles
 
 # View.
-view: citation
+view: citation_enhanced
 
 # Optional header image (relative to `static/media/` folder).
 banner:
