@@ -68,39 +68,40 @@ sections:
 
   - block: collection
     content:
-      title: Featured Publications
+      title: Featured Papers
       filters:
         folders:
           - journal-articles
+          - preprints
         featured_only: true
       count: 6
       archive:
         enable: true
-        text: See all journal articles
-        link: journal-articles/
+        text: See all publications
+        link: publication/
     design:
       view: featured-publication
       columns: 1
       spacing:
         padding: ['2rem', '0rem', '2rem', '0rem']
 
-  - block: collection
-    content:
-      title: Selected Preprints
-      filters:
-        folders:
-          - preprints
-        featured_only: false
-      count: 4
-      archive:
-        enable: true
-        text: See all preprints
-        link: preprints/
-    design:
-      view: citation
-      columns: 1
-      spacing:
-        padding: ['0rem', '0rem', '2rem', '0rem']
+  # - block: collection
+  #   content:
+  #     title: Selected Preprints
+  #     filters:
+  #       folders:
+  #         - preprints
+  #       featured_only: false
+  #     count: 4
+  #     archive:
+  #       enable: true
+  #       text: See all preprints
+  #       link: preprints/
+  #   design:
+  #     view: citation
+  #     columns: 1
+  #     spacing:
+  #       padding: ['0rem', '0rem', '2rem', '0rem']
 
   # - block: collection
   #   id: talks
