@@ -1,5 +1,7 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
+{{ $resource := partial "functions/get_featured_image.html" $item }}
+{{ $anchor := $item.Params.image.focal_point | default "Center" }}
 
 {{ $authors := slice }}
 {{ range $item.Params.authors }}
@@ -10,33 +12,47 @@
   {{ $authors = $authors | append $author }}
 {{ end }}
 
-<article class="featured-publication-item">
-  {{ with $authors }}
-  <div class="featured-publication-authors">
-    {{ delimit . ", " }}
-  </div>
+<article class="featured-publication-item{{ if $resource }} has-thumbnail{{ end }}">
+  {{ with $resource }}
+  <a class="featured-publication-thumbnail" href="{{ $item.RelPermalink }}" aria-label="{{ $item.Title | plainify }}">
+    {{ if ne .MediaType.SubType "svg" }}
+      {{ $image := .Fill (printf "360x240 %s" $anchor) }}
+      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy" alt="{{ $item.Title | plainify }}">
+    {{ else }}
+      <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ $item.Title | plainify }}">
+    {{ end }}
+  </a>
   {{ end }}
 
-  <div class="featured-publication-meta">
-    <span>{{ $item.Date.Format "January 2006" }}</span>
-    {{ with $item.Params.publication }}
-      <span>{{ . | markdownify }}</span>
+  <div class="featured-publication-body">
+    {{ with $authors }}
+    <div class="featured-publication-authors">
+      {{ delimit . ", " }}
+    </div>
+    {{ end }}
+
+    <div class="featured-publication-meta">
+      <span>{{ $item.Date.Format "January 2006" }}</span>
+      {{ with $item.Params.publication }}
+        <span>{{ . | markdownify }}</span>
+      {{ end }}
+    </div>
+
+    <h3 class="featured-publication-title">
+      <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+    </h3>
+
+    {{ with $item.Params.abstract }}
+    <p class="featured-publication-abstract">
+      {{ . | plainify | truncate 520 }}
+    </p>
+    {{ end }}
+
+    {{ if $has_attachments }}
+    <div class="featured-publication-links">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
     {{ end }}
   </div>
-
-  <h3 class="featured-publication-title">
-    <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
-  </h3>
-
-  {{ with $item.Params.abstract }}
-  <p class="featured-publication-abstract">
-    {{ . | plainify | truncate 520 }}
-  </p>
-  {{ end }}
-
-  {{ if $has_attachments }}
-  <div class="featured-publication-links">
-    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-  </div>
-  {{ end }}
 </article>
