@@ -68,7 +68,7 @@ sections:
 
   - block: collection
     content:
-      title: Featured Papers
+      title: Featured Work
       filters:
         folders:
           - journal-articles
