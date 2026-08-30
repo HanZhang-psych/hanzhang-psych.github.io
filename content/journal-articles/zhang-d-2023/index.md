@@ -24,6 +24,7 @@ authors:
 - John Jonides
 date: '2023-10-01'
 doi: 10.1371/journal.pone.0292215
+featured: true
 links:
 - name: URL
   url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292215
@@ -42,5 +43,4 @@ tags:
 - Lectures
 title: A d factor? Understanding trait distractibility and its relationships with
   ADHD symptomatology and hyperfocus
-featured: true
 ---

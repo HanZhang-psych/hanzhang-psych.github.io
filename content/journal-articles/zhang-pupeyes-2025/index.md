@@ -21,6 +21,7 @@ authors:
 - John Jonides
 date: '2025-10-01'
 doi: 10.3758/s13428-025-02830-z
+featured: true
 publication: '*Behavior Research Methods*'
 publication_types:
 - article-journal
@@ -34,5 +35,4 @@ tags:
 - pupillometry
 - Python
 title: 'PupEyes: An Interactive Python Library for Eye Movement Data Processing'
-featured: true
 ---
