@@ -19,6 +19,7 @@ authors:
 - Kai S. Cortina
 date: '2020-01-01'
 doi: 10.1002/acp.3632
+featured: false
 links:
 - name: URL
   url: https://onlinelibrary.wiley.com/doi/abs/10.1002/acp.3632
@@ -33,5 +34,4 @@ tags:
 - growth curve analysis
 - video lecture
 title: 'Wandering eyes: Eye movements during mind wandering in video lectures'
-featured: false
 ---

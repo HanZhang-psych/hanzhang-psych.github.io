@@ -19,6 +19,7 @@ authors:
 - John Jonides
 date: '2024-01-01'
 doi: 10.1080/13506285.2024.2328379
+featured: true
 links:
 - name: URL
   url: https://doi.org/10.1080/13506285.2024.2328379
@@ -33,5 +34,4 @@ tags:
 - ADHD
 - reactive control
 title: 'Lingering on distraction: Examining distractor rejection in adults with ADHD'
-featured: true
 ---

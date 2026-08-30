@@ -22,6 +22,7 @@ authors:
 - John Jonides
 date: '2025-04-01'
 doi: 10.1037/xhp0001275
+featured: true
 publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
 publication_types:
 - article-journal
@@ -31,5 +32,4 @@ tags:
 - Visual Attention
 - Attentional Capture
 title: 'Attentional capture by abrupt onsets: Foundations and emerging issues'
-featured: true
 ---

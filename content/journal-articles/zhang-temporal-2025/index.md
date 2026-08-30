@@ -28,6 +28,7 @@ authors:
 - John Jonides
 date: '2025-04-01'
 doi: 10.1037/xge0001661
+featured: true
 publication: '*Journal of Experimental Psychology: General*'
 publication_types:
 - article-journal
@@ -40,5 +41,4 @@ tags:
 - Attentional Capture
 - Attentional Bias
 title: The temporal dynamics of visual attention
-featured: true
 ---
