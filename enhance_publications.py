@@ -1,6 +1,10 @@
-import os
 import yaml
 from pathlib import Path
+
+PUBLICATION_DIRS = [
+    Path('content/journal-articles'),
+    Path('content/preprints'),
+]
 
 def convert_author_names(authors_list):
     """Convert 'Han Zhang' to 'admin' for Hugo Blox author highlighting, with special handling for shared first authorship"""
@@ -36,48 +40,49 @@ def write_publication_file(data, body, index_file):
 
 def enhance_publication_files():
     """Enhance all publication markdown files with author highlighting"""
-    pub_dir = Path('content/publication')
-    if not pub_dir.exists():
-        print("No publication directory found!")
+    existing_dirs = [pub_dir for pub_dir in PUBLICATION_DIRS if pub_dir.exists()]
+    if not existing_dirs:
+        print("No publication directories found!")
         return
     
     enhanced_count = 0
     
     # Process all markdown files recursively
-    for markdown_file in pub_dir.rglob('index.md'):
-        try:
-            # Read the markdown file
-            with open(markdown_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            # Split front matter and body
-            if content.startswith('---'):
-                parts = content.split('---', 2)
-                if len(parts) >= 3:
-                    front_matter = parts[1]
-                    body = parts[2] if len(parts) > 2 else ''
-                    
-                    # Parse YAML front matter
-                    try:
-                        data = yaml.safe_load(front_matter)
+    for pub_dir in existing_dirs:
+        for markdown_file in pub_dir.rglob('index.md'):
+            try:
+                # Read the markdown file
+                with open(markdown_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                # Split front matter and body
+                if content.startswith('---'):
+                    parts = content.split('---', 2)
+                    if len(parts) >= 3:
+                        front_matter = parts[1]
+                        body = parts[2] if len(parts) > 2 else ''
                         
-                        # Convert author names for highlighting
-                        if 'authors' in data:
-                            data['authors'] = convert_author_names(data['authors'])
+                        # Parse YAML front matter
+                        try:
+                            data = yaml.safe_load(front_matter)
                             
-                            # Write back the file
-                            write_publication_file(data, body, markdown_file)
-                             
-                            enhanced_count += 1
-                            print(f"Enhanced authors: {markdown_file.parent.name}")
-                        else:
-                            print(f"No authors field found in: {markdown_file.parent.name}")
-                    
-                    except yaml.YAMLError as e:
-                        print(f"YAML error in {markdown_file}: {e}")
-        
-        except Exception as e:
-            print(f"Error processing {markdown_file}: {e}")
+                            # Convert author names for highlighting
+                            if 'authors' in data:
+                                data['authors'] = convert_author_names(data['authors'])
+                                
+                                # Write back the file
+                                write_publication_file(data, body, markdown_file)
+                                 
+                                enhanced_count += 1
+                                print(f"Enhanced authors: {markdown_file.parent.name}")
+                            else:
+                                print(f"No authors field found in: {markdown_file.parent.name}")
+                        
+                        except yaml.YAMLError as e:
+                            print(f"YAML error in {markdown_file}: {e}")
+            
+            except Exception as e:
+                print(f"Error processing {markdown_file}: {e}")
     
     print(f"Enhanced {enhanced_count} publications with author highlighting!")
 
