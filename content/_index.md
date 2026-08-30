@@ -51,15 +51,19 @@ sections:
       title: Recent Updates
       subtitle: ''
       text: |-
-        - **October 2025:** [_PupEyes: An Interactive Python Library for Eye Movement Data Processing_](/journal-articles/zhang-pupeyes-2025/) was published in *Behavior Research Methods*.
-        - **October 2025:** Launched a UMTRI and Mcity Integration Fund project on takeover performance in urgent Level-3 driving situations.
-        - **July 2025:** Posted a preprint on how irrelevant speech affects reading eye movements: [_I'm Trying to Read Here!_](/preprints/zhang-im-2025/)
-        - **June 2025:** Started as an Assistant Research Scientist at the University of Michigan Transportation Research Institute.
-        - **April 2025:** [_The temporal dynamics of visual attention_](/journal-articles/zhang-temporal-2025/) was published in *Journal of Experimental Psychology: General*.
+        - **Aug 2026:** Student mentee Nithya Rajan's poster _Can Machine Learning Predict L3 Driving Takeover Performance from Gaze and Cognitive Traits?_ won the 1st place in the UMTRI Poster Competition. Well done, Nithya! 🎉
+        - **Aug 2026:** Student mentee Bianca Done's poster _Who Can Re-Enter the Loop? A Scoping Review_ won the 2nd place in the UMTRI Poster Competition. Congratulations, Bianca! 🎉
+        - **Aug 2026:** Student mentee Stefanie Schneider presented her poster _Who Can Reengage Better During Level-3 Automated Driving?_ at the SURE symposium. Great work, Stefanie! 🎉
+        - **Aug 2026:** Paper "Does Global Slowing Explain Age Effects in Inhibitory Control?" accepted by Psychological Science! :tada: Shared first authorship with Jacob Sellers.
+        - **July 2026:** Helped organiz a session named _SAE Level 3 Features: Coming Soon to a Vehicle Owned by You_ at ATS 2026.
+        - **May 2026:** Gave an invited talk at Mcity's annual research review: Measurement of Drivers' Re-Engagement Readiness. You can watch it [here](https://www.youtube.com/watch?v=0DVUirUmZik)!
+        - **Apr 2026:** Gave an invited talk at Lawrence Tech University: [What can we Learn from Eye Movements?](https://ltu.edu/academics-calendar/coas-seminar-series-april-2026/)
+        - **Apr 2026:** First-author paper [I’m trying to read here! How does irrelevant speech affect how you read?](https://link.springer.com/article/10.1007/s10339-026-01346-4) accepted at _Cognitive Processing_!
+
     design:
-      columns: '1'
+      columns: '2'
       spacing:
-        padding: ['2rem', '0rem', '1rem', '0rem']
+        padding: ['2rem', '0rem', '2rem', '0rem']
 
   - block: collection
     content:
