@@ -1,0 +1,42 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+{{ $authors := slice }}
+{{ range $item.Params.authors }}
+  {{ $author := . }}
+  {{ with site.GetPage (printf "authors/%s" .) }}
+    {{ $author = .Title }}
+  {{ end }}
+  {{ $authors = $authors | append $author }}
+{{ end }}
+
+<article class="featured-publication-item">
+  {{ with $authors }}
+  <div class="featured-publication-authors">
+    {{ delimit . ", " }}
+  </div>
+  {{ end }}
+
+  <div class="featured-publication-meta">
+    <span>{{ $item.Date.Format "January 2006" }}</span>
+    {{ with $item.Params.publication }}
+      <span>{{ . | markdownify }}</span>
+    {{ end }}
+  </div>
+
+  <h3 class="featured-publication-title">
+    <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+  </h3>
+
+  {{ with $item.Params.abstract }}
+  <p class="featured-publication-abstract">
+    {{ . | plainify | truncate 520 }}
+  </p>
+  {{ end }}
+
+  {{ if $has_attachments }}
+  <div class="featured-publication-links">
+    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+  </div>
+  {{ end }}
+</article>
