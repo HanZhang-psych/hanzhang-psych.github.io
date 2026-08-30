@@ -45,3 +45,30 @@
 .citation-counter::before {
   content: counter(citation-counter);
 }
+
+/* Recent Updates homepage block */
+.recent-updates .max-w-prose {
+  max-width: 72rem;
+}
+
+.recent-updates .prose {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.recent-updates .prose ul {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.recent-updates .prose li {
+  break-inside: avoid;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .recent-updates .prose ul {
+    columns: 1;
+  }
+}
