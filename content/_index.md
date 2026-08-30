@@ -54,11 +54,11 @@ sections:
         - **Aug 2026:** Student mentee Nithya Rajan's poster _Can Machine Learning Predict L3 Driving Takeover Performance from Gaze and Cognitive Traits?_ won the 1st place in the UMTRI Poster Competition. Well done, Nithya! 🎉
         - **Aug 2026:** Student mentee Bianca Done's poster _Who Can Re-Enter the Loop? A Scoping Review_ won the 2nd place in the UMTRI Poster Competition. Congratulations, Bianca! 🎉
         - **Aug 2026:** Student mentee Stefanie Schneider presented her poster _Who Can Reengage Better During Level-3 Automated Driving?_ at the SURE symposium. Great work, Stefanie! 🎉
-        - **Aug 2026:** Paper "Does Global Slowing Explain Age Effects in Inhibitory Control?" accepted by Psychological Science! :tada: Shared first authorship with Jacob Sellers.
+        - **Aug 2026:** Paper "Does Global Slowing Explain Age Effects in Inhibitory Control?" accepted by _Psychological Science_! :tada: Shared first authorship with Jacob Sellers.
         - **July 2026:** Helped organize a session named _SAE Level 3 Features: Coming Soon to a Vehicle Owned by You_ at ATS 2026.
         - **May 2026:** Gave an invited talk at Mcity's annual research review: Measurement of Drivers' Re-Engagement Readiness. You can watch it [here](https://www.youtube.com/watch?v=0DVUirUmZik)!
         - **Apr 2026:** Gave an invited talk at Lawrence Tech University: [What can we Learn from Eye Movements?](https://ltu.edu/academics-calendar/coas-seminar-series-april-2026/)
-        - **Apr 2026:** First-author paper [I’m trying to read here! How does irrelevant speech affect how you read?](https://link.springer.com/article/10.1007/s10339-026-01346-4) accepted at _Cognitive Processing_!
+        - **Apr 2026:** First-author paper [I’m trying to read here! How does irrelevant speech affect how you read?](https://link.springer.com/article/10.1007/s10339-026-01346-4) accepted by _Cognitive Processing_!
 
     design:
       css_class: recent-updates
