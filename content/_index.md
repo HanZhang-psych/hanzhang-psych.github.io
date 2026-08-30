@@ -45,6 +45,22 @@ sections:
   #   design:
   #     columns: '1'
 
+  - block: markdown
+    id: updates
+    content:
+      title: Recent Updates
+      subtitle: ''
+      text: |-
+        - **October 2025:** [_PupEyes: An Interactive Python Library for Eye Movement Data Processing_](/journal-articles/zhang-pupeyes-2025/) was published in *Behavior Research Methods*.
+        - **October 2025:** Launched a UMTRI and Mcity Integration Fund project on takeover performance in urgent Level-3 driving situations.
+        - **July 2025:** Posted a preprint on how irrelevant speech affects reading eye movements: [_I'm Trying to Read Here!_](/preprints/zhang-im-2025/)
+        - **June 2025:** Started as an Assistant Research Scientist at the University of Michigan Transportation Research Institute.
+        - **April 2025:** [_The temporal dynamics of visual attention_](/journal-articles/zhang-temporal-2025/) was published in *Journal of Experimental Psychology: General*.
+    design:
+      columns: '1'
+      spacing:
+        padding: ['2rem', '0rem', '1rem', '0rem']
+
   - block: collection
     content:
       title: Selected Publications
