@@ -2,8 +2,7 @@
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 {{ $year_or_status := partial "functions/publication_year_or_status" $item }}
 
-<div class="pub-list-item view-citation" style="margin-bottom: 0rem; counter-increment: citation-counter;">
-  <span class="citation-number" style="font-weight: bold; margin-right: 0.5rem;">[<span class="citation-counter"></span>]</span>
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   {{/* APA Style */}}

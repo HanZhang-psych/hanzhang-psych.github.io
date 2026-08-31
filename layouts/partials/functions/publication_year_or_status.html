@@ -1,0 +1,2 @@
+{{ $item := . }}
+{{ return ($item.Params.publication_status | default ($item.Date.Format "2006")) }}
