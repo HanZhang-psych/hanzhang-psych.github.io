@@ -19,6 +19,7 @@ authors:
 - John Jonides
 date: '2026-01-01'
 doi: 10.3758/s13428-025-02830-z
+featured: true
 links:
 - name: URL
   url: https://doi.org/10.3758/s13428-025-02830-z
@@ -33,5 +34,4 @@ tags:
 - Eye-tracking
 - Python
 title: 'PupEyes: An interactive Python library for eye movement data processing'
-featured: true
 ---
