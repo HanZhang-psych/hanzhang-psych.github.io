@@ -1,6 +1,6 @@
 {
-  "thumbnailHeight": 300,
-  "thumbnailWidth": 500,
+  "thumbnailHeight": 260,
+  "thumbnailWidth": 360,
   "thumbnailBorderVertical": 0,
   "thumbnailBorderHorizontal": 0,
   "thumbnailLabel": {
@@ -14,9 +14,8 @@
   "thumbnailDisplayTransition": "scaleUp",
   "thumbnailDisplayTransitionDuration": 300,
   "thumbnailDisplayInterval": 15,
-  "galleryDisplayMode": "rows",
-  "galleryMaxRows": 2,
-  "gallerySorting": "random",
+  "galleryDisplayMode": "fullContent",
+  "gallerySorting": "titleAsc",
   "thumbnailHoverEffect2": "scale120|borderLighter",
   "thumbnailHoverEffect2Duration": 300,
   "viewerTools": {
