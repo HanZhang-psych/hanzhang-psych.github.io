@@ -206,3 +206,18 @@
     max-width: 22rem;
   }
 }
+
+/* Mentee gallery matrix */
+.mentee-gallery-section .max-w-prose {
+  width: 100%;
+  max-width: 72rem;
+}
+
+.mentee-gallery-section .prose {
+  width: 100%;
+  max-width: 72rem;
+}
+
+.mentee-gallery-section [data-nanogallery2] {
+  width: 100%;
+}

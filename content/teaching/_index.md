@@ -44,6 +44,7 @@ sections:
       text: |
         {{< nanogallery directory="media/mentees/*" >}}
     design:
+      css_class: mentee-gallery-section
       spacing:
         padding: ['0rem', '0rem', '0rem', '0rem']
 ---
