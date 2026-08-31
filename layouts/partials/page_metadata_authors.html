@@ -1,0 +1,30 @@
+{{/* Display author list with local support for highlighting shared-first author names such as "Han Zhang*". */}}
+
+{{- $taxonomy := "authors" }}
+{{ if .Param $taxonomy }}
+  {{ range $index, $value := (.GetTerms $taxonomy) }}
+    {{- $author_name := .LinkTitle -}}
+    {{- $author_name_base := replaceRE "\\*$" "" $author_name -}}
+    {{- $highlight_name := or (.Page.Params.highlight_name | default false) (eq $author_name_base "Han Zhang") -}}
+    {{- $author_url := .RelPermalink -}}
+    {{- if eq $author_name_base "Han Zhang" -}}
+      {{- with site.GetPage "authors/admin" -}}
+        {{- $author_url = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if gt $index 0 }}, {{ end -}}
+    <span {{ if $highlight_name }}class="font-bold"{{end}}>
+      {{- if $author_url -}}
+        <a href="{{$author_url}}">{{.LinkTitle}}</a>
+      {{- else -}}
+        {{ .LinkTitle }}
+      {{- end -}}
+    </span>
+    {{- if isset $.Params "author_notes" -}}
+      {{- with (index $.Params.author_notes $index) -}}
+        <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="{{.}}"></i>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

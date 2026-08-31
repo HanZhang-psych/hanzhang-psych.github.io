@@ -5,11 +5,13 @@
 
 {{ $authors := slice }}
 {{ range $item.Params.authors }}
-  {{ $author := . }}
-  {{ with site.GetPage (printf "authors/%s" .) }}
-    {{ $author = .Title }}
+  {{ $author_raw := . }}
+  {{ $author_base := replaceRE "\\*$" "" $author_raw }}
+  {{ $author_label := $author_raw }}
+  {{ if eq $author_base "admin" }}
+    {{ $author_label = replace $author_raw "admin" "Han Zhang" }}
   {{ end }}
-  {{ $authors = $authors | append $author }}
+  {{ $authors = $authors | append (dict "label" $author_label "highlight" (or (eq $author_base "Han Zhang") (eq $author_base "admin"))) }}
 {{ end }}
 
 <article class="featured-publication-item{{ if $resource }} has-thumbnail{{ end }}">
@@ -28,7 +30,10 @@
   <div class="featured-publication-body">
     {{ with $authors }}
     <div class="featured-publication-authors">
-      {{ delimit . ", " }}
+      {{ range $index, $author := . }}
+        {{- if gt $index 0 }}, {{ end -}}
+        <span{{ if $author.highlight }} class="font-bold"{{ end }}>{{ $author.label }}</span>
+      {{ end }}
     </div>
     {{ end }}
 
