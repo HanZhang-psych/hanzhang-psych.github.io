@@ -5,20 +5,24 @@
   {{ range $index, $value := (.GetTerms $taxonomy) }}
     {{- $author_name := .LinkTitle -}}
     {{- $author_name_base := replaceRE "\\*$" "" $author_name -}}
-    {{- $highlight_name := or (.Page.Params.highlight_name | default false) (eq $author_name_base "Han Zhang") -}}
+    {{- $author_key := lower $author_name_base -}}
+    {{- $author_note := cond (ne $author_name $author_name_base) "*" "" -}}
+    {{- $author_label := $author_name -}}
+    {{- $highlight_name := or (.Page.Params.highlight_name | default false) (eq $author_name_base "Han Zhang") (eq $author_key "admin") -}}
     {{- $author_url := .RelPermalink -}}
-    {{- if eq $author_name_base "Han Zhang" -}}
+    {{- if or (eq $author_name_base "Han Zhang") (eq $author_key "admin") -}}
       {{- with site.GetPage "authors/admin" -}}
         {{- $author_url = .RelPermalink -}}
+        {{- $author_label = print .Title $author_note -}}
       {{- end -}}
     {{- end -}}
 
     {{- if gt $index 0 }}, {{ end -}}
     <span {{ if $highlight_name }}class="font-bold"{{end}}>
       {{- if $author_url -}}
-        <a href="{{$author_url}}">{{.LinkTitle}}</a>
+        <a href="{{$author_url}}">{{$author_label}}</a>
       {{- else -}}
-        {{ .LinkTitle }}
+        {{ $author_label }}
       {{- end -}}
     </span>
     {{- if isset $.Params "author_notes" -}}

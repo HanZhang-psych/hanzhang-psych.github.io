@@ -7,11 +7,17 @@
 {{ range $item.Params.authors }}
   {{ $author_raw := . }}
   {{ $author_base := replaceRE "\\*$" "" $author_raw }}
+  {{ $author_key := lower $author_base }}
+  {{ $author_note := cond (ne $author_raw $author_base) "*" "" }}
   {{ $author_label := $author_raw }}
-  {{ if eq $author_base "admin" }}
-    {{ $author_label = replace $author_raw "admin" "Han Zhang" }}
+  {{ if eq $author_key "admin" }}
+    {{ with site.GetPage "authors/admin" }}
+      {{ $author_label = print .Title $author_note }}
+    {{ else }}
+      {{ $author_label = print "Han Zhang" $author_note }}
+    {{ end }}
   {{ end }}
-  {{ $authors = $authors | append (dict "label" $author_label "highlight" (or (eq $author_base "Han Zhang") (eq $author_base "admin"))) }}
+  {{ $authors = $authors | append (dict "label" $author_label "highlight" (or (eq $author_base "Han Zhang") (eq $author_key "admin"))) }}
 {{ end }}
 
 <article class="featured-publication-item{{ if $resource }} has-thumbnail{{ end }}">
@@ -38,7 +44,11 @@
     {{ end }}
 
     <div class="featured-publication-meta">
-      <span>{{ $item.Date.Format "January 2006" }}</span>
+      {{ with $item.Params.publication_status }}
+        <span>{{ . }}</span>
+      {{ else }}
+        <span>{{ $item.Date.Format "January 2006" }}</span>
+      {{ end }}
       {{ with $item.Params.publication }}
         <span>{{ . | markdownify }}</span>
       {{ end }}
