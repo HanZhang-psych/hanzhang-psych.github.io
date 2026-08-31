@@ -14,7 +14,7 @@ abstract: A long-standing debate in the study of cognitive aging concerns whethe
   fine-grained approach to study inhibitory control.
 authors:
 - Jacob Sellers*
-- Han Zhang*
+- admin*
 - John Jonides
 - Taraz Lee
 date: '2026-09-01'
@@ -23,9 +23,9 @@ links:
 - name: URL
   url: https://osf.io/w7fp9_v1
 publication: '*Psychological Science*'
+publication_status: in press
 publication_types:
 - article-journal
-publication_status: "in press"
 publishDate: '2026-08-30T23:58:17.484651Z'
 title: Does global slowing explain age effects in inhibitory control?
 ---
