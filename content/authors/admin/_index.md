@@ -49,8 +49,7 @@ profiles:
 interests:
   - Attention
   - Cognitive Control
-  - Distraction
-  - Driver Behavior
+  - Human-AI Interaction
 
 education:
   - area: Ph.D. in Education and Psychology
@@ -227,4 +226,4 @@ awards:
 
 ## About Me
 
-I am a cognitive psychologist working in the transportation domain. I have extensive experience investigating cognitive processes relevant to driving behavior, including visual perception, attention, and cognitive control. I have examined these issues in young and older adults as well as individuals with ADHD. My goal is to translate basic understandings about human cognition into practical solutions for improving driving safety.
+I am a cognitive psychologist working at the intersection of human cognition and physical AI. I am interested in the capabilities and limitations of human and artificial minds and applying insights from human cognition to improve the behavior of artificial systems.
