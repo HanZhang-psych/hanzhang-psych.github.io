@@ -33,4 +33,5 @@ tags:
 - Eye-tracking
 - Python
 title: 'PupEyes: An interactive Python library for eye movement data processing'
+featured: true
 ---
