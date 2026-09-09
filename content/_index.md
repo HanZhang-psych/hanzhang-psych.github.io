@@ -51,6 +51,7 @@ sections:
       title: Recent Updates
       subtitle: ''
       text: |-
+        - **Sep 2026:** New preprint **[Emergent goal-directed attention in large vision-language models]**(https://arxiv.org/abs/2609.05517).
         - **Aug 2026:** Student mentee Nithya Rajan's poster **Can Machine Learning Predict L3 Driving Takeover Performance from Gaze and Cognitive Traits?** won the 1st place in the UMTRI Poster Competition. 🎉
         - **Aug 2026:** Student mentee Bianca Done's poster **Who Can Re-Enter the Loop? A Scoping Review** won the 2nd place in the UMTRI Poster Competition. 🎉
         - **Aug 2026:** Student mentee Stefanie Schneider presented her poster **Who Can Reengage Better During Level-3 Automated Driving?** at the SURE symposium. 🎉
