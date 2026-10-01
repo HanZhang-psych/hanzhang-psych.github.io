@@ -51,6 +51,8 @@ sections:
       title: Recent Updates
       subtitle: ''
       text: |-
+        - **Sep 2026:** New preprint **[Who can re-enter the loop? A scoping review on cognitive abilities and task re-engagement in human-AI interaction](https://osf.io/preprints/psyarxiv/mhvts_v2/)**.
+        - **Sep 2026:** New preprint **[From visual search to movement control: A priority field for artificial agents](https://arxiv.org/abs/2609.30704)**.
         - **Sep 2026:** New preprint **[Emergent goal-directed attention in large vision-language models](https://arxiv.org/abs/2609.05517)**.
         - **Aug 2026:** Student mentee Nithya Rajan's poster **Can Machine Learning Predict L3 Driving Takeover Performance from Gaze and Cognitive Traits?** won the 1st place in the UMTRI Poster Competition. 🎉
         - **Aug 2026:** Student mentee Bianca Done's poster **Who Can Re-Enter the Loop? A Scoping Review** won the 2nd place in the UMTRI Poster Competition. 🎉
@@ -59,7 +61,6 @@ sections:
         - **Jul 2026:** Helped organize a session named **SAE Level 3 Features: Coming Soon to a Vehicle Owned by You** at ATS 2026.
         - **May 2026:** Gave an invited talk at Mcity's annual research review: **Measurement of Drivers' Re-Engagement Readiness**. Watch it [here](https://www.youtube.com/watch?v=0DVUirUmZik)!
         - **Apr 2026:** Gave an invited talk at Lawrence Tech University: [What can we learn from eye movements?](https://ltu.edu/academics-calendar/coas-seminar-series-april-2026/)
-        - **Apr 2026:** First-author paper [I’m trying to read here! How does irrelevant speech affect how you read?](https://link.springer.com/article/10.1007/s10339-026-01346-4) accepted by _Cognitive Processing_!
 
     design:
       css_class: recent-updates
