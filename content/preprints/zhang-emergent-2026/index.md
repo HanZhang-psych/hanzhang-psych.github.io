@@ -26,4 +26,5 @@ tags:
 - Computer Science - Computation and Language
 - Computer Science - Computer Vision and Pattern Recognition
 title: Emergent goal-directed attention in large vision-language models
+featured: true
 ---

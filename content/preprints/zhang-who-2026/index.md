@@ -39,4 +39,5 @@ tags:
 - out of the loop
 title: Who can re-enter the loop? A scoping review on cognitive abilities and task
   re-engagement in human-AI interaction
+featured: true
 ---

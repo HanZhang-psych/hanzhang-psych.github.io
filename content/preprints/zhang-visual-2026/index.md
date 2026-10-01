@@ -30,4 +30,5 @@ tags:
 - Computer Science - Artificial Intelligence
 - Computer Science - Computation and Language
 title: 'From visual search to movement control: A priority field for artificial agents'
+featured: true
 ---
