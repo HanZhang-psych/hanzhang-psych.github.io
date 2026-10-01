@@ -1,0 +1,37 @@
+---
+abstract: Inhibitory control challenges have long been theorized to underlie deficits
+  in ADHD, but the precise mechanism(s) have remained unclear. Recent research using
+  “forced-response” conflict tasks and computational modeling, capable of distinguishing
+  the time-dependent contributions of habitual and goal-directed response preparation,
+  has provided evidence that supports the idea that delayed goal-directed processing
+  underlies inhibitory control challenges in adult ADHD. Still, it remains unclear
+  how habitual and goal-directed responding adjust with increased (or decreased) interference
+  that requires more (or less) inhibitory control, which matters because daily life
+  involves varying levels of interference. To address this gap, we recruited adults
+  meeting criteria for ADHD to complete a forced-response version of the arrow flanker
+  task. We created circumstances of increased and decreased interference by manipulating
+  the size of target and non-target (distractor) stimuli relative to each other. We
+  utilized a crossover design, in which participants completed the arrow-flanker once
+  while medicated and once while unmedicated (counterbalanced). Results showed that
+  goal-directed responses were prepared more slowly for participants when unmedicated,
+  regardless of interference circumstance. We directly tested the interaction between
+  medication and interference, and the presence of medication did not especially help
+  in one interference circumstance over the other. These findings add to a growing
+  body of literature working toward better understanding the nature of inhibitory
+  control within adult-ADHD.
+authors:
+- Jahla B. Osborne
+- Jacob Sellers
+- admin
+- Wang Su
+- Sarah Liberatore
+- Chandra Sripada
+- Priti Shah
+- John Jonides
+date: '2026-01-01'
+publication_types:
+- manuscript
+publishDate: '2026-10-01T14:12:21.645821Z'
+title: Regardless of task demands, delayed goal-directed processing persists in adult
+  ADHD
+---
