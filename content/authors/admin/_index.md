@@ -226,4 +226,4 @@ awards:
 
 ## About Me
 
-I am a cognitive psychologist working at the intersection of human cognition and physical AI. I am interested in the capabilities and limitations of human and artificial minds and applying insights from human cognition to improve the behavior of artificial systems.
+I am a cognitive psychologist working at the intersection of human and artificial intelligence. I am interested in the capabilities and limitations of human and artificial minds and applying insights from human cognition to improve the behavior of artificial systems.
