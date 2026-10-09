@@ -51,6 +51,8 @@ sections:
       title: Recent Updates
       subtitle: ''
       text: |-
+        - **Oct 2026**: New grant awarded: "Harnessing Driving Behavior to Inform Cognitive Change in the Aging Population" with Bruno Giordani.
+        - **Oct 2026**: New grant awarded: "Understanding Driver Transitions Across Automated Driving Levels" supported by General Motors!
         - **Sep 2026:** New preprint **[Who can re-enter the loop? A scoping review on cognitive abilities and task re-engagement in human-AI interaction](https://osf.io/preprints/psyarxiv/mhvts_v2/)**.
         - **Sep 2026:** New preprint **[From visual search to movement control: A priority field for artificial agents](https://arxiv.org/abs/2609.30704)**.
         - **Sep 2026:** New preprint **[Emergent goal-directed attention in large vision-language models](https://arxiv.org/abs/2609.05517)**.

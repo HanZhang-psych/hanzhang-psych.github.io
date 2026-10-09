@@ -92,35 +92,35 @@ work:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: ''
-    items:
-      - name: Python
-        description: ''
-        percent: 100
-        icon: devicon/python
-      - name: R
-        description: ''
-        percent: 100
-        icon: devicon/r
-      - name: Statistical Analysis
-        description: ''
-        percent: 100
-        icon: hero/chart-bar
-  - name: ''
-    items:
-      - name: Eye-tracking
-        description: ''
-        percent: 100
-        icon: hero/eye
-      - name: Experimental Design
-        description: ''
-        percent: 100
-        icon: hero/adjustments-horizontal
-      - name: Academic Writing
-        description: ''
-        percent: 100
-        icon: hero/pencil-square
+# skills:
+#   - name: ''
+#     items:
+#       - name: Python
+#         description: ''
+#         percent: 100
+#         icon: devicon/python
+#       - name: R
+#         description: ''
+#         percent: 100
+#         icon: devicon/r
+#       - name: Statistical Analysis
+#         description: ''
+#         percent: 100
+#         icon: hero/chart-bar
+#   - name: ''
+#     items:
+#       - name: Eye-tracking
+#         description: ''
+#         percent: 100
+#         icon: hero/eye
+#       - name: Experimental Design
+#         description: ''
+#         percent: 100
+#         icon: hero/adjustments-horizontal
+#       - name: Academic Writing
+#         description: ''
+#         percent: 100
+#         icon: hero/pencil-square
 #   - name: Hobbies
 #     color: '#eeac02'
 #     color_border: '#f0bf23'
@@ -146,33 +146,68 @@ languages:
 
 # Awards.
 #   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
+#   Only `title`, `date`, and one of `funder` or `awarder` are required.
+#   Optional `role` displays your role separately from the funder.
+#   Optional `amount` displays the award or grant dollar amount.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Understanding Takeover Performance in Urgent Situations during Level‑3 Driving
+  - title: Harnessing Driving Behavior to Inform Cognitive Change in the Aging Population
     #url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2025-10-08'
-    awarder: |
-      Role: PI, UMTRI & Mcity Integration Fund, University of Michigan
+    date: '2027-2028'
+    amount: '$50,000'
+    role: PI
+    funder: Building Better Futures, University of Michigan
+    # icon: academic-cap
+    summary: |
+      This project uses vision-language models (VLMs) to identify where drivers should direct their attention in real-world driving situations. By comparing these context-aware predictions with older adults’ eye movements, the study will test whether patterns of misplaced attention can help identify preclinical Alzheimer’s disease and inform strategies to support safer driving.
+
+  - title: Understanding Driver Transitions Across Automated Driving Levels
+    #url: https://www.coursera.org/learn/neural-networks-deep-learning
+    date: '2026-2027'
+    amount: '$219,357'
+    role: PI
+    funder: General Motors
+    # icon: academic-cap
+    summary: |
+      Vehicles equipped with advanced driving systems may transition between higher and lower levels of automation (e.g., SAE Levels 3 and 2). These shifts in responsibility between the driver and the system may cause confusion and reduce situational awareness. This project seeks to develop a scenario-based framework for studying transitions between automation modes, characterize driver behavior using high-fidelity simulation, and examine how secondary tasks may impair situational awareness.
+    #url: https://www.coursera.org/learn/neural-networks-deep-learning
+
+  - title: Understanding Takeover Performance in Urgent Situations during Level‑3 Driving
+    date: '2025-2027'
+    amount: '$99,971'
+    role: PI
+    funder: UMTRI & Mcity Integration Fund, University of Michigan
     # icon: academic-cap
     summary: |
       This project seeks to combine eye movements, body position, and cognitive assessments to develop a driver re-engagebility score that can predict driver's ability to take over vehicle control during urgent situations in level-3 autonomous driving. 
+
+  - title: Demonstration and Evaluation of Employer‑Based Driving Safety Programs
+    date: '2024-2029'
+    amount: '$2,400,000'
+    role: Co-I
+    funder: NHTSA
+    # icon: academic-cap
+    summary: |
+      This project works with employers to develop behavioral intervention programs to increase seatbelt use and reduce drowsy and distracted driving.
+
   - title: Probing Attentional Allocation with a Novel Forced‑Response Method
     url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238151&HistoricalAwards=false
     date: '2023-07-01'
-    awarder: |
-      Role: Key Personnel (Postdoc), Standard Grant, National Science Foundation
+    role: Key Personnel (Postdoc)
+    funder: Standard Grant, National Science Foundation
     # icon: academic-cap
     summary: |
       This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction. 
+
   - title: Investigating Interference‑Control in ADHD Using a Novel Forced‑Response Method
     url: https://reporter.nih.gov/project-details/10758598
     date: '2023-01-01'
-    awarder: |
-      Role: Key Personnel (Postdoc), R21, National Institute of Mental Health
+    role: Key Personnel (Postdoc)
+    funder: R21, National Institute of Mental Health
     # icon: academic-cap
     summary: |
-      This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction in adults with ADHD. 
+      This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction in adults with ADHD.
+
   - title: Stanley E. and Ruth B. Dimond Best Dissertation Award
     date: '2021-06-02'
     awarder: |
@@ -180,6 +215,7 @@ awards:
     # icon: academic-cap
     summary: |
       Awarded for dissertation: Mind-Wandering: What Can We Learn from Eye Movements?
+
   - title: Midwestern Psychological Association Graduate Student Paper Award
     date: '2020-01-07'
     awarder: |
@@ -187,6 +223,7 @@ awards:
     # icon: academic-cap
     summary: |
       Awarded for submission: Scan‑paths of mind‑wandering during real‑world scene perception.
+
   - title: Rackham One‑Term Dissertation Fellowship
     date: '2019-08-26'
     awarder: |
@@ -194,6 +231,7 @@ awards:
     # icon: academic-cap
     summary: |
       Award that supported my dissertation work.
+
   - title: Rackham Graduate Student Research Grant
     date: '2019-07-09'
     awarder: |
@@ -202,26 +240,6 @@ awards:
     date: '2018-04-12'
     awarder: |
       Inter-university Consortium for Political and Social Research (ICPSR), University of Michigan
-    # icon: academic-cap
-    # summary: 
-#   - title: Blockchain Fundamentals
-#     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-#     date: '2023-07-01'
-#     awarder: edX
-#     icon: edx
-#     summary: |
-#       Learned:
-#       - Synthesize your own blockchain solutions
-#       - Gain an in-depth understanding of the specific mechanics of Bitcoin
-#       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-#   - title: 'Object-Oriented Programming in R'
-#     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-#     certificate_url: https://www.datacamp.com
-#     date: '2023-01-21'
-#     awarder: datacamp
-#     icon: datacamp
-#     summary: |
-#       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 ## About Me
