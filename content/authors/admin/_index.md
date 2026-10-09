@@ -144,13 +144,13 @@ languages:
   - name: Chinese
     percent: 100
 
-# Awards.
-#   Add/remove as many awards below as you like.
+# Research grants.
+#   Add/remove as many grants below as you like.
 #   Only `title`, `date`, and one of `funder` or `awarder` are required.
 #   Optional `role` displays your role separately from the funder.
 #   Optional `amount` displays the award or grant dollar amount.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
+grants:
   - title: Harnessing Driving Behavior to Inform Cognitive Change in the Aging Population
     #url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2027-2028'
@@ -208,6 +208,11 @@ awards:
     summary: |
       This project employs a novel behavioral paradigm with computational modeling to understand cognitive processes involved in mitigating distraction in adults with ADHD.
 
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+awards:
   - title: Stanley E. and Ruth B. Dimond Best Dissertation Award
     date: '2021-06-02'
     awarder: |

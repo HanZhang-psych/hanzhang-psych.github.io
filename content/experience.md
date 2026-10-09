@@ -20,14 +20,19 @@ sections:
       is_education_first: false
   - block: awards
     content:
-      title: Awards & Grants
+      title: Research Grants
       username: admin
-  - block: skills
+      collection: grants
+  - block: awards
     content:
-      title: Skills
+      title: Awards
       username: admin
-    design:
-      show_skill_percentage: false
+  # - block: skills
+  #   content:
+  #     title: Skills
+  #     username: admin
+  #   design:
+  #     show_skill_percentage: false
   # - block: resume-languages
   #   content:
   #     title: Languages
